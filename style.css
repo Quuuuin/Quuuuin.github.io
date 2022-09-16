@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Kaushan+Script&family=Open+Sans&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background-image:
+    radial-gradient(closest-side, rgba(235, 105, 78, 1), rgba(235, 105, 78, 0)),
+    radial-gradient(closest-side, rgba(243, 11, 164, 1), rgba(243, 11, 164, 0)),
+    radial-gradient(closest-side, rgba(254, 234, 131, 1), rgba(254, 234, 131, 0)),
+    radial-gradient(closest-side, rgba(170, 142, 245, 1), rgba(170, 142, 245, 0)),
+    radial-gradient(closest-side, rgba(248, 192, 147, 1), rgba(248, 192, 147, 0));
+  background-size:
+    130vmax 130vmax,
+    80vmax 80vmax,
+    90vmax 90vmax,
+    110vmax 110vmax,
+    90vmax 90vmax;
+  background-position:
+    -80vmax -80vmax,
+    60vmax -30vmax,
+    10vmax 10vmax,
+    -30vmax -10vmax,
+    50vmax 50vmax;
+  background-repeat: no-repeat;
+  animation: 10s movement linear infinite;
+  overflow: hidden;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+body::after {
+  content: '';
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.title1 {
+  position: relative;
+  display: flex;
+  z-index: 15;
+  width: 100%;
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow:
+    0px 0px 1px rgba(255, 255, 255, .6),
+    0px 4px 4px rgba(0, 0, 0, .05);
+  letter-spacing: .2rem;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  margin-left: 5rem;
+}
+
+.titlebox {
+  position: relative;
+  display: flex;
+  z-index: 10;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow:
+    0px 0px 1px rgba(255, 255, 255, .6),
+    0px 4px 4px rgba(0, 0, 0, .05);
+  letter-spacing: .2rem;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.sectiontitle {
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin: 5rem;
+  margin-left: 20%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+@keyframes movement {
+
+  0%,
+  100% {
+    background-size:
+      130vmax 130vmax,
+      80vmax 80vmax,
+      90vmax 90vmax,
+      110vmax 110vmax,
+      90vmax 90vmax;
+    background-position:
+      -80vmax -80vmax,
+      60vmax -30vmax,
+      10vmax 10vmax,
+      -30vmax -10vmax,
+      50vmax 50vmax;
+  }
+
+  25% {
+    background-size:
+      100vmax 100vmax,
+      90vmax 90vmax,
+      100vmax 100vmax,
+      90vmax 90vmax,
+      60vmax 60vmax;
+    background-position:
+      -60vmax -90vmax,
+      50vmax -40vmax,
+      0vmax -20vmax,
+      -40vmax -20vmax,
+      40vmax 60vmax;
+  }
+
+  50% {
+    background-size:
+      80vmax 80vmax,
+      110vmax 110vmax,
+      80vmax 80vmax,
+      60vmax 60vmax,
+      80vmax 80vmax;
+    background-position:
+      -50vmax -70vmax,
+      40vmax -30vmax,
+      10vmax 0vmax,
+      20vmax 10vmax,
+      30vmax 70vmax;
+  }
+
+  75% {
+    background-size:
+      90vmax 90vmax,
+      90vmax 90vmax,
+      100vmax 100vmax,
+      90vmax 90vmax,
+      70vmax 70vmax;
+    background-position:
+      -50vmax -40vmax,
+      50vmax -30vmax,
+      20vmax 0vmax,
+      -10vmax 10vmax,
+      40vmax 60vmax;
+  }
+}
+
+.warp {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  /* flex弹性布局 居中（水平、垂直） */
+}
+
+.card {
+  width: 90vw;
+  height: 16vh;
+  border-radius: 2vh;
+  margin: 2vh;
+
+  /* 文本垂直居中 */
+  /* text-align: center; */
+  /* line-height: 20vh; */
+
+  /*外层相对位置*/
+  /* position: relative; */
+
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 1s ease;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+.one {
+  background-color: rgba(170, 142, 245, 1);
+  background-image: linear-gradient(135deg, #d09cf3, #8063e1);
+  box-shadow: 20px 20px 60px rgba(34, 50, 84, 0.5), 1px 1px 0px 1px #8063e1;
+  z-index: 5;
+  opacity: 0.9;
+}
+
+.two {
+  background-color: rgba(243, 11, 164, 1);
+  background-image: linear-gradient(135deg, #7f94fc, rgba(248, 192, 147, 1));
+  box-shadow: 20px 20px 60px rgba(34, 50, 84, 0.5), 1px 1px 0px 1px #3f58e3;
+  z-index: 4;
+  opacity: 0.9;
+}
+
+.three {
+  background-color: #2c6fd1;
+  background-image: linear-gradient(135deg, rgb(242, 65, 183), rgba(254, 234, 131, 1));
+  box-shadow: 20px 20px 60px rgba(34, 50, 84, 0.5), 1px 1px 0px 1px #2c6fd1;
+  z-index: 3;
+  opacity: 0.9;
+}
+
+
+.card .title {
+  /*内层绝对位置*/
+  /*position: absolute;*/
+  border-bottom: rgb(149, 158, 158) 1px solid;
+  width: calc(100% - 2vw);
+  height: 25%;
+  padding-left: 2rem;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.card .content {
+  /*position: absolute;*/
+
+  width: 100%;
+  height: 74%;
+
+  /* 文本垂直居中 */
+  /* text-align: center; */
+  line-height: 11vh;
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: 700;
+  font-size: 16px;
+  word-break: break-all;
+}
+
+.card:hover {
+  transform: rotateX(0deg) rotateY(0deg) rotate(0deg) translate(15px, 0px);
+  opacity: 0.9;
+}
+
+.card:hover:after {
+  transform: translateX(100%);
+  transition: all 1.5s ease-in-out;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  background-image: linear-gradient(60deg, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 80%);
+}
