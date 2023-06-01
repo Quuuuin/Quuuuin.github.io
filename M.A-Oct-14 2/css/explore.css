@@ -1,0 +1,396 @@
+/* z-index: 
+        map:1   .mode:5     others:99
+*/
+
+
+/* logo */
+
+header img {
+    z-index: 99;
+}
+
+
+/* set the explore.html's body element */
+
+.explore-body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* height changed from 680px to 2000px - juewen Ma*/
+
+#mapid {
+    height: 2000px;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    z-index: 1;
+}
+
+body button a {
+    margin: 0px 0px 0px 0px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.mode {
+    padding: 0px;
+    margin: 0px;
+    font-size: 0;
+    position: fixed;
+    top: 30px;
+    width: 100vw;
+    height: 60px;
+    text-align: center;
+    z-index: 5;
+}
+
+button#explore {
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: rgb(242, 112, 89);
+    width: 250px;
+    height: 60px;
+    border-radius: 7px;
+    border-width: 0px;
+}
+
+button#recommend {
+    font-size: 15px;
+    background-color: rgb(242, 112, 89, 0.7);
+    width: 200px;
+    height: 60px;
+    border-radius: 7px;
+    border-width: 0px;
+}
+
+button#recommend a {
+    margin: 0;
+}
+
+#stop {
+    font-size: 22px;
+    float: left;
+    background-color: white;
+    margin: 15px 0 0 30px;
+    border: 2px black solid;
+    border-radius: 10px;
+    width: 222px;
+    height: 35px;
+}
+
+#stop:hover {
+    background-color: #ff4027;
+}
+
+#stop>input {
+    position: relative;
+    margin: 0;
+    width: 18px;
+    height: 18px;
+}
+
+#stop>label {
+    position: relative;
+    margin: 0;
+}
+
+
+/* Guidance & menu */
+
+#main-menu {
+    position: fixed;
+    z-index: 99;
+    top: 1%;
+    right: 7%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+
+/* added by juewen ma */
+
+#main-menu>div {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: rgba(47, 47, 47, 0.95);
+    color: rgb(228, 228, 228);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 99;
+    width: 200px;
+    padding: 20px 20px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.dropdown-content li {
+    list-style: none;
+    font-size: 16px;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content a {
+    color: aliceblue;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+
+/* Guidance */
+
+#guide-icon {
+    cursor: pointer;
+    width: 70px;
+    display: block;
+    z-index: 99;
+}
+
+#guidance-content ul {
+    padding: 5% 2% 2% 2%;
+    margin-top: 0%;
+}
+
+#guidance-content li {
+    flex-direction: row;
+    margin-inline: 2%;
+}
+
+
+/* Menu */
+
+#menu-icon {
+    cursor: pointer;
+    width: 70px;
+    display: block;
+    padding-top: 0px;
+    z-index: 99;
+}
+
+#menu-content ul {
+    display: flex;
+    padding: 2%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#menu-content li {
+    height: 30px;
+    margin-inline: 2px;
+}
+
+
+/* Filter */
+
+#filter-btn {
+    position: fixed;
+    display: block;
+    top: 35%;
+    left: 1%;
+    cursor: pointer;
+    width: 40px;
+    z-index: 5;
+}
+
+#filter {
+    position: fixed;
+    display: none;
+    top: 20%;
+    left: 0%;
+    background-color: rgb(255, 249, 242);
+    opacity: 0.85;
+    padding: 10px;
+    border: black;
+    border-radius: 10px;
+    border-style: groove;
+    font-size: 17px;
+    z-index: 99;
+}
+
+#fliter-content {
+    position: absolute;
+    display: block;
+    z-index: 99;
+}
+
+#filter-content div {
+    padding: 5px;
+    margin: 5px;
+}
+
+#all-none {
+    cursor: pointer;
+    display: flexbox;
+    flex-direction: row;
+}
+
+#type-all,
+#type-none {
+    width: fit-content;
+    font-size: small;
+    border-style: groove;
+    border-color: #ff4027;
+    border-radius: 3px;
+    background-color: #f1a99f;
+    margin-top: 5px;
+    padding: 3px;
+}
+
+#filter-content .attribute {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+#filter-content .input {
+    display: block;
+    text-align: center;
+}
+
+#filter-content img {
+    width: 50px;
+}
+
+#filter #close-filter {
+    position: absolute;
+    right: 0ch;
+    margin: 5px;
+    width: 37px;
+    cursor: pointer;
+}
+
+#submit-btn {
+    width: 80px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+fieldset {
+    border-style: none;
+}
+
+#filter.show {
+    display: block;
+}
+
+#filter-btn.show {
+    display: none;
+}
+
+
+/* prompt after successfully applied filter */
+
+#filter-prompt {
+    display: none;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    font-size: 25px;
+    color: cornsilk;
+    background-color: rgb(233, 120, 79);
+    padding: 5px;
+    z-index: 99;
+}
+
+#filter-prompt p {
+    padding: 0;
+    margin: 5px;
+}
+
+
+
+
+/* chart demonstration section*/
+
+#chart-section {
+    position: fixed;
+    width: 42px;
+    height: 43px;
+    z-index: 98;
+    left: 1%;
+    top: 20%;
+    background-color: rgba(12, 12, 12, 0.6);
+    border-radius: 49%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#chart-section:hover .tip {
+    visibility: visible;
+}
+
+
+#chart-section img {
+    width: 40px;
+    height: 40px;
+}
+
+.tip {
+    z-index: 101;
+    visibility: hidden;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.596);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    left: 50px;
+    top: -7px;
+
+}
+
+.chart-page {
+    display: none;
+    position: fixed;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 600px;
+    min-height: 400px;
+    z-index: 102;
+    border: 1px solid rgba(0, 0, 0, 0.445);
+    border-radius: 2%;
+
+}
+
+.chart-page img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+
+}
+
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    background-color: rgba(255, 255, 255, 0.521);
+    position: fixed;
+    display: none;
+}
+
+canvas#myChart {
+    z-index: 103;
+
+}

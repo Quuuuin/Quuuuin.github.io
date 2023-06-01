@@ -1,0 +1,188 @@
+<!doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Millionaire Assistant | Explore Mode</title>
+    <link rel="shortcut icon" href="Images&Files/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/explore.css">
+</head>
+
+<body class="explore-body">
+    <header>
+        <a href="index.html"><img src="Images&Files/logo.png" alt="logo"></a>
+    </header>
+
+
+    <!-- EXPLORE button & RECOMMEND button -->
+    <div class="mode">
+        <button type="button" id="explore"><a href="explore.html">EXPLORE&RECOMMEND</a></button>
+        <button type="button" id="recommend"><a href="recommend.html">FOOD TRUCKS</a></button>
+    </div>
+
+
+    <nav id="main-menu">
+
+        <div class="guidance">
+
+            <img src="Images&Files/Guide_icon.png" alt="guidence icon" id="guide-icon">
+
+            <div class="dropdown-content" id="guidance-content">
+
+                <ul>
+                    <li><b>Step 1: </b></li>
+                    <li>Select value for each attribute</li>
+                </ul>
+
+                <ul>
+                    <li><b>Step 2: </b></li>
+                    <li>Click "Apply" button</li>
+                </ul>
+
+                <ul>
+                    <li><b>Step 3: </b></li>
+                    <li>All trucks that meet your reqirements are shown on the map </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="dropdown">
+
+            <img src="Images&Files/Menu-icon.png" alt="unfold icon" id="menu-icon">
+
+            <div class="dropdown-content" id="menu-content">
+
+                <ul>
+                    <li>
+                        <a href="about.html">ABOUT US</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="datasets.html">OUR IDEA</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="datasets.html">DATASETS</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="#">REFERENCE LIST</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Filter -->
+
+    <img id="filter-btn" src="Images&Files/arrow1.png" alt="xxx-btn">
+
+    <section id="filter">
+
+        <img id="close-filter" src="Images&Files\close1.png" alt="close filter">
+
+        <form>
+
+            <fieldset id="filter-content">
+
+                <div id="all-none">
+                    <p id="type-all">Select All</p>
+                    <p id="type-none">Select None</p>
+                </div>
+
+
+                <div>
+                    <div class="attribute">Food type</div>
+                    <div class="input">
+                        <input id="food-type-burger" type="checkbox" name="food-type" value="burger" checked>
+                        <img src="Images&Files\burger.png" alt="burger icon">
+                        <input id="food-type-pizza" type="checkbox" name="food-type" value="pizza" checked>
+                        <img src="Images&Files\pizza.svg" alt="">
+                        <!-- 无bbq -->
+                        <!-- <input id="food-type-bbq" type="radio" name="food-type" value="bbq">
+                        <img src="Images&Files\food3.png" alt=""> -->
+                        <br>
+                        <input id="food-type-dessert" type="checkbox" name="food-type" value="dessert" checked>
+                        <img src="Images&Files\sweet.png" alt="">
+                        <input id="food-type-others" type="checkbox" name="food-type" value="others" checked>
+                        <img src="Images&Files\others.png" alt="">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="attribute">Food sefety rating</div>
+                    <div class="input">
+                        <input id="food-safety-high" type="checkbox" name="food-safety" value="high" checked>5-high
+                        <input id="food-safety-medium" type="checkbox" name="food-safety" value="medium"
+                            checked>4-medium
+                        <input id="food-safety-low" type="checkbox" name="food-safety" value="low" checked>3-low
+                    </div>
+                </div>
+
+                <div>
+                    <div class="attribute">Passenger flow</div>
+                    <div class="input">
+                        <input id="passenger-flow-high" type="checkbox" name="passenger-flow" value="high" checked>High
+                        <input id="passenger-flow-medium" type="checkbox" name="passenger-flow" value="medium"
+                            checked>Medium
+                        <input id="passenger-flow-low" type="checkbox" name="passenger-flow" value="high" checked>Low
+                    </div>
+                </div>
+
+                <button id="submit-btn" type="submit" value="button">Apply!</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <div id="filter-prompt">
+        <p>Now the filter is applied!</p>
+    </div>
+
+
+
+    <!-- chart section and its extra elements -->
+    <div id="chart-section">
+        <img
+            src="https://img.icons8.com/external-prettycons-flat-prettycons/94/000000/external-pie-chart-business-and-finance-prettycons-flat-prettycons.png" />
+        <div class="tip" id="tip">This section is about chart demonstration</div>
+    </div>
+
+
+    <div class="chart-page" id="chart-page">
+        <img id="close-chart-page" src="Images&amp;Files\close1.png" alt="close filter">
+
+        <canvas id="myChart"></canvas>
+        <canvas></canvas>
+        <canvas></canvas>
+    </div>
+
+    <div id="overlay"></div>
+
+
+    <div id="mapid"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/explore.js"></script>
+    <script src="js/dropdown.js"></script>
+
+
+
+
+</body>
+
+</html>

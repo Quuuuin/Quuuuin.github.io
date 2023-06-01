@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+#index {
+    background-color: #F27059;
+}
+
+
+
+header {
+    /* position: absolute; */
+    position: fixed;
+    left: 35px;
+    top: 6px;
+    width: 135px;
+    height: 135px;
+    z-index: 100;
+    /* background-color: rgba(255, 255, 255, 0.75); */
+}
+
+
+header img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+nav.top {
+    width: 100vw;
+    height: 10vh;
+    padding-top: 10px;
+    /*border: snow 10px solid;*/
+    z-index: 2;
+}
+
+nav.top ul {
+    float: right;
+}
+
+nav.top ul li {
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 10px;
+    float: left;
+}
+
+nav.top ul li a {
+    position: relative;
+    display: block;
+    margin: 0 20px;
+    padding-top: 5px;
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+}
+
+nav.top ul li a span {
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+
+section#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: darkblue;
+    text-align: center;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+section#banner div {
+    padding-bottom: 50px;
+}
+
+
+/* pizza & smoke image setting */
+
+
+/* pizza */
+
+section#banner div :nth-child(1) {
+    position: relative;
+    right: 400px;
+    width: 50px;
+    height: 50px;
+}
+
+
+/* title: M.A  */
+
+section#banner div :nth-child(2) {
+    font-size: 4em;
+}
+
+
+/* smoke */
+
+section#banner div :nth-child(3) {
+    position: relative;
+    left: 400px;
+    bottom: 10px;
+    transform: rotateY(180deg);
+}
+
+
+/* food-truck */
+
+section#banner div :nth-child(4) {
+    position: relative;
+    left: 400px;
+    width: 50px;
+    height: 50px;
+}
+
+section#banner h1 {
+    font-family: 'Gluten', cursive;
+    color: black;
+}
+
+section#banner ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50vw;
+    /*border: 10px red solid;*/
+}
+
+section#banner ul li {
+    list-style-type: none;
+    font-size: 1.5em;
+    background: pink;
+    padding: 13px 20px;
+    border-radius: 10%;
+    transform: scale(1);
+    transition: .5s;
+}
+
+section#banner ul li a {
+    text-decoration: none;
+}
+
+section#banner ul li:hover {
+    background: rgb(241, 227, 229);
+    transform: scale(1.1);
+}
+
+section#index-bottom {
+    position: relative;
+    top: 15vh;
+    /*border: blue 10px solid;*/
+}
+
+section#index-bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* bubble-explore */
+
+section#index-bottom :nth-child(1) {
+    position: relative;
+    left: 15vw;
+    bottom: 10vh;
+    width: 300px;
+    height: 230px;
+    opacity: 0;
+}
+
+section#index-bottom :nth-child(1).show-explore {
+    opacity: 1;
+}
+
+
+/* explore-text */
+
+section#index-bottom :nth-child(2) {
+    position: absolute;
+    left: 27vw;
+    bottom: 25vh;
+    font-size: 1.5em;
+    opacity: 0;
+}
+
+section#index-bottom :nth-child(2).show-explore {
+    opacity: 1;
+}
+
+
+/* cartoon man */
+
+section#index-bottom :nth-child(3) {
+    width: 300px;
+    height: 230px;
+}
+
+
+/* recommen-text */
+
+section#index-bottom :nth-child(4) {
+    position: absolute;
+    right: 27vw;
+    bottom: 22vh;
+    font-size: 1.5em;
+    opacity: 0;
+}
+
+section#index-bottom :nth-child(4).show-recommend {
+    opacity: 1;
+}
+
+
+/* bubble-recommend */
+
+section#index-bottom :nth-child(5) {
+    position: relative;
+    right: 15vw;
+    bottom: 10vh;
+    width: 320px;
+    height: 250px;
+    opacity: 0;
+}
+
+section#index-bottom :nth-child(5).show-recommend {
+    opacity: 1;
+}
+
+
+/* about us page */
+
+#about {
+    background-color: #F27059;
+}
+
+#about h1 {
+    margin-top: 4vh;
+    padding-bottom: 5vh;
+    font-size: 60px;
+    text-align: center;
+}
+
+#about div {
+    height: 25%;
+    width: 25%;
+    text-align: center;
+    font-size: 30px;
+    float: left;
+    margin-left: 80px;
+}
+
+#about div>h2 {
+    margin-top: -10px;
+}
+
+#about #yang {
+    margin-left: 290px;
+}
+
+#about #ma {
+    margin-left: 90px;
+}
+
+
+
+/* datasets */
+
+body#datasets {
+    text-align: center;
+    background-color: #F27059;
+}
+
+body#datasets h1 {
+    padding-top: 2vh;
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+
+body#datasets article {
+    background-color: #FFE4E1;
+    margin: 10px 50px 30px 50px;
+    border: 2px inset #CD853F;
+}
+
+body#datasets article>h2 {
+    font-size: 30px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+}
+
+body#datasets article>p {
+    font-size: 25px;
+    margin-top: 0px;
+    padding: 0px 70px 0px 70px;
+}
+
+
+/* homepage */
+
+#banner article {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+}
+
+#start-button {
+    padding-top: 10vh;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+#start-button :hover {
+    transform: scale(1.1);
+}
+
+#start-button svg :hover {
+    transform: scale(1);
+}
+
+
+
+#start-button button {
+    border-radius: 10px;
+    border: 5px solid transparent;
+}
+
+#start-button button a {
+    position: relative;
+    font-size: 2em;
+    bottom: 10px;
+    color: #F27059;
+}
+
+#start-button button svg {
+    position: relative;
+    top:10px;
+}
+
+/* loading */
+
+
+/* This is a loading page which should be inserted to 
+IterateRecords() function later */
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white url(/Images&Files/loading.gif) no-repeat center center;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    opacity: 0;
+    display: none;
+}

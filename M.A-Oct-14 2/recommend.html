@@ -1,0 +1,103 @@
+<!doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Millionaire Assistant | Recommend Mode</title>
+    <link rel="shortcut icon" href="Images&Files/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recommend.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <!--
+Reference：
+[1] “Leaflet — an open-source JavaScript library for interactive maps.” https://leafletjs.com/ (accessed Sep. 22, 2021).
+-->
+
+</head>
+
+<body class="recommend-body">
+    <header>
+        <a href="index.html"><img src="Images&Files/logo.png" alt="logo"></a>
+    </header>
+
+    <!-- EXPLORE button & RECOMMEND button -->
+    <div class="mode">
+        <button type="button" id="explore"><a href="explore.html">EXPLORE&RECOMMAND</a></button>
+        <button type="button" id="recommend"><a href="recommend.html">FOOD TRUCKS</a></button>
+    </div>
+
+    <nav id="main-menu">
+
+        <div class="guidance">
+
+            <img src="Images&Files/Guide_icon.png" alt="guidence icon" id="guide-icon">
+
+            <div class="dropdown-content" id="guidance-content">
+
+                <ul>
+                    <li><b>Step 1: </b></li>
+                    <li>Select the region in the map</li>
+                </ul>
+
+                <ul>
+                    <li><b>Step 2: </b></li>
+                    <li>Wait until the system give you the rating!</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="dropdown">
+
+            <img src="Images&Files/Menu-icon.png" alt="unfold icon" id="menu-icon">
+
+            <div class="dropdown-content" id="menu-content">
+
+                <ul>
+                    <li>
+                        <a href="about.html">ABOUT US</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="datasets.html">OUR IDEA</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="datasets.html">DATASETS</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="#">REFERENCE LIST</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+    </nav>
+
+    <div id="box">
+        <div id="list">
+            <h1 id="head">Enjoy browsing & Find your favorite</h1>
+            <section id="records"></section>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script src="js/script2.js"></script>
+        </div>
+        <div id="mapid"></div>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/recommend.js"></script>
+        <script src="js/dropdown.js"></script>
+    </div>
+</body>
+
+</html>

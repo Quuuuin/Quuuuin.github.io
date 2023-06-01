@@ -1,0 +1,240 @@
+/* z-index: 
+        map:1   mode switcher:5     others:99
+*/
+
+
+/* logo */
+header img {
+    z-index: 99;
+}
+
+.recommend-body {
+    width: 100%;
+    height: 100%;
+}
+
+#box {
+    position: relative;
+}
+
+#mapid {
+    position: fixed;
+    height: 2000px;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    z-index: 1;
+    opacity: 50%;
+}
+
+body button a {
+    margin: 0px 0 0px 0px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+
+.mode {
+    padding: 0px;
+    margin: 0px;
+    font-size: 0;
+    position: fixed;
+    top: 30px;
+    width: 100vw;
+    height: 60px;
+    text-align: center;
+    z-index: 99;
+
+
+}
+
+button#explore {
+    font-size: 15px;
+    background-color: rgb(242, 112, 89, 0.7);
+    width: 200px;
+    height: 60px;
+    border-radius: 7px;
+    border-width: 0px;
+}
+
+
+button#recommend {
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: rgb(242, 112, 89);
+    width: 250px;
+    height: 60px;
+    border-radius: 7px;
+    border-width: 0px;
+}
+
+/* #explore {
+    margin-left: 10px;
+    font-size: 22px;
+    margin-top: 0px;
+    width: 180px;
+    height: 40px;
+    background-color: #F27059;
+    border-radius: 10px;
+}
+
+#explore:hover {
+    background-color: #ff4027;
+}
+
+#recommend {
+    font-size: 30px;
+    background-color: #f73920;
+    width: 240px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+#recommend:hover {
+    background-color: #ff4027;
+} */
+
+
+/* Guidance & menu */
+
+#main-menu {
+    position: fixed;
+    z-index: 99;
+    top: 1%;
+    right: 7%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+
+/* added by juewen ma */
+#main-menu>div {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: rgba(47, 47, 47, 0.95);
+    color: rgb(228, 228, 228);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 99;
+    width: 200px;
+    padding: 20px 20px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.dropdown-content li {
+    list-style: none;
+    font-size: 16px;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content a {
+    color: aliceblue;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+/* Guidance */
+
+#guide-icon {
+    cursor: pointer;
+    width: 70px;
+    display: block;
+    z-index: 99;
+}
+
+#guidance-content ul {
+    padding: 5% 2% 2% 2%;
+    margin-top: 0%;
+}
+
+#guidance-content li {
+    flex-direction: row;
+    margin-inline: 2%;
+
+}
+
+/* Menu */
+
+#menu-icon {
+    cursor: pointer;
+    width: 70px;
+    display: block;
+    padding-top: 0px;
+    z-index: 99;
+}
+
+#menu-content ul {
+    display: flex;
+    padding: 2%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#menu-content li {
+    height: 30px;
+    margin-inline: 2px;
+}
+
+.record {
+    border: 2px solid orange;
+    padding: 2em;
+    margin: 1em;
+}
+
+#head {
+    margin-top: 8%;
+    margin-left: 0.5em;
+}
+
+#list {
+    position: absolute;
+    z-index: 75;
+}
+
+.avater {
+    border-radius: 50%;
+    display: inline-flex;
+}
+
+
+.link {
+    color: rgb(242, 112, 89);
+    font-size: x-large;
+}
+
+.link:hover {
+    background-color: rgb(242, 112, 89, 0.7);
+    color: white;
+}
+
+.cate {
+    margin-left: 4px;
+    display: inline-flex;
+}
+
+.title {
+    background-color: rgb(242, 112, 89);
+    color: seashell;
+    margin-bottom: 1em;
+}
+
+.bio {
+    font-size: 1.25em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
