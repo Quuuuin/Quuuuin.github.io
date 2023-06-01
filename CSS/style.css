@@ -1252,7 +1252,7 @@ article {
 
 
 /* mobile screen */
-@media (orientation:portrait) and (width<=385px) {
+@media (orientation:portrait) and (width<=395px) {
 
     html {
         font-size: 8px;
