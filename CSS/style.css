@@ -1183,7 +1183,7 @@ article {
     }
 
     .mainitem {
-        height: auto;
+        height: 100vh;
         scroll-snap-align: unset;
     }
 
@@ -1239,7 +1239,7 @@ article {
     }
 
     .mainitem {
-        height: auto;
+        height: 100vh;
         scroll-snap-align: unset;
     }
 
@@ -1295,7 +1295,7 @@ article {
     }
 
     .mainitem {
-        height: auto;
+        height: 100vh;
         scroll-snap-align: unset;
     }
 
