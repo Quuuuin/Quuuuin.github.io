@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByWanqi | Own Work | Stretch Adventure</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <nav class="mobilesubsidebar">
+        <h1>
+            <a href="./index.html#headtitle3" title="Back to: Homepage | My Own Work" class="logo">Wanqi's
+                Portfolio</a>
+            <a href="JavaScript:void(0)" onclick="openDialog()" id="menuicon"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACH0lEQVR4nO2Zy07CQBSGD5dgBCKPob6AcektPgsmLBQXLmm5ljsJt4RLICxoXChL4hMYjUlxI3Xhk7AYcwgQAwU6BTpg5k/OrjP9/plzpp0ZAC4urv+twNfnqaj2/IKqPJgZotrz47sNg0s/Hx5ft/NydHU+cLicBABMDYfLSQ4vzgbeJ/kNWagNIPy+58B0cJgKZPB1O10qeJw6HHnW8DCK4+vLQeBbOdFtQOj37lmkDcyJPbeLYE3oNiD2FYE1NEzFiIkbIHwGgKfQcvEihh1ahSwWi2EoC0XbjRiIRCKkUqkQq9VqCD6fz5NkMsnGAMKPVa1WqUwgfKFQmLTXY2KtBqLRKJlWrVbTZQLhi8XiTPtUKmWOAQTI5XJES/V6faGJefCocrm8sCbWnkKxWIzQmEC4Uqmk2SabzS4t6I0UsVYqodrtNrHZbJPn0FCj0dB8NpPJsClirWL+K1mWid1uH8I3m03NZ9Lp9Hb8jSYSCU3AVqs1DC1hG9im3+lwOEz0atmKAywMYIRCoaXwej9cwMIARjAYnAtPmzbAwsDwZaI4Ax+Pxw33Byy2lIIgTOAlSVqpL2C1J0YTGOvoS+Sbelh9FPkM6BXfEwNPIbLSKrR9h7tuusNdPF7HywXW4DAKPOqnOl5HeZ/l92254LjpPL6CwSumLl4u4Pm8+WnjGo48whu6YhoLp05QlTux35NMDVW5pU4bLi4u2Dn9Aj7D0Xurw9e6AAAAAElFTkSuQmCC"></a>
+        </h1>
+        <ul id="menu1" class="menu">
+            <li class="subnav"><a href="./index.html#headtitle2" class="subnavlink">Team Project</a>
+            </li>
+            <li class="subnav">My Own Work
+            </li>
+            <li class="msub2nav"><a href="./PetGO.html" class="sub2navlink">Pet GO</a>
+            </li>
+            <li class="msub2navse">Stretch Adventure
+                <div class="landani2" id="navblock26"> </div>
+            </li>
+            <li class=" msub2nav"><a href="./ProjectX.html" class="sub2navlink">Project X</a>
+            </li>
+            <li class="msub2nav"><a href="./SaferATM.html" class="sub2navlink">Safer ATM</a>
+            </li>
+            <li class=" msub2nav"><a href="./CoursePortfolio.html" class="sub2navlink">Course Portfolio</a>
+            </li>
+            <a href="javascript:void(0)" onclick="closeDialog()"><img class="closebuttom"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEKklEQVR4nO1ZXU8TWRh+oS2KG9qiULhUwQX3M+p6oUXZgF7vYqVuvFD8WC+gSKvG72Y+1IU1hoQrgySNjZvNJgQkunZ2TYi90UUcmbZ027HZjb9h9Y5TZsxLMG6IQ5mZM4ULnuRNTjrN9HlOzsfzPgVYxSpWDgZyuTX8q6mveVnycxkpwMrSBSwcc7LUjs+YdLoMVhKYfxKeq6nnZ49EbmdbejpJQ+u3M1WbN86udVaoNrt9rnBcvXnTLD5r7ekiRyODGW5aDN7ITVUvH/FM4otAbEzYfeIoqfBUKwCg6ilnjUfxnuwgAWHsEZOb+qx4xNPp9cHx2G/bD7YRm8Ohi/THyuZwqDsO+UjoifAL81pyW0qey0w1t/Vee1vucuqe8UJV7nYpB25ef8O9Su6xhPxV8WnPNt93hDZxWFA7/D5yJTnZRZX8+Wfxa3XeXXmrycN81e/x5i9MxHlqM19M8vA/EeHkZKfpNb/tgPXLBrSW0yEfYeREk+HT5vte/u1ykYf58t268abvX9GlW0AoHvt1ndtN7bRhWVbt6+szdDoFxx/d00We/1v6HM95muTfw4iIb35oJ4ycalyygIBwX6BxSS0kb1SEraxM7Y7d/33J3gbtgVXkETzP636X9+QxsiTvxKZfhtCnWEW+v7/f0PsqPNVKODkRLCgAXaVV5AcGBky9tyM6mC7o59ESW0F+aGhILSkpMSWgNRggi/YT2HA0tOwltMlHIhG1tLTU9J5q3Ncyw2eTX2oLkCU/Nh40yUejUSrkAUD11NfNMtnkQU0BXDZx2ohV1iI/PDys2u12KuQBQMWLlZUlbafKZZOX9Z7/WuRHRkaokof5+4DNJC5RE2Cz2dTR0VFqZz2YF6B/CTkcDk0RRmwDmFpCstRuZBMXS4Snvm6WyyZ8mgIYOfUVRh9GXl4MEVv3t85gGmLZRWa1iH2h7sUvMgSGTmZ+xEoRHdE704uSn9sH02LQWVOjrDQRrtpahU2/6C4oAC2r90SHaTtNW0TTj8cJI4tVsBR0CWMxGg2NlgiGYXSf/4E/xh6AnpYSEwGzAj4mQi95AFB3HvYTJpP4FPTgTPzxvXWVlQpNEUbIl7tdSmhcuAt6gUFr28/XqcUqRh2p71bvf0xuwglGgEHrdj+dpWSkdh72Ey7zcheYQTj5V2dDS3PRo8Ute735cGryFNAABq2YVRaNfHNT/uKzOAM0gUErrZOp0LIJ05r5hcCgFbNKmpEjzNcn6ysV3LCm13xBEa8l95knQhTjPrxgzBK3rymbm/Vz8T8jhkJcw0LkVCPGfZiYOWv1eyf0Nk2njpNu4cFD3ZcUXSFiFTst9mDohLkNRh/YeGBnh3YEC8eeLXV5fIaWGF0lGrOfMs83wErCoCg6sCnC6ANbv/d/dOMYP8NMB7+z3DxXsQr4gHcjca7uWqkHggAAAABJRU5ErkJggg=="></a>
+        </ul>
+    </nav>
+    <nav class="sidebar subpsidebar">
+        <ul>
+            <h1>
+                <a href="./index.html#headtitle3" title="Back to: Homepage | My Own Work" class="logo">Wanqi's
+                    Portfolio</a>
+            </h1>
+            <li class="subnav"><a href="./index.html#headtitle2" class="subnavlink">Team Project</a>
+            </li>
+            <li class="subnav">My Own Work
+            </li>
+            <li class="sub2nav"><a href="./PetGO.html" class="sub2navlink">Pet GO</a>
+            </li>
+            <li class="sub2nav">Stretch Adventure
+                <div class="landani2" id="navblock26"> </div>
+            </li>
+            <li class=" sub2nav"><a href="./ProjectX.html" class="sub2navlink">Project X</a>
+            </li>
+            <li class="sub2nav"><a href="./SaferATM.html" class="sub2navlink">Safer ATM</a>
+            </li>
+            <li class=" sub2nav"><a href="./CoursePortfolio.html" class="sub2navlink">Course Portfolio</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="page">
+        <h3 class="headtitle">Stretch Adventure</h3>
+        <section class="headintroduction">
+            Stretch Adventure is a motion-sensing game designed for people who need to work long hours in front of a
+            desk. Improper computer use, including long hours of uninterrupted computer use, can lead to muscle and
+            joint pain. Stretch Adventure uses common wearable devices such as smart bands or smart watches with the
+            computer to guide users to stretch through motion-sensing games to relax their muscles.
+        </section>
+        <section class="projectinfo">
+            <span class="bold">What I did:</span> UX design, Test & Evaluation, Arduino develop, Unity develop<br>
+            <span class="bold">Tool used:</span> Arduino IDE, Unity, Excel
+            <br>
+            <span class="bold">Duration:</span> 16th August - 16th November 2021 as part of Course <span
+                class="italic">Digital Prototyping</span> at UQ
+            <br>*Due to the COVID-19 lockdown, the project was completed in a remote mode.
+            <a href="https://drive.google.com/file/d/1LbCqnMQL9g-9xkC3XPnSmbxDmIIcoC9z/view?usp=sharing" target="_blank"
+                class="linkbutton">View the demo video
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">The background & Research</h4>
+            Stretch Adventure is a well-thought-out and researched idea under the course theme: <span
+                class="underline">A Game Augmenting Everyday
+                Life</span>. It aims to improve office workers' happiness and physical health, helping them have a more
+            fulfilling
+            workday.
+            <div class="paraspace">
+                Through literature review, survey, and interviews, I comprehensively understood the problem space and
+                studied feasibility. Based on the literature review, I created a questionnaire, distributed it on Google
+                Forms and received 89 valid responses. Three open-ended interviews were conducted to address the key
+                findings from the questionnaire analysis.
+            </div>
+            <div class="arrowframe">
+                <img src="./Images/arrow.png" alt="decorated arrow" class="deco1">
+                <img src="./Images/SAsurveydata.png" alt="Bar chart of one of the data" class="imgofp img2 imgfloat">
+            </div>
+            Through exploration of the problem space, my data analysis shows that a large proportion of office workers
+            experience self-reported upper limb muscle fatigue issues. There is a demand for muscle relaxation, but the
+            current conditions are insufficient to support and encourage them to engage in muscle relaxation during
+            their leisure time at work. And a large portion of them lacks relevant knowledge about muscle relaxation.
+            <div class="paraspace">
+                According to the survey results, Stretch Adventure is positioned as a system that encourages and
+                guides the users to perform muscle relaxation in limited circumstances.
+            </div>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Conceptual Design</h4>
+            Stretch Adventure is a somatosensory game designed to alleviate the strains and pains of prolonged desk
+            work.
+            <div class="paraspace">
+                The target user for the game is young white-collar workers in office buildings. They are interested in
+                new technology and also pay attention to health management. They are often willing to invest in their
+                physical fitness; many of them own or are interested in purchasing wearable devices such as smartwatches
+                or fitness trackers.
+            </div>
+            The game is designed to use sensors on wearable devices to guide target users to finish simple
+            stretches. By completing a set of stretching exercises to pass a game level, I hope the design can enhance
+            the user's sense of achievement and cultivate the user's stretching habits.The design hope to give users
+            physical relief and mental relaxation by allowing them to stretch through a
+            fun game.
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Storyboard</h4>
+            <img src="./Images/SAstoryboard.png" alt="Storyboard of Stretch Adventure" class="imgofp img1">
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Prototyping - Phase 1: Development</h4>
+            <span class="bold">-Prototype</span>
+            <img src="./Images/SAprototype1.png" alt="Interface of prototype" class="imgofp img2">
+            <img src="./Images/SAprototype2.png" alt="Prototype User Scenario" class="imgofp img2">
+            <span class="bold">-Design Rational</span>
+            <div class="paraspace">
+                <span class="italic">The scene's width</span>: In my test, I usually need 2-4s to change from one
+                stretching
+                to the following.
+            </div>
+            <span class="italic">The length of the scene</span>: THE UNIVERSITY OF CALIFORNIA recommends people take
+            a
+            five or ten minutes break to do a series of stretches after sitting a long time at a desk or computer
+            terminal.
+            <div class="paraspace">
+                <span class="italic">The number of coins</span>: According to research, holding the stretch for 20
+                seconds
+                is reasonable. In future development, 20 seconds will be taken as the standard to consider the placement
+                of
+                coins.
+            </div>
+            <span class="bold" id="usertest">-User Test</span>
+            <div class="paraspace">
+                For usability testing, I used an interview format to ask testers about their feelings and suggestions
+                for the game after they played it.
+            </div>
+            Besides demonstrating the prototype's usability, the purpose of testing is to prove its effectiveness in
+            addressing design opportunities in the problem space. Our game has two objectives: muscle relaxation and
+            mental relaxation, so I designed two evaluation methods for the test.
+            <div class="paraspace">
+                For the muscle relaxation effect,
+                instruments used to evaluate muscle tension are expensive or require professional knowledge. After
+                considering and referring to the literature (Bhimani et al., 2017), I used <span class="underline">a
+                    self-rating scale</span>.
+                Participants use different adjectives to describe their physical sensations before and after playing the
+                game.
+            </div>
+            <div class="paraspace">
+                For the mental relaxation effect, I used the <span class="underline">SAS (Self-Rating Anxiety
+                    Scale)</span>
+                to evaluate, which is
+                widely used in the field of psychology to measure individuals' mental stress (Dunstan & Scott, 2020).
+            </div>
+            <span class="bold">-Evaluation</span>
+            <div class="paraspace">
+                I invited 9 testers to participate in the whole testing process, including the experience and interview.
+                Through the interviews, the testers evaluated the interface's usability, the completeness of the game
+                functions, and the effectiveness of the design. I summarized their data after the interviews.
+            </div>
+            <img src="./Images/SAdata2.png" alt="Interview data" class="imgofp img2">
+            <span class="bold">-Muscle self-rating and SAS(Self-Rating Anxiety
+                Scale) Visualization: Before the game</span>
+            <img src="./Images/SAdata3.png" alt="Muscle self-rating and SAS(Self-Rating Anxiety
+            Scale) Visualization: Before the game" class="imgofp img2">
+            <span class="bold">-Muscle self-rating and SAS(Self-Rating Anxiety
+                Scale) Visualization: After the game</span>
+            <img src="./Images/SAdata4.png" alt="Muscle self-rating and SAS(Self-Rating Anxiety
+            Scale) Visualization: After the game" class="imgofp img2">
+            By comparing the word clouds before and after the test, it can be found that the overall muscle tension of
+            the testers has decreased by one level. The main feeling has changed from "stiff" to "good". Therefore, this
+            game does help people to relax their bodies by guiding them to do some practical stretching exercises. This
+            result is consistent with the widely recognized fact that stretching can relieve muscle fatigue.
+            <div class="paraspace">
+                However, in evaluating the mental relaxation scale, only one tester's data has changed, which can be
+                considered to have almost no significant effect.
+            </div>
+            By comparing data before and after the test, we can conclude that the game <span class="underline">has an
+                effect on muscle
+                relaxation, but its impact on mental relaxation is limited</span>. I think this is because muscle
+            relaxation
+            mainly depends on stretching, and the prototype has already implemented the main functions related to
+            stretching. However, mental relaxation depends on the influence of muscle relaxation and the missing
+            game graphics and sound effects in the current prototype. The lack of motivation for passing the game
+            also leads to a poor effect on mental relaxation.
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Prototyping - Phase 2: Iteration</h4>
+            Improvements were made based on the test results, including:
+            <div class="paraspace">
+                <ul class="sticon">
+                    <li>Adding more stretching exercises in the game and extending the game time to the recommended 3-5
+                        minutes.</li>
+                    <li>Improving the usability of the prototype interface by adding stretching guidance reminders,
+                        making the interface design more in line with the purpose of exercise guidance.</li>
+                    <li>Adding sound effects in the game enhances the mental relaxation function reflected in the
+                        prototype, making the prototype closer to the finished product so that the test can verify the
+                        functions.</li>
+                </ul>
+            </div>
+            <span class="bold">-Prototype</span>
+            <div class="inlinecenter">
+                <img src="./Images/SAprototype3.png" alt="Interface of prototype" class="imgofp img7">
+                <img src="./Images/SAprototype4.png" alt="Interface of prototype" class="imgofp img7">
+            </div>
+            <span class="bold">-User Test</span>
+            <div class="paraspace">
+                I used the <a href="./StretchAdventure.html#usertest" class="intextlink onsitejump">same testing
+                    method<img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO2WsU7CUBSGv8luAhprLMpb+CAmogMLDwAOvqEuYFQ0wQFIiIObOgmTDJib/CQ3zS0p9NSJP7kJLSfn7zn33K+FnbZXBHSBPjDX6uteREk6BV6BZcZ6AerWpg1gKoMRcAHsAwnQBMaeuVnlZ56pa2s1EFPzzDsWppHXXmdaWRPb9OIK60bJ3jMq9ZUo9sfC+EHJXDX8p/FMyQ51HQPPwF0g9kqxPQvjLyU7kulQ164Tvtw2TCyH617JboE3/R7qIVaqaKCWwMDqOLVTkEib1jzTqY6eidzA/AZMj4EW8OGZNoqw91vtbct0GDC9BhZeFwbCqRl7Q5WeA596yJ4Gac+CvQfqQNaelsbeeM30lsbeOGNPXXvN2DsKsPcxY5Dcnpqx9zLwnxuWp9SRWViz9yRHbMuSvbOcxjUPDibs7ed4zZXC3q4SjlVVWtWy2Bvpg2xl3hQaE71PJ9uyN4/qnnlobczeTSvvaGLnRdi7E57+APHIojLsmNzxAAAAAElFTkSuQmCC"></a>
+                as the previous phrase in this test phrase. I will conduct two rounds of
+                testing this time. The first round of testing will have no background music to compare whether the
+                extended stretching time has improved the results. The second round will include background music to
+                test whether adding background music positively affects mental relaxation mainly. <br>*Both rounds of
+                testing
+                will control variables to ensure valid results.
+            </div>
+            <span class="bold">-Evaluation</span>
+            <div class="paraspace">
+                A total of nine participants took part in the test. Here is the interview data.
+            </div>
+            <img src="./Images/SAdata5.png" alt="Interview data at phrase2" class="imgofp img2">
+            <span class="bold">-Muscle self-rating and SAS(Self-Rating Anxiety
+                Scale) Visualization: Before the game(Compared with phrase 1)</span>
+            <img src="./Images/SAdata6.png" alt="Muscle self-rating and SAS(Self-Rating Anxiety
+            Scale) Visualization: Before the game(Compared with phrase 1)" class="imgofp img2">
+            <span class="bold">-Muscle self-rating and SAS(Self-Rating Anxiety
+                Scale) Visualization: After the game(Compared with phrase 1)</span>
+            <img src="./Images/SAdata7.png" alt="Muscle self-rating and SAS(Self-Rating Anxiety
+            Scale) Visualization: After the game(Compared with phrase 1)" class="imgofp img2">
+            <span class="bold">-SAS(Self-Rating Anxiety
+                Scale) Visualization: After the game with background music</span>
+            <img src="./Images/SAdata8.png" alt="SAS(Self-Rating Anxiety
+            Scale) Visualization: After the game with background music" class="imgofp img2">
+            Comparing the two tests found that the degree and frequency of the vocabulary used by the testers for
+            description were similar before the tests, which can be regarded as the exact prerequisite for the two
+            tests. After the tests, compared to the previous test, although "stiff" and "dull" still appeared in this
+            test, the frequency of occurrence decreased. At the same time, the frequency of "relax" increased
+            significantly.
+            <div class="paraspace">
+                This result is consistent with the widely accepted view that stretching can relieve muscle
+                fatigue. It can be considered that extending the game time did increase the relaxation effect.
+                It is foreseeable that within the stretching time recommended by the authority, the stretching effect
+                will increase as the stretching time increases. Therefore, as long as the time is extended to the
+                recommended time, the game will have an optimised effect.
+            </div>
+            Regarding mental relaxation, the improved prototype without background music is slightly better than the
+            previous prototype. Still, the difference is insignificant, indicating that the prerequisites of the tests
+            are consistent.
+            <div class="paraspace">
+                Based on the result, the prototype with added background music is more effective than the
+                one without. The number of testers in the 35-45 score group has decreased significantly. The number in
+                the 65-75 score group has increased considerably, indicating that <span class="underline">the testers'
+                    mental pressure has been
+                    effectively relieved</span>.
+            </div>
+            Therefore, it can be considered that adding background music can indeed enhance the
+            relaxing effect of the game on people's mental state. With the refinement of art resources and reward
+            mechanisms, the effect of mental relaxation will likely be further improved.
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Prototyping - Accessibility Reflection</h4>
+            The target user with accessibility needs is the colour-blind user. Colour-blind people usually cannot
+            distinguish between specific colours. It will cause the information presented through colour can be
+            unreadable or completely invisible, friendly players can look like enemies, and game elements can become
+            camouflaged against each other in the game.
+            <div class="paraspace">
+                As many as 8 per cent of men and 0.4 per cent of women
+                experience congenital colour deficiency(Chan et al., 2014). It means that the colour-blind group has
+                this
+                non-negligible proportion among gamers, and colour blindness does interfere with the game experience.
+            </div>
+            <div class="paraspace">
+                Unlike other accessibility needs like those who lose of limb, which requires a complete redesign of game
+                content or who are blind that may conflict with the game's original intention (a visual incentive game),
+                the colour
+                blind people are already on the target list. And the game can meet its accessibility needs with a
+                limited redesign.
+            </div>
+            <span class="bold">-Design Guideline</span>
+            <div class="paraspace">
+                After browsing the websites of many organisations dedicated to game accessibility and referring to WCAG
+                (Web
+                Content Accessibility Guidelines)2.1 related colour design guidelines, I summarised a set of colour
+                barrier
+                design guidelines to check any unfriendly design for colour-blind players and use it as a guide for game
+                development in the future.
+            </div>
+            <div class="paraspace">
+                <ul class="sticon">
+                    <li>Ensure no essential information is conveyed by a fixed colour alone. Considering the extreme
+                        situation like Monochromacy, it is best to provide text instead of colour to convey information
+                    </li>
+                    <li>Ensure the contrast ratio is over 3:1 because some colours may appear darker than without colour
+                        deficiency. It makes the game object distinguishable from everything else in the game.</li>
+                    <li>Ideally, players can select and customise colours for vital information (colour blindness mode).
+                        If not possible, include a simple colour palette that can be used as a single-colour choice that
+                        is not problematic for those with colour blindness.</li>
+                </ul>
+            </div>
+            <span class="bold">-User Test</span>
+            <div class="paraspace">
+                Due to the tight development schedule, it was challenging to access colour-blind patients for data
+                collection. I conducted accessibility testing of the game interface through a colour-blindness simulator
+                and got the literature's help.
+            </div>
+            <img src="./Images/SAdata9.png" alt="Game scene in the colour-blindness simulator" class="imgofp img2">
+            <img src="./Images/SAdata11.png" alt="Color palette summary for colorblind users" class="imgofp img2">
+            For a long time, artists and designers have believed that colours can significantly influence emotions,
+            feelings, and moods and have developed what is known as <span class="underline">colour psychology</span>
+            (Elliot & Maier, 2014). The
+            colour-blind players may be affected by the abnormal colours they see, which could reduce the game's
+            relaxation effect.
+            <div class="paraspace">
+                Researchers and experts have made some significant findings on the impact of colour
+                psychology on emotions, feelings, and behaviours. Colours in the red spectrum are called warm colours.
+                These
+                warm colours evoke emotions ranging from warmth and comfort to anger and hostility (O'Connor, 2011). My
+                previous simulation test showed that the vision of green-blind users was all in red. <span
+                    class="underline">Prolonged exposure
+                    to
+                    red light may make green-blind users feel less relaxed</span>. To solve this problem, I tried
+                various colours
+                in
+                the redesign. I put the redesign plan into the simulator to verify the design.
+            </div>
+            <img src="./Images/SAdata10.png" alt="Color palette summary for colorblind users" class="imgofp img1">
+            <span class="bold">-Redesign Prototype</span>
+            <img src="./Images/SAprototype5.png" alt="Redesign Prototype with accessibility consideration"
+                class="imgofp img2">
+            <a href="https://drive.google.com/file/d/1LbCqnMQL9g-9xkC3XPnSmbxDmIIcoC9z/view?usp=sharing" target="_blank"
+                class="linkbutton" style="margin-top: 4rem;">View the demo video
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            The above is the design and development process of the Stretch Adventure, welcome to click the links to
+            watch the demo, or please feel free to browse my other works :)
+        </section>
+        <section class="introduction firstsentence lastsentence">
+            <h4 class="subtitleofp">Reference</h4>
+            Bhimani, R. H., Gaugler, J. E., & Skay, C. (2017). Understanding symptom experiences of muscle tightness
+            from patients’ and clinicians’ perspectives. Journal of Clinical Nursing, 26(13-14), 1927–1938.
+            <a href="https://doi.org/10.1111/jocn.135067" target="_blank">https://doi.org/10.1111/jocn.135067</a>.
+            <div class="paraspace">
+                Chan, X. B., Goh, S. M., & Tan, N. C. (2014). Subjects with colour vision deficiency in the community:
+                What do primary care physicians need to know? Asia Pacific Family Medicine, 13(1).
+                <a href="https://doi.org/10.1186/s12930-014-0010-3"
+                    target="_blank">https://doi.org/10.1186/s12930-014-0010-3</a>
+            </div>
+            <div class="paraspace">
+                Dunstan, D. A., & Scott, N. (2020). Norms for zung’s self-rating anxiety scale. BMC Psychiatry, 20(1).
+                <a href="https://doi.org/10.1186/s12888-019-2427-6"
+                    target="_blank">https://doi.org/10.1186/s12888-019-2427-6</a>
+            </div>
+            <div class="paraspace">
+                Elliot, A. J., & Maier, M. A. (2014). Color psychology: Effects of perceiving color on psychological
+                functioning in humans. Annual Review of Psychology, 65(1), 95–120.
+                <a href="https://doi.org/10.1146/annurev-psych-010213-115035"
+                    target="_blank">https://doi.org/10.1146/annurev-psych-010213-115035</a>
+            </div>
+            <div class="paraspace">
+                O'Connor, Z. (2011). Colour psychology and colour therapy: Caveat emptor. Color Research & Application,
+                36(3), 229–234. <a href="https://doi.org/10.1002/col.20597"
+                    target="_blank">https://doi.org/10.1002/col.20597</a>
+            </div>
+            <div class="paraspace">
+                ScienceDaily. (2017, March 30). It's true: The sound of nature helps us relax. ScienceDaily. Retrieved
+                May 1, 2023, from <a href="https://www.sciencedaily.com/releases/2017/03/170330132354.htm"
+                    target="_blank">https://www.sciencedaily.com/releases/2017/03/170330132354.htm</a>
+            </div>
+        </section>
+    </main>
+    <script src="./Javascript/script.js"></script>
+</body>
+
+</html>

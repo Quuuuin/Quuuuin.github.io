@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ByWanqi | Own Work | Course Portfolio</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <nav class="mobilesubsidebar">
+        <h1>
+            <a href="./index.html#headtitle3" title="Back to: Homepage | My Own Work" class="logo">Wanqi's
+                Portfolio</a>
+            <a href="JavaScript:void(0)" onclick="openDialog()" id="menuicon"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACH0lEQVR4nO2Zy07CQBSGD5dgBCKPob6AcektPgsmLBQXLmm5ljsJt4RLICxoXChL4hMYjUlxI3Xhk7AYcwgQAwU6BTpg5k/OrjP9/plzpp0ZAC4urv+twNfnqaj2/IKqPJgZotrz47sNg0s/Hx5ft/NydHU+cLicBABMDYfLSQ4vzgbeJ/kNWagNIPy+58B0cJgKZPB1O10qeJw6HHnW8DCK4+vLQeBbOdFtQOj37lmkDcyJPbeLYE3oNiD2FYE1NEzFiIkbIHwGgKfQcvEihh1ahSwWi2EoC0XbjRiIRCKkUqkQq9VqCD6fz5NkMsnGAMKPVa1WqUwgfKFQmLTXY2KtBqLRKJlWrVbTZQLhi8XiTPtUKmWOAQTI5XJES/V6faGJefCocrm8sCbWnkKxWIzQmEC4Uqmk2SabzS4t6I0UsVYqodrtNrHZbJPn0FCj0dB8NpPJsClirWL+K1mWid1uH8I3m03NZ9Lp9Hb8jSYSCU3AVqs1DC1hG9im3+lwOEz0atmKAywMYIRCoaXwej9cwMIARjAYnAtPmzbAwsDwZaI4Ax+Pxw33Byy2lIIgTOAlSVqpL2C1J0YTGOvoS+Sbelh9FPkM6BXfEwNPIbLSKrR9h7tuusNdPF7HywXW4DAKPOqnOl5HeZ/l92254LjpPL6CwSumLl4u4Pm8+WnjGo48whu6YhoLp05QlTux35NMDVW5pU4bLi4u2Dn9Aj7D0Xurw9e6AAAAAElFTkSuQmCC"></a>
+        </h1>
+        <ul id="menu1" class="menu">
+            <li class="subnav"><a href="./index.html#headtitle2" class="subnavlink">Team Project</a>
+            </li>
+            <li class="subnav">My Own Work
+            </li>
+            <li class="msub2nav"><a href="./PetGO.html" class="sub2navlink">Pet GO</a>
+            </li>
+            <li class=" msub2nav"><a href="./StretchAdventure.html" class="sub2navlink">Stretch Adventure</a>
+            </li>
+            <li class="msub2nav"><a href="./ProjectX.html" class="sub2navlink">Project X</a>
+            </li>
+            <li class="msub2nav"><a href="./SaferATM.html" class="sub2navlink">Safer ATM</a>
+            </li>
+            <li class="msub2navse">Course Portfolio
+                <div class="landani2" id="navblock26"> </div>
+            </li>
+            <a href="javascript:void(0)" onclick="closeDialog()"><img class="closebuttom"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEKklEQVR4nO1ZXU8TWRh+oS2KG9qiULhUwQX3M+p6oUXZgF7vYqVuvFD8WC+gSKvG72Y+1IU1hoQrgySNjZvNJgQkunZ2TYi90UUcmbZ027HZjb9h9Y5TZsxLMG6IQ5mZM4ULnuRNTjrN9HlOzsfzPgVYxSpWDgZyuTX8q6mveVnycxkpwMrSBSwcc7LUjs+YdLoMVhKYfxKeq6nnZ49EbmdbejpJQ+u3M1WbN86udVaoNrt9rnBcvXnTLD5r7ekiRyODGW5aDN7ITVUvH/FM4otAbEzYfeIoqfBUKwCg6ilnjUfxnuwgAWHsEZOb+qx4xNPp9cHx2G/bD7YRm8Ohi/THyuZwqDsO+UjoifAL81pyW0qey0w1t/Vee1vucuqe8UJV7nYpB25ef8O9Su6xhPxV8WnPNt93hDZxWFA7/D5yJTnZRZX8+Wfxa3XeXXmrycN81e/x5i9MxHlqM19M8vA/EeHkZKfpNb/tgPXLBrSW0yEfYeREk+HT5vte/u1ykYf58t268abvX9GlW0AoHvt1ndtN7bRhWVbt6+szdDoFxx/d00We/1v6HM95muTfw4iIb35oJ4ycalyygIBwX6BxSS0kb1SEraxM7Y7d/33J3gbtgVXkETzP636X9+QxsiTvxKZfhtCnWEW+v7/f0PsqPNVKODkRLCgAXaVV5AcGBky9tyM6mC7o59ESW0F+aGhILSkpMSWgNRggi/YT2HA0tOwltMlHIhG1tLTU9J5q3Ncyw2eTX2oLkCU/Nh40yUejUSrkAUD11NfNMtnkQU0BXDZx2ohV1iI/PDys2u12KuQBQMWLlZUlbafKZZOX9Z7/WuRHRkaokof5+4DNJC5RE2Cz2dTR0VFqZz2YF6B/CTkcDk0RRmwDmFpCstRuZBMXS4Snvm6WyyZ8mgIYOfUVRh9GXl4MEVv3t85gGmLZRWa1iH2h7sUvMgSGTmZ+xEoRHdE704uSn9sH02LQWVOjrDQRrtpahU2/6C4oAC2r90SHaTtNW0TTj8cJI4tVsBR0CWMxGg2NlgiGYXSf/4E/xh6AnpYSEwGzAj4mQi95AFB3HvYTJpP4FPTgTPzxvXWVlQpNEUbIl7tdSmhcuAt6gUFr28/XqcUqRh2p71bvf0xuwglGgEHrdj+dpWSkdh72Ey7zcheYQTj5V2dDS3PRo8Ute735cGryFNAABq2YVRaNfHNT/uKzOAM0gUErrZOp0LIJ05r5hcCgFbNKmpEjzNcn6ysV3LCm13xBEa8l95knQhTjPrxgzBK3rymbm/Vz8T8jhkJcw0LkVCPGfZiYOWv1eyf0Nk2njpNu4cFD3ZcUXSFiFTst9mDohLkNRh/YeGBnh3YEC8eeLXV5fIaWGF0lGrOfMs83wErCoCg6sCnC6ANbv/d/dOMYP8NMB7+z3DxXsQr4gHcjca7uWqkHggAAAABJRU5ErkJggg=="></a>
+        </ul>
+    </nav>
+    <nav class="sidebar subpsidebar">
+        <ul>
+            <h1>
+                <a href="./index.html#headtitle3" title="Back to: Homepage | My Own Work" class="logo">Wanqi's
+                    Portfolio</a>
+            </h1>
+            <li class="subnav"><a href="./index.html#headtitle2" class="subnavlink">Team Project</a>
+            </li>
+            <li class="subnav">My Own Work
+            </li>
+            <li class="sub2nav"><a href="./PetGO.html" class="sub2navlink">Pet GO</a>
+            </li>
+            <li class=" sub2nav"><a href="./StretchAdventure.html" class="sub2navlink">Stretch Adventure</a>
+            </li>
+            <li class=" sub2nav"><a href="./ProjectX.html" class="sub2navlink">Project X</a>
+            </li>
+            <li class="sub2nav"><a href="./SaferATM.html" class="sub2navlink">Safer ATM</a>
+            </li>
+            <li class="sub2nav">Course Portfolio
+                <div class="landani2" id="navblock26"> </div>
+            </li>
+        </ul>
+    </nav>
+    <main class="page">
+        <h3 class="headtitle">Course Portfolio</h3>
+        <section class="headintroduction">
+            Welcome to my web design portfolio! Here you will find a collection of my work as a web designer. Each
+            project reflects my documentation and reflections on the course projects. Each project showcases unique
+            aesthetics and inspiring interaction designs, demonstrating my skills in creating visually appealing, fully
+            functional, and user-friendly websites to meet clients' needs. I hope you enjoy browsing through my course
+            portfolio!
+        </section>
+        <section class="projectinfo">
+            <span class="bold">What I did:</span> UI & UX design, Web development<br>
+            <span class="bold">Tool used:</span> VScode, Miro, Adobe suite
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Design Computing Studio Ⅰ Portfolio</h4>
+            The website is created as part of the course <span class="italic">Design Computing Studio Ⅰ
+            </span>assignment.
+            In this course, my team and
+            I completed Project <a href="./Millionnaire.html" class="intextlink onsitejump">Millionaire
+                Assistants<img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO2WsU7CUBSGv8luAhprLMpb+CAmogMLDwAOvqEuYFQ0wQFIiIObOgmTDJib/CQ3zS0p9NSJP7kJLSfn7zn33K+FnbZXBHSBPjDX6uteREk6BV6BZcZ6AerWpg1gKoMRcAHsAwnQBMaeuVnlZ56pa2s1EFPzzDsWppHXXmdaWRPb9OIK60bJ3jMq9ZUo9sfC+EHJXDX8p/FMyQ51HQPPwF0g9kqxPQvjLyU7kulQ164Tvtw2TCyH617JboE3/R7qIVaqaKCWwMDqOLVTkEib1jzTqY6eidzA/AZMj4EW8OGZNoqw91vtbct0GDC9BhZeFwbCqRl7Q5WeA596yJ4Gac+CvQfqQNaelsbeeM30lsbeOGNPXXvN2DsKsPcxY5Dcnpqx9zLwnxuWp9SRWViz9yRHbMuSvbOcxjUPDibs7ed4zZXC3q4SjlVVWtWy2Bvpg2xl3hQaE71PJ9uyN4/qnnlobczeTSvvaGLnRdi7E57+APHIojLsmNzxAAAAAElFTkSuQmCC"></a>
+            . I independently developed this portfolio website to document the process and reflect
+            on my work for Millionaire Assistant. The website features a clean design to emphasize the key elements. It
+            utilizes a linear browsing structure to guide users during their initial visit. Inspired by Piet Mondrian's
+            <a href="https://rkd.nl/nl/explore/images/253643" target="_blank" class="intextlink onsitejump">Composition
+                with Red
+                Blue and Yellow
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            , I incorporated primary colours as accents on a white page,
+            aiming to bring a sense of modernist simplicity and vibrancy to the website.
+            <img src="./Images5/CPscreenshot1.png" alt="Landing page of the website" class="imgofp img2 ">
+            <a href="./7180/landpage.html" target="_blank" class="linkbutton">View the website
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Physical computing and interaction Design Studio Portfolio</h4>
+            The website is created as part of the course <span class="italic">Physical computing and interaction Design
+                Studio Portfolio </span>assignment.
+            In this course, my team and
+            I completed Project <a href="./Millionnaire.html" class="intextlink onsitejump">Mark &#8545;-&#8550;<img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO2WsU7CUBSGv8luAhprLMpb+CAmogMLDwAOvqEuYFQ0wQFIiIObOgmTDJib/CQ3zS0p9NSJP7kJLSfn7zn33K+FnbZXBHSBPjDX6uteREk6BV6BZcZ6AerWpg1gKoMRcAHsAwnQBMaeuVnlZ56pa2s1EFPzzDsWppHXXmdaWRPb9OIK60bJ3jMq9ZUo9sfC+EHJXDX8p/FMyQ51HQPPwF0g9kqxPQvjLyU7kulQ164Tvtw2TCyH617JboE3/R7qIVaqaKCWwMDqOLVTkEib1jzTqY6eidzA/AZMj4EW8OGZNoqw91vtbct0GDC9BhZeFwbCqRl7Q5WeA596yJ4Gac+CvQfqQNaelsbeeM30lsbeOGNPXXvN2DsKsPcxY5Dcnpqx9zLwnxuWp9SRWViz9yRHbMuSvbOcxjUPDibs7ed4zZXC3q4SjlVVWtWy2Bvpg2xl3hQaE71PJ9uyN4/qnnlobczeTSvvaGLnRdi7E57+APHIojLsmNzxAAAAAElFTkSuQmCC"></a>
+            .I independently developed this portfolio website to document the process and reflect
+            on my work for Mark &#8545;-&#8550;.The website's style is consistent with the brand identity I designed for
+            our team project, incorporating a blue-purple colour palette and a neon light scattering effect to create a
+            cyberpunk visual identity. It responds to the design theme of the course: <span class="italic">The Future
+                Everyday</span>. The entire
+            website embraces the mesmerizing style of cyberpunk while maintaining simplicity to ensure a good reading
+            experience for users.
+            <img src="./Images5/CPscreenshot2.png" alt="Landing page of the website" class="imgofp img1 ">
+            <a href="./7385/landpage.html" target="_blank" class="linkbutton">View the website
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            The above is all the archive of my passion for creating beautiful and functional websites that are easy to
+            use and navigate. Thank you for taking the time to browse my portfolio. Welcome to click the links to
+            experience the prototype or check the project documentation, or please feel free to browse my other works:)
+        </section>
+    </main>
+    <script src="./Javascript/script.js"></script>
+</body>
+
+</html>

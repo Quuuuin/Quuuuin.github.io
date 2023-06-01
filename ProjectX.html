@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByWanqi | Own Work | Project X</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <nav class="mobilesubsidebar">
+        <h1>
+            <a href="./index.html#headtitle3" title="Back to: Homepage | My Own Work" class="logo">Wanqi's
+                Portfolio</a>
+            <a href="JavaScript:void(0)" onclick="openDialog()" id="menuicon"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACH0lEQVR4nO2Zy07CQBSGD5dgBCKPob6AcektPgsmLBQXLmm5ljsJt4RLICxoXChL4hMYjUlxI3Xhk7AYcwgQAwU6BTpg5k/OrjP9/plzpp0ZAC4urv+twNfnqaj2/IKqPJgZotrz47sNg0s/Hx5ft/NydHU+cLicBABMDYfLSQ4vzgbeJ/kNWagNIPy+58B0cJgKZPB1O10qeJw6HHnW8DCK4+vLQeBbOdFtQOj37lmkDcyJPbeLYE3oNiD2FYE1NEzFiIkbIHwGgKfQcvEihh1ahSwWi2EoC0XbjRiIRCKkUqkQq9VqCD6fz5NkMsnGAMKPVa1WqUwgfKFQmLTXY2KtBqLRKJlWrVbTZQLhi8XiTPtUKmWOAQTI5XJES/V6faGJefCocrm8sCbWnkKxWIzQmEC4Uqmk2SabzS4t6I0UsVYqodrtNrHZbJPn0FCj0dB8NpPJsClirWL+K1mWid1uH8I3m03NZ9Lp9Hb8jSYSCU3AVqs1DC1hG9im3+lwOEz0atmKAywMYIRCoaXwej9cwMIARjAYnAtPmzbAwsDwZaI4Ax+Pxw33Byy2lIIgTOAlSVqpL2C1J0YTGOvoS+Sbelh9FPkM6BXfEwNPIbLSKrR9h7tuusNdPF7HywXW4DAKPOqnOl5HeZ/l92254LjpPL6CwSumLl4u4Pm8+WnjGo48whu6YhoLp05QlTux35NMDVW5pU4bLi4u2Dn9Aj7D0Xurw9e6AAAAAElFTkSuQmCC"></a>
+        </h1>
+        <ul id="menu1" class="menu">
+            <li class="subnav"><a href="./index.html#headtitle2" class="subnavlink">Team Project</a>
+            </li>
+            <li class="subnav">My Own Work
+            </li>
+            <li class="msub2nav"><a href="./PetGO.html" class="sub2navlink">Pet GO</a>
+            </li>
+            <li class=" msub2nav"><a href="./StretchAdventure.html" class="sub2navlink">Stretch Adventure</a>
+            </li>
+            <li class="msub2navse">Project X
+                <div class="landani2" id="navblock22"> </div>
+            </li>
+            <li class="msub2nav"><a href="./SaferATM.html" class="sub2navlink">Safer ATM</a>
+            </li>
+            <li class=" msub2nav"><a href="./CoursePortfolio.html" class="sub2navlink">Course Portfolio</a>
+            </li>
+            <a href="javascript:void(0)" onclick="closeDialog()"><img class="closebuttom"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEKklEQVR4nO1ZXU8TWRh+oS2KG9qiULhUwQX3M+p6oUXZgF7vYqVuvFD8WC+gSKvG72Y+1IU1hoQrgySNjZvNJgQkunZ2TYi90UUcmbZ027HZjb9h9Y5TZsxLMG6IQ5mZM4ULnuRNTjrN9HlOzsfzPgVYxSpWDgZyuTX8q6mveVnycxkpwMrSBSwcc7LUjs+YdLoMVhKYfxKeq6nnZ49EbmdbejpJQ+u3M1WbN86udVaoNrt9rnBcvXnTLD5r7ekiRyODGW5aDN7ITVUvH/FM4otAbEzYfeIoqfBUKwCg6ilnjUfxnuwgAWHsEZOb+qx4xNPp9cHx2G/bD7YRm8Ohi/THyuZwqDsO+UjoifAL81pyW0qey0w1t/Vee1vucuqe8UJV7nYpB25ef8O9Su6xhPxV8WnPNt93hDZxWFA7/D5yJTnZRZX8+Wfxa3XeXXmrycN81e/x5i9MxHlqM19M8vA/EeHkZKfpNb/tgPXLBrSW0yEfYeREk+HT5vte/u1ykYf58t268abvX9GlW0AoHvt1ndtN7bRhWVbt6+szdDoFxx/d00We/1v6HM95muTfw4iIb35oJ4ycalyygIBwX6BxSS0kb1SEraxM7Y7d/33J3gbtgVXkETzP636X9+QxsiTvxKZfhtCnWEW+v7/f0PsqPNVKODkRLCgAXaVV5AcGBky9tyM6mC7o59ESW0F+aGhILSkpMSWgNRggi/YT2HA0tOwltMlHIhG1tLTU9J5q3Ncyw2eTX2oLkCU/Nh40yUejUSrkAUD11NfNMtnkQU0BXDZx2ohV1iI/PDys2u12KuQBQMWLlZUlbafKZZOX9Z7/WuRHRkaokof5+4DNJC5RE2Cz2dTR0VFqZz2YF6B/CTkcDk0RRmwDmFpCstRuZBMXS4Snvm6WyyZ8mgIYOfUVRh9GXl4MEVv3t85gGmLZRWa1iH2h7sUvMgSGTmZ+xEoRHdE704uSn9sH02LQWVOjrDQRrtpahU2/6C4oAC2r90SHaTtNW0TTj8cJI4tVsBR0CWMxGg2NlgiGYXSf/4E/xh6AnpYSEwGzAj4mQi95AFB3HvYTJpP4FPTgTPzxvXWVlQpNEUbIl7tdSmhcuAt6gUFr28/XqcUqRh2p71bvf0xuwglGgEHrdj+dpWSkdh72Ey7zcheYQTj5V2dDS3PRo8Ute735cGryFNAABq2YVRaNfHNT/uKzOAM0gUErrZOp0LIJ05r5hcCgFbNKmpEjzNcn6ysV3LCm13xBEa8l95knQhTjPrxgzBK3rymbm/Vz8T8jhkJcw0LkVCPGfZiYOWv1eyf0Nk2njpNu4cFD3ZcUXSFiFTst9mDohLkNRh/YeGBnh3YEC8eeLXV5fIaWGF0lGrOfMs83wErCoCg6sCnC6ANbv/d/dOMYP8NMB7+z3DxXsQr4gHcjca7uWqkHggAAAABJRU5ErkJggg=="></a>
+        </ul>
+    </nav>
+    <nav class="sidebar subpsidebar">
+        <ul>
+            <h1>
+                <a href="./index.html#headtitle3" title="Back to: Homepage | My Own Work" class="logo">Wanqi's
+                    Portfolio</a>
+            </h1>
+            <li class="subnav"><a href="./index.html#headtitle2" class="subnavlink">Team Project</a>
+            </li>
+            <li class="subnav">My Own Work
+            </li>
+            <li class="sub2nav"><a href="./PetGO.html" class="sub2navlink">Pet GO</a>
+            </li>
+            <li class=" sub2nav"><a href="./StretchAdventure.html" class="sub2navlink">Stretch Adventure</a>
+            </li>
+            <li class="sub2nav">Project X
+                <div class="landani2" id="navblock22"> </div>
+            </li>
+            <li class="sub2nav"><a href="./SaferATM.html" class="sub2navlink">Safer ATM</a>
+            </li>
+            <li class=" sub2nav"><a href="./CoursePortfolio.html" class="sub2navlink">Course Portfolio</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="page">
+        <h3 class="headtitle">Project X</h3>
+        <section class="headintroduction">
+            Project X is a fictional sci-fi-themed space exploration project. I am responsible for developing an
+            official website for this grand project to showcase the vastness of space, epic expeditions, and adventurous
+            spirit to users. Users can view detailed information about the project on the website and submit
+            applications.
+        </section>
+        <section class="projectinfo">
+            <span class="bold">What I did:</span> UI & UX design, Web develop<br>
+            <span class="bold">Tool used:</span> Figma, VS code, Adobe Photoshop, Adobe Premiere Pro
+            <br>
+            <span class="bold">Duration:</span> 16th August - 9th November 2021 as part of Course <span
+                class="italic">Introduction to Web Design</span> at UQ
+            <br>*Due to the COVID-19 lockdown, the project was completed in a remote mode.
+            <a href="./ProjectX/index.html" target="_blank" class="linkbutton">View the website
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">The Background</h4>
+            In the course, we are required to design and implement a themed resort website, with the theme being
+            imaginative and unusual locations and activities. The website aims to attract the target audience engagingly
+            and interactively.
+            <div class="paraspace">
+                Some ideas came up in the topic brainstorming. The first idea that came to my mind is not some
+                futuristic
+                concept. It is about if something happened or not happened, what the world will look like, and the
+                themed
+                resort allows visitors to experience the world that changed. I must confess the idea is inspired by
+                Philip
+                K. Dick's 1962 novel The Man in the High Castle. But I gave up using the idea of imagining a world that
+                would change slightly or be great. It is not breathtaking enough. I need some wow elements. I cast my
+                eye on something grand.
+                As a sci-fi fan, I turn my gaze to boundless space. Searching for an expanse of space is a big dream
+                for some humans.
+
+            </div>
+            I learned before that scientists once proposed a one-way crewed mission to Mars at the 1998 International
+            Space Development Conference because sending the ship back is the hardest part of a manned mission to Mars.
+            The above idea inspires me. Since we are hard to make a ship that can fly at the sub-speed of light, why
+            don't we use the time to compensate for speed? That's how the idea came up. <span class="underline">A
+                spaceship never backs to the
+                Earth.</span>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Fictional Background Story</h4>
+            ProjectX is a story about a spaceship that condenses the wisdom of all humankind and is equipped with the
+            most
+            advanced aeronautics technology. It is a gigantic spaceship with a complete ecological cycle built inside
+            and the ship has infinite energy.
+            The passengers can live on the ship for their whole life and procreate generation after generation.
+            But the rule is that the ship will ship to the deep space and never return to Earth.
+            <div class="paraspace">
+                The passengers can explore the universe in their whole life. They will reach the space that human
+                never reach. The ship can provide a similar experience to Earth thanks to the ecosystem built inside. It
+                allows the crew to explore the planets they encounter using small-scale sub-exploration spacecraft.
+            </div>
+            It is 2077, and the spacecraft is expected to launch in Houston in 2099. The journey will begin with a drive
+            to the Butterfly Cluster M62 & M19 near ANTARES, then turn to the LEO system. Finally, we will head towards
+            the Gamma Disk, a vast system of four galaxies. After completing galactic exploration, the crew are allowed
+            to colonise a habitable
+            star system. Space exploration is a difficult task, so the recommended crew age is 18-70 years, and as we
+            are still 22 years away from take-off,
+            <span class="underline">the audience for the website should be 18-50 years old</span>.
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Personas</h4>
+            The audiences will be aboard with strong purposes and drives due to the distinctiveness of the resort. The
+            hypothetical target users are mainly scientific researchers and adventurers.
+            <img src="./Images/PXpersona.png" alt="Persona: Johnson" class="imgofp img1">
+            <img src="./Images/PXpersona1.png" alt="Persona: Albert" class="imgofp img1">
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Case Study</h4>
+            <div class="inlinecenter">
+                <img src="./Images/PXcase1.png" alt="Case study: Yellowstone National Parks official websites"
+                    class="imgofp img8">
+                <img src="./Images/PXcase2.png" alt="Case study: the Nature and the Science official website"
+                    class="imgofp img3">
+            </div>
+            <div class="inlinecenter">
+                <img src="./Images/PXcase3.png" alt="Case study: NASA official websites" class="imgofp img8">
+                <img src="./Images/PXcase4.png" alt="Case study: TESLA official website" class="imgofp img8">
+            </div>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Card Sorting, Site Map & Content Architecture</h4>
+            <div class="inlinecenter">
+                <img src="./Images/PXcardsort1.png" alt="Card sorting: before the test" class="imgofp img8">
+                <img src="./Images/PXcardsort2.png" alt="Card sorting: after the test" class="imgofp img8">
+            </div>
+            <img src="./Images/PXsitemap.svg" alt="Site Map & Content Architecture" class="imgofp img2">
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Low-fidelity Prototype</h4>
+            <div class="inlinecenter">
+                <img src="./Images/PXlfp1.png" alt="Low-fidelity Prototype: lading page" class="imgofp img2 img5">
+                <img src="./Images/PXlfp2.png" alt="Low-fidelity Prototype: home page" class="imgofp img2 img5">
+                <img src="./Images/PXlfp3.png" alt="Low-fidelity Prototype: content page" class="imgofp img2 img5">
+                <img src="./Images/PXlfp4.png" alt="Low-fidelity Prototype: booking page" class="imgofp img2 img5">
+            </div>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Medium-fidelity Prototype</h4>
+            <div class="inlinecenter">
+                <img src="./Images/PXmfp1.png" alt="Medium-fidelity Prototype: lading page" class="imgofp img5">
+                <img src="./Images/PXmfp2.png" alt="Medium-fidelity Prototype: content page" class="imgofp img5">
+                <img src="./Images/PXmfp3.png" alt="Medium-fidelity Prototype: contact page" class="imgofp img5">
+                <img src="./Images/PXmfp4.png" alt="Medium-fidelity Prototype: booking page" class="imgofp img5">
+            </div>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Technical Implementation</h4>
+            The website was built independently using HTML, CSS, and JavaScript, and the following interactive features
+            were designed and implemented to enhance the browsing experience on the website.
+            <ul class="shipicon">
+                <li>The sound controller on the welcome page. <a href="./ProjectX/index.html" target="_blank"
+                        class="bold tablelink">Check on
+                        the
+                        Website
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+                </li>
+                <li>The Pop-ups function. <a href="./ProjectX/home_page.html" target="_blank"
+                        class="bold tablelink">Check on
+                        the
+                        Website
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+                </li>
+                <li>The interactive picture gallery. <a href="./ProjectX/about_the_ship.html" target="_blank"
+                        class="bold tablelink">Check on
+                        the
+                        Website
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+                </li>
+                <li>Interactive page transitions. <a href="./ProjectX/book_the_seat.html" target="_blank"
+                        class="bold tablelink">Check on
+                        the
+                        Website
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+                </li>
+                <li>Uploading information validation & displaying message pop-ups. <a
+                        href="./ProjectX/book_the_seat.html" target="_blank" class="bold tablelink">Check on
+                        the
+                        Website
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+                </li>
+            </ul>
+            <a href="./ProjectX/index.html" target="_blank" class="linkbutton">View the website
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <a href="./Images/PeojectX design documentation.pdf" target="_blank" class="linkbutton">View the design
+                documentation
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            The above is the design and development process of the Stretch Adventure, welcome to click the links to
+            watch the demo, or please feel free to browse my other works :)
+        </section>
+    </main>
+    <script src="./Javascript/script.js"></script>
+</body>
+
+</html>

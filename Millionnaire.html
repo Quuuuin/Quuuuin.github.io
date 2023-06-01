@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByWanqi | Team Project | Millionaire Assistant</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <nav class="mobilesubsidebar">
+        <h1>
+            <a href="./index.html#headtitle2" title="Back to: Homepage | Team Project" class="logo">Wanqi's
+                Portfolio</a>
+            <a href="JavaScript:void(0)" onclick="openDialog()" id="menuicon"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACH0lEQVR4nO2Zy07CQBSGD5dgBCKPob6AcektPgsmLBQXLmm5ljsJt4RLICxoXChL4hMYjUlxI3Xhk7AYcwgQAwU6BTpg5k/OrjP9/plzpp0ZAC4urv+twNfnqaj2/IKqPJgZotrz47sNg0s/Hx5ft/NydHU+cLicBABMDYfLSQ4vzgbeJ/kNWagNIPy+58B0cJgKZPB1O10qeJw6HHnW8DCK4+vLQeBbOdFtQOj37lmkDcyJPbeLYE3oNiD2FYE1NEzFiIkbIHwGgKfQcvEihh1ahSwWi2EoC0XbjRiIRCKkUqkQq9VqCD6fz5NkMsnGAMKPVa1WqUwgfKFQmLTXY2KtBqLRKJlWrVbTZQLhi8XiTPtUKmWOAQTI5XJES/V6faGJefCocrm8sCbWnkKxWIzQmEC4Uqmk2SabzS4t6I0UsVYqodrtNrHZbJPn0FCj0dB8NpPJsClirWL+K1mWid1uH8I3m03NZ9Lp9Hb8jSYSCU3AVqs1DC1hG9im3+lwOEz0atmKAywMYIRCoaXwej9cwMIARjAYnAtPmzbAwsDwZaI4Ax+Pxw33Byy2lIIgTOAlSVqpL2C1J0YTGOvoS+Sbelh9FPkM6BXfEwNPIbLSKrR9h7tuusNdPF7HywXW4DAKPOqnOl5HeZ/l92254LjpPL6CwSumLl4u4Pm8+WnjGo48whu6YhoLp05QlTux35NMDVW5pU4bLi4u2Dn9Aj7D0Xurw9e6AAAAAElFTkSuQmCC"></a>
+        </h1>
+        <ul id="menu1" class="menu">
+            <li class="subnav">Team Project
+            </li>
+            <li class="msub2navse">Millionaire Assistant
+                <div class="landani2" id="navblock21"> </div>
+            </li>
+            <li class="msub2nav"><a href="./Mark II-VII.html" class="sub2navlink">Mark &#8545;-&#8550;</a>
+            </li>
+            <li class=" msub2nav"><a href="./Ouah Ouah Friends.html" class="sub2navlink">Ouah Ouah Friends</a>
+            </li>
+            <li class=" msub2nav"><a href="./Petrol Pal.html" class="sub2navlink">Petrol Pal</a>
+            </li>
+            <li class="msub2nav"><a href="./TouchMeNot.html" class="sub2navlink">Touch Me Not</a>
+            <li class="msub2nav"><a href="./iMarket.html" class="sub2navlink">iMarket</a>
+            </li>
+            </li>
+            <li class="subnav"><a href="./index.html#headtitle3" class="subnavlink">My Own Work</a>
+            </li>
+            <a href="javascript:void(0)" onclick="closeDialog()"><img class="closebuttom1"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEKklEQVR4nO1ZXU8TWRh+oS2KG9qiULhUwQX3M+p6oUXZgF7vYqVuvFD8WC+gSKvG72Y+1IU1hoQrgySNjZvNJgQkunZ2TYi90UUcmbZ027HZjb9h9Y5TZsxLMG6IQ5mZM4ULnuRNTjrN9HlOzsfzPgVYxSpWDgZyuTX8q6mveVnycxkpwMrSBSwcc7LUjs+YdLoMVhKYfxKeq6nnZ49EbmdbejpJQ+u3M1WbN86udVaoNrt9rnBcvXnTLD5r7ekiRyODGW5aDN7ITVUvH/FM4otAbEzYfeIoqfBUKwCg6ilnjUfxnuwgAWHsEZOb+qx4xNPp9cHx2G/bD7YRm8Ohi/THyuZwqDsO+UjoifAL81pyW0qey0w1t/Vee1vucuqe8UJV7nYpB25ef8O9Su6xhPxV8WnPNt93hDZxWFA7/D5yJTnZRZX8+Wfxa3XeXXmrycN81e/x5i9MxHlqM19M8vA/EeHkZKfpNb/tgPXLBrSW0yEfYeREk+HT5vte/u1ykYf58t268abvX9GlW0AoHvt1ndtN7bRhWVbt6+szdDoFxx/d00We/1v6HM95muTfw4iIb35oJ4ycalyygIBwX6BxSS0kb1SEraxM7Y7d/33J3gbtgVXkETzP636X9+QxsiTvxKZfhtCnWEW+v7/f0PsqPNVKODkRLCgAXaVV5AcGBky9tyM6mC7o59ESW0F+aGhILSkpMSWgNRggi/YT2HA0tOwltMlHIhG1tLTU9J5q3Ncyw2eTX2oLkCU/Nh40yUejUSrkAUD11NfNMtnkQU0BXDZx2ohV1iI/PDys2u12KuQBQMWLlZUlbafKZZOX9Z7/WuRHRkaokof5+4DNJC5RE2Cz2dTR0VFqZz2YF6B/CTkcDk0RRmwDmFpCstRuZBMXS4Snvm6WyyZ8mgIYOfUVRh9GXl4MEVv3t85gGmLZRWa1iH2h7sUvMgSGTmZ+xEoRHdE704uSn9sH02LQWVOjrDQRrtpahU2/6C4oAC2r90SHaTtNW0TTj8cJI4tVsBR0CWMxGg2NlgiGYXSf/4E/xh6AnpYSEwGzAj4mQi95AFB3HvYTJpP4FPTgTPzxvXWVlQpNEUbIl7tdSmhcuAt6gUFr28/XqcUqRh2p71bvf0xuwglGgEHrdj+dpWSkdh72Ey7zcheYQTj5V2dDS3PRo8Ute735cGryFNAABq2YVRaNfHNT/uKzOAM0gUErrZOp0LIJ05r5hcCgFbNKmpEjzNcn6ysV3LCm13xBEa8l95knQhTjPrxgzBK3rymbm/Vz8T8jhkJcw0LkVCPGfZiYOWv1eyf0Nk2njpNu4cFD3ZcUXSFiFTst9mDohLkNRh/YeGBnh3YEC8eeLXV5fIaWGF0lGrOfMs83wErCoCg6sCnC6ANbv/d/dOMYP8NMB7+z3DxXsQr4gHcjca7uWqkHggAAAABJRU5ErkJggg=="></a>
+        </ul>
+    </nav>
+    <nav class="sidebar subpsidebar">
+        <ul>
+            <h1>
+                <a href="./index.html#headtitle2" title="Back to: Homepage | Team Project" class="logo">Wanqi's
+                    Portfolio</a>
+            </h1>
+            <li class="subnav">Team Project
+            </li>
+            <li class="sub2nav">Millionaire Assistant
+                <div class="landani2" id="navblock21"> </div>
+            </li>
+            <li class="sub2nav"><a href="./Mark II-VII.html" class="sub2navlink">Mark II-VII</a>
+            </li>
+            <li class=" sub2nav"><a href="./Ouah Ouah Friends.html" class="sub2navlink">Ouah Ouah Friends</a>
+            </li>
+            <li class=" sub2nav"><a href="./Petrol Pal.html" class="sub2navlink">Petrol Pal</a>
+            </li>
+            <li class="sub2nav"><a href="./TouchMeNot.html" class="sub2navlink">Touch Me Not</a>
+            <li class="sub2nav"><a href="./iMarket.html" class="sub2navlink">iMarket</a>
+            </li>
+            </li>
+            <li class="subnav"><a href="./index.html#headtitle3" class="subnavlink">My Own Work</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="page">
+        <h3 class="headtitle">Millionaire Assistant</h3>
+        <section class="headintroduction">
+            Millionaire Assistant is a website that aims to assist individual business owners who want to start or
+            already owned mobile food businesses
+            and want to boost their income.
+            The website will gather information on some significant aspects that impact food truck earning and show them
+            intelligibly
+            from the QLD Government data sources and Google Map.
+            Then it will give users intelligently recommendations about the best site to start today's food truck
+            business! <br>
+            The website also provides consumers with food truck information on an interactive map.
+        </section>
+        <section class="projectinfo">
+            <span class="bold">My role:</span> UI Designer, Graphic Designer, UX Designer, Developer <br>
+            <span class="bold">Tool used:</span> Miro, Figma, Adobe Photoshop, Adobe Illustrator, Visual Studio Code
+            <br>
+            <span class="bold">What I did:</span> UI Design, User Test, Graphic design for branding, Font end
+            development <br>
+            <span class="bold">Duration:</span> 23 August - 26 October 2021 as part of Course <span
+                class="italic">Studio
+                Ⅰ:Interactive Technology</span> at UQ
+            <br>*Due to the COVID-19 lockdown, the project was completed in a remote mode.
+            <a href="./M.A-Oct-14 2/index.html" target="_blank" class="linkbutton">View the website <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">The background</h4>
+            The project required uncovering design-worthy data from a national or state government database and applying
+            it to the interactive website. Our team's interest was piqued by the Food Truck data in the database. Our
+            following background research revealed three points:
+            <ul class="foodtruckicon">
+                <li>Extra government restriction on mobile food business</li>
+                <li>Higher competition due to the adaptability of food truck's business models has</li>
+                <li>The high demand for food trucks pushes business owners to seek higher incomes</li>
+            </ul>
+            which these made the usage of food truck data highly useful and
+            marketable. Based on the research, our team decided to use the Brisbane traffic geodatabase and the food
+            truck database for the design.
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Ideation & Positioning</h4>
+            Our prototype product was defined by the course requirements as the product had to be web-side and integrate
+            the components of an interactive map. We started by defining our target users and base functionality after
+            team meetings. The target users of our product will be food truck owners, with consumers
+            being positioned as our peripheral users. <br> Based on the type of data in the database, the main function
+            of our website will be the algorithmic analysis of data to provide information to help business owners to
+            better improve their revenue.
+            <img src="./Images3/MAdiscussion.png" alt="part of discussion note" class="imgofp img1">
+            Based on its proposal, Millionaire Assistant will be a business consulting website, not an information
+            system website. <br> The food truck business is a mostly decentralized and self-employed type of small
+            business.
+            For the reason of that, our website is positioned as a lightweight business application, facing lightweight
+            business needs.
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Persona</h4>
+            <img src="./Images3/MAPersona.png" alt="persona of Millionaire Assistant" class="imgofp img1">
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Task Flow</h4>
+            <img src="./Images3/MATaskflow1.png" alt="Task flow note" class="imgofp img1">
+            <img src="./Images3/MATaskflow2.png" alt="Task flow formal" class="imgofp img2">
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Storyboard</h4>
+            <img src="./Images3/MAStoryboard.png" alt="Storyboard of Millionaire Assistant" class="imgofp img1">
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Low-fidelity Prototype & Online User Test</h4>
+            <div class="inlinecenter">
+                <img src="./Images3/MAlp1.png" alt="Low-fidelity Prototype Screenshot" class="imgofp img3">
+                <img src="./Images3/MAlp2.png" alt="Low-fidelity Prototype Screenshot" class="imgofp img3">
+                <img src="./Images3/MAlp3.png" alt="Low-fidelity Prototype Screenshot" class="imgofp img3">
+            </div>
+            We designed the test plan based on our low-fidelity prototype and sitemap. We designed tasks
+            for the testers and we set what we should observe. After the testers completed, we
+            collect data for usability evaluations through questionnaires and interviews.
+            <br> *Due to the COVID lockdown, we are hard to find the target users to be our testers.
+            <img src="./Images3/MAtest.jpg" alt="Screenshot of the test site" class="imgofp img2">
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">UI Design</h4>
+            <img src="./Images3/MAUI.jpg" alt="UI design meeting note" class="imgofp img2">
+            Based on our Positioning and User Scenario, we abandoned the professional software design style, hoping that
+            the
+            Two-dimensional cartoonish and relaxed style would let users have a good start of their busy day. In the
+            main page
+            , we arranged our function buttons on the immersive interactive map component to highlight our
+            geographic information-based service feature and to visually and intuitive communicate information to users.
+            <br>
+            In this stage, I deeply involved in every part from style definition to UI design. And led the completion of
+            the design principles to ensure the unification of the design.
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Development</h4>
+            <img src="./Images3/MAfoodtrucklist.png" alt="the page I am mainly responsible for the development"
+                class="imgofp img1">
+            I am mainly responsible for the development of the Food Truck Page shown above, using PHP language for
+            data reading.
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Graphic Design & Branding</h4>
+            I took full responsibility for the graphic design work in the team, completed some of the art resources for
+            the project and built the visual identity of the project.
+            <br> *All third-party art resources used in the project have been licensed.
+            <img src="./Images3/MAGraphicdesign.png" alt="Brand logo design" class="imgofp img2">
+            <img src="./Images3/MAposter1.png" alt="Poster" class="imgofp img1">
+            <div class="inlinecenter">
+                <img src="./Images3/MAposter2.png" alt="Report Cover" class="imgofp img3">
+                <img src="./Images3/MAposter4.png" alt="Report Cover" class="imgofp img3">
+                <img src="./Images3/MAposter3.png" alt="Report Cover" class="imgofp img3">
+            </div>
+        </section>
+        <section class="introduction lastsentence">
+            <h4 class="subtitleofp">High-fidelity Prototype</h4>
+            <a href="./M.A-Oct-14 2/index.html" target="_blank" class="linkbutton">View the website <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <a href="" target="_blank" class="linkbutton">View my course portfolio website<img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            The above is the design and development process of the Millionaire Assistant, welcome to click the links to
+            experience
+            our high-fidelity prototype website, or please feel free to browse my other works :)
+        </section>
+    </main>
+    <script src="./Javascript/script.js"></script>
+</body>
+
+</html>

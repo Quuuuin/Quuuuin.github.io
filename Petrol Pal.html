@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByWanqi | Team Project | Petrol Pal</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <nav class="mobilesubsidebar">
+        <h1>
+            <a href="./index.html#headtitle2" title="Back to: Homepage | Team Project" class="logo">Wanqi's
+                Portfolio</a>
+            <a href="JavaScript:void(0)" onclick="openDialog()" id="menuicon"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACH0lEQVR4nO2Zy07CQBSGD5dgBCKPob6AcektPgsmLBQXLmm5ljsJt4RLICxoXChL4hMYjUlxI3Xhk7AYcwgQAwU6BTpg5k/OrjP9/plzpp0ZAC4urv+twNfnqaj2/IKqPJgZotrz47sNg0s/Hx5ft/NydHU+cLicBABMDYfLSQ4vzgbeJ/kNWagNIPy+58B0cJgKZPB1O10qeJw6HHnW8DCK4+vLQeBbOdFtQOj37lmkDcyJPbeLYE3oNiD2FYE1NEzFiIkbIHwGgKfQcvEihh1ahSwWi2EoC0XbjRiIRCKkUqkQq9VqCD6fz5NkMsnGAMKPVa1WqUwgfKFQmLTXY2KtBqLRKJlWrVbTZQLhi8XiTPtUKmWOAQTI5XJES/V6faGJefCocrm8sCbWnkKxWIzQmEC4Uqmk2SabzS4t6I0UsVYqodrtNrHZbJPn0FCj0dB8NpPJsClirWL+K1mWid1uH8I3m03NZ9Lp9Hb8jSYSCU3AVqs1DC1hG9im3+lwOEz0atmKAywMYIRCoaXwej9cwMIARjAYnAtPmzbAwsDwZaI4Ax+Pxw33Byy2lIIgTOAlSVqpL2C1J0YTGOvoS+Sbelh9FPkM6BXfEwNPIbLSKrR9h7tuusNdPF7HywXW4DAKPOqnOl5HeZ/l92254LjpPL6CwSumLl4u4Pm8+WnjGo48whu6YhoLp05QlTux35NMDVW5pU4bLi4u2Dn9Aj7D0Xurw9e6AAAAAElFTkSuQmCC"></a>
+        </h1>
+        <ul id="menu1" class="menu">
+            <li class="subnav">Team Project
+            </li>
+            <li class="msub2nav"><a href="./Millionnaire.html" class="sub2navlink">Millionaire Assistant</a>
+            </li>
+            <li class=" msub2nav"><a href="./Mark II-VII.html" class="sub2navlink">Mark &#8545;-&#8550;</a>
+            </li>
+            <li class=" msub2nav"><a href="./Ouah Ouah Friends.html" class="sub2navlink">Ouah Ouah Friends</a>
+            </li>
+            <li class="msub2navse">Petrol Pal
+                <div class="landani2" id="navblock22"> </div>
+            </li>
+            <li class="msub2nav"><a href="./TouchMeNot.html" class="sub2navlink">Touch Me Not</a>
+            <li class="msub2nav"><a href="./iMarket.html" class="sub2navlink">iMarket</a>
+            </li>
+            </li>
+            <li class="subnav"><a href="./index.html#headtitle3" class="subnavlink">My Own Work</a>
+            </li>
+            <a href="javascript:void(0)" onclick="closeDialog()"><img class="closebuttom1"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEKklEQVR4nO1ZXU8TWRh+oS2KG9qiULhUwQX3M+p6oUXZgF7vYqVuvFD8WC+gSKvG72Y+1IU1hoQrgySNjZvNJgQkunZ2TYi90UUcmbZ027HZjb9h9Y5TZsxLMG6IQ5mZM4ULnuRNTjrN9HlOzsfzPgVYxSpWDgZyuTX8q6mveVnycxkpwMrSBSwcc7LUjs+YdLoMVhKYfxKeq6nnZ49EbmdbejpJQ+u3M1WbN86udVaoNrt9rnBcvXnTLD5r7ekiRyODGW5aDN7ITVUvH/FM4otAbEzYfeIoqfBUKwCg6ilnjUfxnuwgAWHsEZOb+qx4xNPp9cHx2G/bD7YRm8Ohi/THyuZwqDsO+UjoifAL81pyW0qey0w1t/Vee1vucuqe8UJV7nYpB25ef8O9Su6xhPxV8WnPNt93hDZxWFA7/D5yJTnZRZX8+Wfxa3XeXXmrycN81e/x5i9MxHlqM19M8vA/EeHkZKfpNb/tgPXLBrSW0yEfYeREk+HT5vte/u1ykYf58t268abvX9GlW0AoHvt1ndtN7bRhWVbt6+szdDoFxx/d00We/1v6HM95muTfw4iIb35oJ4ycalyygIBwX6BxSS0kb1SEraxM7Y7d/33J3gbtgVXkETzP636X9+QxsiTvxKZfhtCnWEW+v7/f0PsqPNVKODkRLCgAXaVV5AcGBky9tyM6mC7o59ESW0F+aGhILSkpMSWgNRggi/YT2HA0tOwltMlHIhG1tLTU9J5q3Ncyw2eTX2oLkCU/Nh40yUejUSrkAUD11NfNMtnkQU0BXDZx2ohV1iI/PDys2u12KuQBQMWLlZUlbafKZZOX9Z7/WuRHRkaokof5+4DNJC5RE2Cz2dTR0VFqZz2YF6B/CTkcDk0RRmwDmFpCstRuZBMXS4Snvm6WyyZ8mgIYOfUVRh9GXl4MEVv3t85gGmLZRWa1iH2h7sUvMgSGTmZ+xEoRHdE704uSn9sH02LQWVOjrDQRrtpahU2/6C4oAC2r90SHaTtNW0TTj8cJI4tVsBR0CWMxGg2NlgiGYXSf/4E/xh6AnpYSEwGzAj4mQi95AFB3HvYTJpP4FPTgTPzxvXWVlQpNEUbIl7tdSmhcuAt6gUFr28/XqcUqRh2p71bvf0xuwglGgEHrdj+dpWSkdh72Ey7zcheYQTj5V2dDS3PRo8Ute735cGryFNAABq2YVRaNfHNT/uKzOAM0gUErrZOp0LIJ05r5hcCgFbNKmpEjzNcn6ysV3LCm13xBEa8l95knQhTjPrxgzBK3rymbm/Vz8T8jhkJcw0LkVCPGfZiYOWv1eyf0Nk2njpNu4cFD3ZcUXSFiFTst9mDohLkNRh/YeGBnh3YEC8eeLXV5fIaWGF0lGrOfMs83wErCoCg6sCnC6ANbv/d/dOMYP8NMB7+z3DxXsQr4gHcjca7uWqkHggAAAABJRU5ErkJggg=="></a>
+        </ul>
+    </nav>
+    <nav class="sidebar subpsidebar">
+        <ul>
+            <h1>
+                <a href="./index.html#headtitle2" title="Back to: Homepage | Team Project" class="logo">Wanqi's
+                    Portfolio</a>
+            </h1>
+            <li class="subnav">Team Project
+            </li>
+            <li class="sub2nav"><a href="./Millionnaire.html" class="sub2navlink">Millionaire Assistant</a>
+            </li>
+            <li class=" sub2nav"><a href="./Mark II-VII.html" class="sub2navlink">Mark &#8545;-&#8550;</a>
+            </li>
+            <li class=" sub2nav"><a href="./Ouah Ouah Friends.html" class="sub2navlink">Ouah Ouah Friends</a>
+            </li>
+            <li class="sub2nav">Petrol Pal
+                <div class="landani2" id="navblock22"> </div>
+            </li>
+            <li class="sub2nav"><a href="./TouchMeNot.html" class="sub2navlink">Touch Me Not</a>
+            </li>
+            <li class="sub2nav"><a href="./iMarket.html" class="sub2navlink">iMarket</a>
+            </li>
+            <li class="subnav"><a href="./index.html#headtitle3" class="subnavlink">My Own Work</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="page">
+        <h3 class="headtitle">Petrol Pal</h3>
+        <section class="headintroduction">
+            PatrolPal is a software that integrates petrol station information and fuel prices, designed and implemented
+            based on the public's needs for fuel-related matters. <br>PatrolPal has four fundamental functions:
+            Historical
+            fuel price data, a handy fuel log and an intelligently sorted list of petrol stations, and innovative fuel
+            price forecasting based on historical fuel prices and price fluctuation research-based algorithms. <br>
+            PatrolPal
+            is designed to meet all the needs of most people during the fueling process.
+        </section>
+        <section class="projectinfo">
+            <span class="bold">My role:</span>UI Designer, UX Researcher, UX Designer<br>
+            <span class="bold">Tool used:</span> Figma, Miro
+            <br>
+            <span class="bold">What I did:</span> UI design, User Experience research, design, test & evaluation<br>
+            <span class="bold">Duration:</span> 7 April - 13 June 2022 as part of Course <span
+                class="italic">Human-Computer Interaction</span> at UQ
+            <br>*Due to the COVID-19 lockdown, the project was completed in a remote mode.
+            <a href="https://www.figma.com/proto/AGeXXTn0jiOBDODtQlO0T4/Petrol-Pal%EF%BC%88Yang?page-id=0%3A1&node-id=66%3A75&viewport=184%2C209%2C0.09&scaling=scale-down&starting-point-node-id=66%3A75"
+                target="_blank" class="linkbutton">Try the prototype
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Background Research</h4>
+            <ul class="petrolicon">
+                <div class="bold">Research Method</div>
+                <li style="font-weight: normal; font-family:Helve;">Literature Review</li>
+                <li style="font-weight: normal; font-family:Helve;">Survey<span class="italic">(53
+                        participants were covered)</span> & Interview<span class="italic">(4
+                        participants were covered)</span> </li>
+                <li style="font-weight: normal; font-family:Helve;">Existing Systems Study</li>
+            </ul>
+            <div class="paraspace">
+                The price of gasoline is undergoing a global change. The change is being accelerated by changing trends
+                in
+                the worldwide economy and the volatile situation the producing countries face.
+            </div>
+            In addition to the macroscopic view of the potential impact of crude oil on the national economy, this
+            is even more relevant to the interests of every citizen. Within Australia, for example, driving is still
+            an utterly irreplaceable mode of transport for adult citizens. The research statistics showed that <span
+                class="underline">up to 7.4% of household income is spent on gasoline consumption in the
+                lowest-income
+                groups</span> and as low
+            as 2.2% in higher-income groups (Byrne, D. P., Nah, J. S., & Xue, P. 2018). Thus, reducing spending on
+            petrol could mean
+            <span class="underline">significant savings</span> for poorer households.
+            <div class="paraspace">
+                Meanwhile, other researchers found that an <span class="underline">increase of gasoline prices standard
+                    deviation leads
+                    to</span> a decrease in subjective well-being (SWB) of 0.0157-0.0245 standard deviations (Prakash,
+                K.,
+                Awaworyi Churchill, S., & Smyth, R. 2020). Therefore it is socially and spiritually significant how to
+                help
+                users save money on fuel through technical means
+                without affecting objective fuel prices.
+            </div>
+            <div class="paraspace">
+                Researchers derived the public's level of concern about the real-time fuel prices side-by-side by
+                counting the magnitude of the change in traffic flow in the morning and evening rush hours. And
+                the fact that people may prefer to take public transportation during the high gas prices period (Burke,
+                P.
+                J., & Zhang, T. 2020). <span class="underline">These
+                    truths and our surveys show that people are pretty sensitive and concerned about the real-time
+                    changes in gas
+                    prices.</span>
+            </div>
+            <div class="arrowframe">
+                <img src="./Images/arrow.png" alt="decorated arrow" class="deco">
+                <img src="./Images2/PPsurvey1.png" alt="Survey outcome about people are concerned about petrol price"
+                    class="imgofp img1">
+            </div>
+            <div class="inlinecenter">
+                <img src="./Images2/PPsurvey2.png" alt="Survey outcome about app market" class="imgofp img7">
+                <img src="./Images2/PPsurvey3.png" alt="Survey outcome about app market" class="imgofp img7">
+            </div>
+            We also conduct a case study, analyzing the existing applications FuelMap and FuelCheck by analyzing the
+            interaction experience, the functions and user reviews on app stores. Get reflection and inspiration from
+            existing designs.
+            <div class="inlinecenter">
+                <img src="./Images2/PPfuelmap.png" alt="FuelMap logo" class="imglogo img8">
+                <img src="./Images2/PPfuelcheck.png" alt="FuelCheck logo" class="imglogo img9">
+            </div>
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">UX design: System Concept</h4>
+            <div class="statement">Develop a solution to help users save money on fuel, relieve their financial stress
+                and
+                improve their consumer happiness. </div>
+            <div class="statement">Our solution is an application based on multi-dimensional information. The nearby gas
+                stations are sorted algorithmically by parameters such as fuel price, distance and rating in the form of
+                a list for users to choose from. The secondary page of the list, i.e. the display page, is used as a
+                platform for merchants to build up their business profiles. <br>
+                The application integrates a gasoline logbook function to facilitate users' expense management and
+                reconciliation. <br>
+                The application also provides a display function for historical changes in gasoline prices while having
+                an innovation: an algorithm forecasts future fuel price trends to facilitate users' fuel consumption
+                decisions.</div>
+            <div class="inlinecenter">
+                <div class="statement instat">Mobile</div>
+                <div class="statement instat">Instructing</div>
+            </div>
+            <div class="statement">
+                <span class="bold">-Card: </span>The card metaphor categorizes complicated information into a block
+                of information, which is easy for users to read and operate. <br>
+                <span class="bold">-Logbook: </span>The logbook metaphor gives users a sense of bookkeeping and guides
+                them through the process. <br>
+                <span class="bold">-Stock: </span>Use a line chart to express the stock market metaphor to make users
+                perceive the volatility of fuel prices and to boost their financial cognition for fuel consumption.
+            </div>
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Target Users</h4>
+            According to our research, our target users are car owners aged 18-50 who need to refuel, are also sensitive
+            to fuel prices and want to find ways to save money. However, our user group can be all-age car owners
+            interested in using the app or family members of car owners.
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Persona & Storyboard</h4>
+            <div class="inlinecenter">
+                <img src="./Images2/PPpersona1.png" alt="Persona: Lisa" class="imgofp img7">
+                <img src="./Images2/PPpersona2.png" alt="Persona: Liam" class="imgofp img5">
+            </div>
+            <img src="./Images2/PPstoryboard1.png" alt="Storyboard: Lisa" class="imgofp img2">
+            <img src="./Images2/PPstoryboard2.png" alt="Storyboard: Liam" class="imgofp img2">
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Low-fidelity Prototype</h4>
+            <img src="./Images2/PPLow.png" alt="Low-fidelity Prototype" class="imgofp img1">
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Mid-fidelity Prototype-Ver.1</h4>
+            After completing the low-fidelity prototype, we developed our first medium-fidelity prototype after
+            conducting a
+            small-scale user experience evaluation and satisfaction survey.
+            <img src="./Images2/PPMid-feidelity.png" alt="Mid-fidelity Prototype" class="imgofp img1">
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Design Guideline</h4>
+            We designed the guideline to ensure that the principles of intuitiveness, learnability, efficiency and
+            consistency were reflected in our prototype design.
+            <div class="paraspace">
+                For the colour selection, we chose blue and orange, two
+                colours commonly used in gas stations worldwide, to form the visual identity of our application and
+                construct a gas station metaphor.
+            </div>
+            <div class="paraspace">
+                The interactive elements are represented in a brighter orange to make it easier for users to operate.
+                The UI frequently uses rounded corners to neutralize the clashing sense of orange and make the visual
+                identity
+                user-friendly.
+            </div>
+            We also conducted readability tests to ensure the readability of the font.
+            <img src="./Images2/PPdg.png" alt="Design Guideline" class="imgofp img2">
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Evaluation</h4>
+            For one round of evaluation of the mid-fidelity prototype, we prepared two sets of evaluation methods:
+            an<span class="underline"> expert-based, qualitative</span> Heuristic Evaluation and a <span
+                class="underline">user-based, quantitative</span> Time on Task .
+            <div class="paraspace">
+                We prepared plans and protocols for both methods before the evaluation. The data was recorded following
+                the
+                plan during the process. We obtained the participation of five expert users and five general users
+                during
+                the evaluation process.
+            </div>
+            <span class="bold">Here are the data charts.</span>
+            <div class="inlinecenter">
+                <img src="./Images2/PPehe1.png" alt="Data chart of Heuristic Evaluation" class="imgofp img7">
+                <img src="./Images2/PPehe2.png" alt="Data chart of Heuristic Evaluation" class="imgofp img5">
+            </div>
+            <div class="inlinecenter">
+                <img src="./Images2/PPtot1.png" alt="Data chart of Time on Task" class="imgofp img2 img7">
+                <img src="./Images2/PPtot2.png" alt="Data chart of Time on Task" class="imgofp img2 img8">
+            </div>
+            Based on the evaluation results, the prototype is easy to use and intuitive to learn. The information
+            transmission efficiency of our application is good.
+            <div class="paraspace">
+                However, the expert-based heuristic evaluation results show that the application still has usability
+                problems that are against the <a href="https://www.nngroup.com/articles/ten-usability-heuristics/"
+                    target="_blank" class="intextlink">Usability Heuristics principle<img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>.
+            </div>
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Mid-fidelity Prototype-Ver.2Final</h4>
+            After reflecting on the results, We developed the second also final version medium-fidelity prototype of
+            this project.
+            <img src="./Images2/PPhigh.png" alt="Mid-fidelity Prototype-Ver.2Final" class="imgofp img2">
+            <a href="https://www.figma.com/proto/AGeXXTn0jiOBDODtQlO0T4/Petrol-Pal%EF%BC%88Yang?page-id=0%3A1&node-id=66%3A75&viewport=184%2C209%2C0.09&scaling=scale-down&starting-point-node-id=66%3A75"
+                target="_blank" class="linkbutton" style="margin-top: 4rem
+                ;">Try the prototype
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            The above is the design and development process of the Petrol Pal, welcome to click the links to
+            experience the prototype, or please feel free to browse my other works :)
+        </section>
+        <section class="introduction firstsentence lastsentence">
+            <h4 class="subtitleofp">Reference</h4>
+            Byrne, D. P., Nah, J. S., & Xue, P. (2018). Australia Has the World’s Best Petrol Price Data:
+            FuelWatch and FuelCheck. The Australian Economic Review, 51(4), 564–577.
+            10.1111/1467-8462.12302
+            <div class="paraspace">
+                Prakash, K., Awaworyi Churchill, S., & Smyth, R. (2020). Petrol prices and subjective
+                wellbeing. Energy Economics, 90, 104867. <a href="https://doi.org/10.1016/j.eneco.2020.104867"
+                    target="_blank">https://doi.org/10.1016/j.eneco.2020.104867</a>
+            </div>
+            <div class="paraspace">
+                Burke, P. J., & Zhang, T. (2020). The Effect of Fuel Prices on Traffic Flows: Evidence from
+                New South Wales. SSRN Electronic Journal. <a href="https://doi.org/10.2139/ssrn.3707317"
+                    target="_blank">https://doi.org/10.2139/ssrn.3707317</a>
+            </div>
+            <div class="paraspace">
+                Fuel Map Australia is a trademark of WikiCamps pty ltd. ©2015 WIKICAMPS PTY LTD. ALL RIGHTS RESERVED.
+            </div>
+            <div class="paraspace">
+                FuelCheck is intellectual property of NSW Department of Customer Service. ©NSW Department of Customer
+                Service ALL RIGHTS RESERVED.
+            </div>
+        </section>
+    </main>
+    <script src="./Javascript/script.js"></script>
+</body>
+
+</html>

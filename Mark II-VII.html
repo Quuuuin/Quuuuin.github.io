@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByWanqi | Team Project | Mark &#8545;-&#8550;</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <nav class="mobilesubsidebar">
+        <h1>
+            <a href="./index.html#headtitle2" title="Back to: Homepage | Team Project" class="logo">Wanqi's
+                Portfolio</a>
+            <a href="JavaScript:void(0)" onclick="openDialog()" id="menuicon"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACH0lEQVR4nO2Zy07CQBSGD5dgBCKPob6AcektPgsmLBQXLmm5ljsJt4RLICxoXChL4hMYjUlxI3Xhk7AYcwgQAwU6BTpg5k/OrjP9/plzpp0ZAC4urv+twNfnqaj2/IKqPJgZotrz47sNg0s/Hx5ft/NydHU+cLicBABMDYfLSQ4vzgbeJ/kNWagNIPy+58B0cJgKZPB1O10qeJw6HHnW8DCK4+vLQeBbOdFtQOj37lmkDcyJPbeLYE3oNiD2FYE1NEzFiIkbIHwGgKfQcvEihh1ahSwWi2EoC0XbjRiIRCKkUqkQq9VqCD6fz5NkMsnGAMKPVa1WqUwgfKFQmLTXY2KtBqLRKJlWrVbTZQLhi8XiTPtUKmWOAQTI5XJES/V6faGJefCocrm8sCbWnkKxWIzQmEC4Uqmk2SabzS4t6I0UsVYqodrtNrHZbJPn0FCj0dB8NpPJsClirWL+K1mWid1uH8I3m03NZ9Lp9Hb8jSYSCU3AVqs1DC1hG9im3+lwOEz0atmKAywMYIRCoaXwej9cwMIARjAYnAtPmzbAwsDwZaI4Ax+Pxw33Byy2lIIgTOAlSVqpL2C1J0YTGOvoS+Sbelh9FPkM6BXfEwNPIbLSKrR9h7tuusNdPF7HywXW4DAKPOqnOl5HeZ/l92254LjpPL6CwSumLl4u4Pm8+WnjGo48whu6YhoLp05QlTux35NMDVW5pU4bLi4u2Dn9Aj7D0Xurw9e6AAAAAElFTkSuQmCC"></a>
+        </h1>
+        <ul id="menu1" class="menu">
+            <li class="subnav">Team Project
+            </li>
+            <li class="msub2nav"><a href="./Millionnaire.html" class="sub2navlink">Millionaire Assistant</a>
+            </li>
+            <li class="msub2navse">Mark &#8545;-&#8550;
+                <div class="landani2" id="navblock22"> </div>
+            </li>
+            <li class=" msub2nav"><a href="./Ouah Ouah Friends.html" class="sub2navlink">Ouah Ouah Friends</a>
+            </li>
+            <li class=" msub2nav"><a href="./Petrol Pal.html" class="sub2navlink">Petrol Pal</a>
+            </li>
+            <li class="msub2nav"><a href="./TouchMeNot.html" class="sub2navlink">Touch Me Not</a>
+            <li class="msub2nav"><a href="./iMarket.html" class="sub2navlink">iMarket</a>
+            </li>
+            </li>
+            <li class="subnav"><a href="./index.html#headtitle3" class="subnavlink">My Own Work</a>
+            </li>
+            <a href="javascript:void(0)" onclick="closeDialog()"><img class="closebuttom1"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEKklEQVR4nO1ZXU8TWRh+oS2KG9qiULhUwQX3M+p6oUXZgF7vYqVuvFD8WC+gSKvG72Y+1IU1hoQrgySNjZvNJgQkunZ2TYi90UUcmbZ027HZjb9h9Y5TZsxLMG6IQ5mZM4ULnuRNTjrN9HlOzsfzPgVYxSpWDgZyuTX8q6mveVnycxkpwMrSBSwcc7LUjs+YdLoMVhKYfxKeq6nnZ49EbmdbejpJQ+u3M1WbN86udVaoNrt9rnBcvXnTLD5r7ekiRyODGW5aDN7ITVUvH/FM4otAbEzYfeIoqfBUKwCg6ilnjUfxnuwgAWHsEZOb+qx4xNPp9cHx2G/bD7YRm8Ohi/THyuZwqDsO+UjoifAL81pyW0qey0w1t/Vee1vucuqe8UJV7nYpB25ef8O9Su6xhPxV8WnPNt93hDZxWFA7/D5yJTnZRZX8+Wfxa3XeXXmrycN81e/x5i9MxHlqM19M8vA/EeHkZKfpNb/tgPXLBrSW0yEfYeREk+HT5vte/u1ykYf58t268abvX9GlW0AoHvt1ndtN7bRhWVbt6+szdDoFxx/d00We/1v6HM95muTfw4iIb35oJ4ycalyygIBwX6BxSS0kb1SEraxM7Y7d/33J3gbtgVXkETzP636X9+QxsiTvxKZfhtCnWEW+v7/f0PsqPNVKODkRLCgAXaVV5AcGBky9tyM6mC7o59ESW0F+aGhILSkpMSWgNRggi/YT2HA0tOwltMlHIhG1tLTU9J5q3Ncyw2eTX2oLkCU/Nh40yUejUSrkAUD11NfNMtnkQU0BXDZx2ohV1iI/PDys2u12KuQBQMWLlZUlbafKZZOX9Z7/WuRHRkaokof5+4DNJC5RE2Cz2dTR0VFqZz2YF6B/CTkcDk0RRmwDmFpCstRuZBMXS4Snvm6WyyZ8mgIYOfUVRh9GXl4MEVv3t85gGmLZRWa1iH2h7sUvMgSGTmZ+xEoRHdE704uSn9sH02LQWVOjrDQRrtpahU2/6C4oAC2r90SHaTtNW0TTj8cJI4tVsBR0CWMxGg2NlgiGYXSf/4E/xh6AnpYSEwGzAj4mQi95AFB3HvYTJpP4FPTgTPzxvXWVlQpNEUbIl7tdSmhcuAt6gUFr28/XqcUqRh2p71bvf0xuwglGgEHrdj+dpWSkdh72Ey7zcheYQTj5V2dDS3PRo8Ute735cGryFNAABq2YVRaNfHNT/uKzOAM0gUErrZOp0LIJ05r5hcCgFbNKmpEjzNcn6ysV3LCm13xBEa8l95knQhTjPrxgzBK3rymbm/Vz8T8jhkJcw0LkVCPGfZiYOWv1eyf0Nk2njpNu4cFD3ZcUXSFiFTst9mDohLkNRh/YeGBnh3YEC8eeLXV5fIaWGF0lGrOfMs83wErCoCg6sCnC6ANbv/d/dOMYP8NMB7+z3DxXsQr4gHcjca7uWqkHggAAAABJRU5ErkJggg=="></a>
+        </ul>
+    </nav>
+    <nav class="sidebar subpsidebar">
+        <ul>
+            <h1>
+                <a href="./index.html#headtitle2" title="Back to: Homepage | Team Project" class="logo">Wanqi's
+                    Portfolio</a>
+            </h1>
+            <li class="subnav">Team Project
+            </li>
+            <li class="sub2nav"><a href="./Millionnaire.html" class="sub2navlink">Millionaire Assistant</a>
+            </li>
+            <li class="sub2nav">Mark &#8545;-&#8550;
+                <div class="landani2" id="navblock22"> </div>
+            </li>
+            <li class=" sub2nav"><a href="./Ouah Ouah Friends.html" class="sub2navlink">Ouah Ouah Friends</a>
+            </li>
+            <li class=" sub2nav"><a href="./Petrol Pal.html" class="sub2navlink">Petrol Pal</a>
+            </li>
+            <li class="sub2nav"><a href="./TouchMeNot.html" class="sub2navlink">Touch Me Not</a>
+            </li>
+            <li class="sub2nav"><a href="./iMarket.html" class="sub2navlink">iMarket</a>
+            </li>
+            <li class="subnav"><a href="./index.html#headtitle3" class="subnavlink">My Own Work</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="page">
+        <h3 class="headtitle">Mark &#8545;-&#8550;</h3>
+        <section class="headintroduction">
+            Mark &#8545;-&#8550; is an interactive clothing prototype, a project that explores the possibilities of
+            self-expression beyond fast fashion. We defined Mark &#8545;-&#8550; by exploring the intersection of three
+            areas:
+            self-expression, fashion, and wearable technology. <br>
+            Mark &#8545;-&#8550; uses dynamic light to allow people to enjoy self-expression, making interaction more
+            fun and promoting a new level of individualism in fashion, reflecting the results of our design thinking
+            about the intersection of self-expression, fashion and wearable technology. <br>
+            The essential interaction of Mark &#8545;-&#8550; has three parts, changing appearance, RFID token,
+            and interaction between users.
+        </section>
+        <section class="projectinfo">
+            <span class="bold">My role:</span> UX Designer, Developer, Graphic Designer<br>
+            <span class="bold">Tool used:</span> Miro, Slack, Adruino IDE, Adobe Photoshop, Adobe Illustrator
+            <br>
+            <span class="bold">What I did:</span> User Experience Design, RFID system develop, Graphic design for
+            supporting material<br>
+            <span class="bold">Duration:</span> 21 March - 3 June 2022 as part of Course <span class="italic">Physical
+                Computing & Interaction Design Studio</span> at UQ
+            <br>*Due to the COVID-19 lockdown, the project was completed in a Hybrid mode.
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">The background</h4>
+            Our team, Flash Studio, was assigned the theme <span class="italic">Expressable</span>, a subtheme
+            under <span class="italic">The Future Everyday: novel interactions for near-future technologies</span>
+            and the course
+            defined the subtheme as:
+            <ul class="M2icon">
+                <li>Merge of Neo-Fashion and Expressions of Self</li>
+                <li>Worn items for self-expression</li>
+                <li>Changeable/adaptable fashion</li>
+                <li>Enhances / augmented worn garments</li>
+                <li>NOT fit-bits, smart-watches, functional things</li>
+            </ul>
+            The definition of the theme led us to think about the field of self-expression, fashion and wearable
+            technology.
+            Our understanding of the theme is to integrate technology beyond the "wearable tech" concept
+            and put it at the service of fashion expression. Using "fashion" as a novel means of expressing our
+            individuality. <br>
+            <div class="paraspace">
+                The literature review reveals that many works explored fashion design in the context of interpersonal
+                and
+                intrapersonal expression. Civilisation has advanced from treating clothing as merely functional piece of
+                defence against the elements, to intricate items that also provide humans identification, modesty,
+                status
+                and adornment. With this development, fashion became the first <span class="underline">“Social
+                    Interface”
+                </span>- a means to reflect the
+                self.</div> Additionally, clothing also affects the wearer's moods and attitudes. The works revealed
+            that clothing
+            serves as an important form of communication, influencing others and the self.
+            As fashion is considered a “social interface”, integrating technology could open up new modes of interaction
+            with such interface. In fact, there have been a lot of attempts in this field.
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Ideation</h4>
+            After completing the background research, we conducted several brainstorming sessions to ideate and refine
+            the concept. We first discussed which <span class="underline">interaction medium</span> to perform the
+            interaction while technology is a
+            means of expression. Temperature, sound and touch etc., were senses we thought of as ways to interact. The
+            light was our final thought, as it is a universal medium that is striking, light as a communication medium
+            can impact the space where the user is located, and the users can passively
+            express their personalities.
+            <img src="./Images4/M2brainstorm1.png" alt="Brainstroming note" class="imgofp img1">
+            <img src="./Images4/M2brainstorm2.png" alt="Brainstroming note" class="imgofp img2">
+            Based on the social properties of clothing,
+            We hoped to evolve beyond the passive interaction of clothing into an active interconnection between the
+            wearer, observer and garment. Therefore, we considered interpersonal interactions.Therefore, we considered
+            interpersonal interactions. <div class="paraspace">In a sketching session, we thought of distance sensors
+                or other
+                short-distance connection techniques that would trigger pattern or colour changes through conditions
+                such as
+                movement or touch when two wearers meet. To help build stronger social connections between users.</div>
+            Inspired by existing products, technology enables direct user inputs to affect clothing cryptically and
+            personally, reflecting the garment's monetary value.
+            <img src="./Images4/M2sketch1.png" alt="idea sketch" class="imgofp img2">
+            <img src="./Images4/M2sketch2.png" alt="idea sketch" class="imgofp img2">
+            Relate the premium value of clothing and the importance of uniqueness in
+            self-expression, it connect us to a bigger picture.The booming NFT industry and the related trading
+            market allowed new insights into enforcing uniqueness of digital things. Since Mark &#8545;-&#8550; is
+            a non-static interactive garment, treating individual patterns like NFTs can introduce peer-to-peer
+            clothing purchases - a new
+            form of social experience. It was an exciting idea.
+            <img src="./Images4/M2refinement1.jpg" alt="idea renfining note" class="imgofp img2">
+            <img src="./Images4/M2refine2.png" alt="idea renfining note" class="imgofp img2">
+            <div class="paraspace">
+                After refining and perfecting the idea, we identified three main functions of the MarkII-VII:
+                <ul class="M2icon">
+                    <li>Changing of appearance</li>
+                    <li>Tradable token associated with one piece of unique design</li>
+                    <li>Interactions occur between jacket wearers</li>
+                </ul>
+                In communicating with the teaching team, the idea of NFT was so far ahead of its time and technically
+                tricky that it exceeded the course requirements and the technical assistance the teaching team could
+                provide, so we kept the NFT part in our concept. Prototyping uses the idea of physical tokens.
+            </div>
+            In addition to being technically easier to implement, the concept of physical tokens is also more relevant
+            to the current physical transactions in the apparel market, providing a more familiar experience for
+            consumers and helping with the future promotion of the project.
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Target Users</h4>
+            While fashion is a universal form of self-expression regardless of demographic, socially-conscious young
+            adults born in 1995-2010 would be the ideal match for the Mark &#8545;-&#8550;.
+            Generation Z is an emerging demographic currently taking up 41% of the population, meaning technologies for
+            this demographic will certainly see wide-use and large-scale social effects. Market research has also shown
+            that this generation values self-expression more than ever and prefers sustainable and ethical products.
+            <div class="paraspace">
+                As the first generation to live in a world of ubiquitous technology, generation Z embraces a strong
+                sense of
+                self-identity, especially online. Consistency and customizability come to mind when observing their
+                preferences for platforms and technology (Bewicke, 2021).
+            </div>
+            The Mark &#8545;-&#8550; is highly suitable for generation Z because it aligns with their core values and
+            desires.
+            This technology would be highly appealing due to its customizability and uniqueness, that off-the-rack
+            clothes cannot provide. It also has other side appeals, such as sustainability and ethical production.
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Interaction Plan</h4>
+            <img src="./Images4/M2interpaln.png" alt="Interaction Plan" class="imgofp img2">
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Storyboard (Original version-NFT) </h4>
+            <img src="./Images4/M2storyboardorigin.png" alt="Storyboard (Original version-NFT)" class="imgofp img2">
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Storyboard (Modified version-Physical Token) </h4>
+            <img src="./Images4/M2storyboardphysical.png" alt="Storyboard (Modified version-Physical Token)"
+                class="imgofp img2">
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Implementation</h4>
+            Following our functional design, Mark &#8545;-&#8550; can be broken down into its primary components:
+            <ul class="M2icon">
+                <li><span class="bold">Light Source:</span> We had chosen NeoPixels for our light source as the most
+                    practical and available
+                    resource. We experimented with different light diffusion behaviours and colour algorithms to create
+                    pleasing and meaningful combinations. </li>
+                <li><span class="bold">Physical Token:</span> The physical token had to be a component that could
+                    generate and store a unique
+                    colour combination. Based on workshop resources and teaching team advice, we removed the token
+                    trading system and opted for a physical RFID token scheme. Each <span class="italic">'seed'</span>
+                    is unique, which coincides
+                    with our concept of non-fungible tokens and is, therefore, well suited for our technology
+                    application.</li>
+                <li><span class="bold">Proximity Sensing:</span> Interpersonal interaction was a barrier. Bluetooth and
+                    ESP were plausible
+                    solutions, but the difficulty was how sensors could detect other Mark &#8545;-&#8550;s without
+                    interference.
+                    In many conversations with the teaching team, we found that wireless communication was greatly
+                    beyond our prototype scope. Additionally, with universal proximity sensors, the boundaries of
+                    interaction will no longer be limited to Mark &#8545;-&#8550; users. It can be the interaction with
+                    the
+                    surrounding. The sensor solution helps open up more opportunities for interaction. </li>
+            </ul>
+            <img src="./Images4/M2techspikes.jpeg" alt="Tech Spike comparison sheet" class="imgofp img1">
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">User Test</h4>
+            The main purpose of the user testing was to justify the types of colour palettes used in the jacket was
+            reasonable and capable of mobilising the user's emotional changes. We expect to be able to determine if the
+            physical experience met our expectations and vision. Even with great resources on colour psychology, we
+            believe user testing is worthwhile.
+            <div class="paraspace">
+                We set up a dark room, illuminated the room with a single colour (or series of colours in our colour
+                palettes), and invited testers to express the thoughts and emotions they experienced. We used these
+                results
+                to select well-liked colour combinations that expressed interesting emotions.
+            </div>
+            <img src="./Images4/M2usertest.png" alt="Colour palettes using in the user test" class="imgofp img1">
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Graphic Design & Branding</h4>
+            I also worked as the graphic designer in the team, completed supporting material (post and brochure) for the
+            project and built the project's visual identity.
+            <br> *All third-party art resources used in the project have been licensed.
+            <img src="./Images4/M2poster1.png" alt="Poster" class="imgofp img1">
+            <div class="inlinecenter">
+                <img src="./Images4/M2flyer1.png" alt="Flyer Cover" class="imgofp img1">
+                <img src="./Images4/M2flyer2.png" alt="Flyer Inner" class="imgofp img1">
+            </div>
+        </section>
+        <section class="introduction lastsentence">
+            <h4 class="subtitleofp">High-fidelity Prototype</h4>
+            <div class="inlinecenter">
+                <video src="./Images4/M2prototypevideo1.mp4" controls autoplay class="imgofp video1">Colour changing
+                    demo
+                    video</video>
+                <video src="./Images4/M2prototypevideo2.mp4" controls muted class="imgofp video1">Reed sensor
+                    demo</video>
+            </div>
+            <div class="inlinecenter">
+                <img src="./Images4/M2exhibition (2).jpg" alt="productpicture" id="pimage1" class="imgofp img4">
+                <img src="./Images4/M2exhibition (4).jpg" alt="exhibitpicture" id="pimage2" class="imgofp img4">
+                <img src="./Images4/M2exhibition (3).jpg" alt="productpicture2" id="pimage3" class="imgofp img4">
+            </div>
+
+            <a href="https://ixd-exhibit.uqcloud.net/flashstudios/" target="_blank" class="linkbutton">View project
+                website <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <a href="" target="_blank" class="linkbutton">View my course portfolio website<img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            The above is the design and development process of the Mark &#8545;-&#8550;, welcome to click the links to
+            explore more about Mark &#8545;-&#8550;, or please feel free to browse my other works :)
+        </section>
+        <section class="introduction firstsentence lastsentence">
+            <h4 class="subtitleofp">Reference</h4>
+            Bewicke, H. (2021). Gen Z Consumer Behavior: What You Need to Know | Talon.One. Talon.one. Retrieved 23
+            March 2022, from
+            <a href="https://www.talon.one/blog/gen-z-consumer-behavior-what-you-need-to-know#:~:text=In%20general%2C%20Gen%20Z'ers,around%20for%20the%20best%20deal"
+                target="_blank">gen-z-consumer-behavior-what-you-need-to-know</a>
+            .
+            <div class="paraspace">
+                Images of <span class="italic">UQ IxD Exhibit @ Andrew Liveris 2022</span> from <a
+                    href="http://eventphotography.com/"> Eventphotography</a>
+            </div>
+        </section>
+    </main>
+    <script src="./Javascript/script.js"></script>
+</body>
+
+</html>

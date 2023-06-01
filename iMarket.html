@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByWanqi | Team Project | iMarket</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <nav class="mobilesubsidebar">
+        <h1>
+            <a href="./index.html#headtitle2" title="Back to: Homepage | Team Project" class="logo">Wanqi's
+                Portfolio</a>
+            <a href="JavaScript:void(0)" onclick="openDialog()" id="menuicon"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACH0lEQVR4nO2Zy07CQBSGD5dgBCKPob6AcektPgsmLBQXLmm5ljsJt4RLICxoXChL4hMYjUlxI3Xhk7AYcwgQAwU6BTpg5k/OrjP9/plzpp0ZAC4urv+twNfnqaj2/IKqPJgZotrz47sNg0s/Hx5ft/NydHU+cLicBABMDYfLSQ4vzgbeJ/kNWagNIPy+58B0cJgKZPB1O10qeJw6HHnW8DCK4+vLQeBbOdFtQOj37lmkDcyJPbeLYE3oNiD2FYE1NEzFiIkbIHwGgKfQcvEihh1ahSwWi2EoC0XbjRiIRCKkUqkQq9VqCD6fz5NkMsnGAMKPVa1WqUwgfKFQmLTXY2KtBqLRKJlWrVbTZQLhi8XiTPtUKmWOAQTI5XJES/V6faGJefCocrm8sCbWnkKxWIzQmEC4Uqmk2SabzS4t6I0UsVYqodrtNrHZbJPn0FCj0dB8NpPJsClirWL+K1mWid1uH8I3m03NZ9Lp9Hb8jSYSCU3AVqs1DC1hG9im3+lwOEz0atmKAywMYIRCoaXwej9cwMIARjAYnAtPmzbAwsDwZaI4Ax+Pxw33Byy2lIIgTOAlSVqpL2C1J0YTGOvoS+Sbelh9FPkM6BXfEwNPIbLSKrR9h7tuusNdPF7HywXW4DAKPOqnOl5HeZ/l92254LjpPL6CwSumLl4u4Pm8+WnjGo48whu6YhoLp05QlTux35NMDVW5pU4bLi4u2Dn9Aj7D0Xurw9e6AAAAAElFTkSuQmCC"></a>
+        </h1>
+        <ul id="menu1" class="menu">
+            <li class="subnav">Team Project
+            </li>
+            <li class="msub2nav"><a href="./Millionnaire.html" class="sub2navlink">Millionaire Assistant</a>
+            </li>
+            <li class=" msub2nav"><a href="./Mark II-VII.html" class="sub2navlink">Mark &#8545;-&#8550;</a>
+            </li>
+            <li class=" msub2nav"><a href="./Ouah Ouah Friends.html" class="sub2navlink">Ouah Ouah Friends</a>
+            </li>
+            <li class="msub2nav"><a href="./Petrol Pal.html" class="sub2navlink">Petrol Pal</a>
+            </li>
+            <li class="msub2nav"><a href="./TouchMeNot.html" class="sub2navlink">Touch Me Not</a>
+            </li>
+            <li class="msub2navse">iMarket
+                <div class="landani2" id="navblock24"></div>
+            </li>
+            <li class="subnav"><a href="./index.html#headtitle3" class="subnavlink">My Own Work</a>
+            </li>
+            <a href="javascript:void(0)" onclick="closeDialog()"><img class="closebuttom1"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEKklEQVR4nO1ZXU8TWRh+oS2KG9qiULhUwQX3M+p6oUXZgF7vYqVuvFD8WC+gSKvG72Y+1IU1hoQrgySNjZvNJgQkunZ2TYi90UUcmbZ027HZjb9h9Y5TZsxLMG6IQ5mZM4ULnuRNTjrN9HlOzsfzPgVYxSpWDgZyuTX8q6mveVnycxkpwMrSBSwcc7LUjs+YdLoMVhKYfxKeq6nnZ49EbmdbejpJQ+u3M1WbN86udVaoNrt9rnBcvXnTLD5r7ekiRyODGW5aDN7ITVUvH/FM4otAbEzYfeIoqfBUKwCg6ilnjUfxnuwgAWHsEZOb+qx4xNPp9cHx2G/bD7YRm8Ohi/THyuZwqDsO+UjoifAL81pyW0qey0w1t/Vee1vucuqe8UJV7nYpB25ef8O9Su6xhPxV8WnPNt93hDZxWFA7/D5yJTnZRZX8+Wfxa3XeXXmrycN81e/x5i9MxHlqM19M8vA/EeHkZKfpNb/tgPXLBrSW0yEfYeREk+HT5vte/u1ykYf58t268abvX9GlW0AoHvt1ndtN7bRhWVbt6+szdDoFxx/d00We/1v6HM95muTfw4iIb35oJ4ycalyygIBwX6BxSS0kb1SEraxM7Y7d/33J3gbtgVXkETzP636X9+QxsiTvxKZfhtCnWEW+v7/f0PsqPNVKODkRLCgAXaVV5AcGBky9tyM6mC7o59ESW0F+aGhILSkpMSWgNRggi/YT2HA0tOwltMlHIhG1tLTU9J5q3Ncyw2eTX2oLkCU/Nh40yUejUSrkAUD11NfNMtnkQU0BXDZx2ohV1iI/PDys2u12KuQBQMWLlZUlbafKZZOX9Z7/WuRHRkaokof5+4DNJC5RE2Cz2dTR0VFqZz2YF6B/CTkcDk0RRmwDmFpCstRuZBMXS4Snvm6WyyZ8mgIYOfUVRh9GXl4MEVv3t85gGmLZRWa1iH2h7sUvMgSGTmZ+xEoRHdE704uSn9sH02LQWVOjrDQRrtpahU2/6C4oAC2r90SHaTtNW0TTj8cJI4tVsBR0CWMxGg2NlgiGYXSf/4E/xh6AnpYSEwGzAj4mQi95AFB3HvYTJpP4FPTgTPzxvXWVlQpNEUbIl7tdSmhcuAt6gUFr28/XqcUqRh2p71bvf0xuwglGgEHrdj+dpWSkdh72Ey7zcheYQTj5V2dDS3PRo8Ute735cGryFNAABq2YVRaNfHNT/uKzOAM0gUErrZOp0LIJ05r5hcCgFbNKmpEjzNcn6ysV3LCm13xBEa8l95knQhTjPrxgzBK3rymbm/Vz8T8jhkJcw0LkVCPGfZiYOWv1eyf0Nk2njpNu4cFD3ZcUXSFiFTst9mDohLkNRh/YeGBnh3YEC8eeLXV5fIaWGF0lGrOfMs83wErCoCg6sCnC6ANbv/d/dOMYP8NMB7+z3DxXsQr4gHcjca7uWqkHggAAAABJRU5ErkJggg=="></a>
+        </ul>
+    </nav>
+    <nav class="sidebar subpsidebar">
+        <ul>
+            <h1>
+                <a href="./index.html#headtitle2" title="Back to: Homepage | Team Project" class="logo">Wanqi's
+                    Portfolio</a>
+            </h1>
+            <li class="subnav">Team Project
+            </li>
+            <li class="sub2nav"><a href="./Millionnaire.html" class="sub2navlink">Millionaire Assistant</a>
+            </li>
+            <li class=" sub2nav"><a href="./Mark II-VII.html" class="sub2navlink">Mark &#8545;-&#8550;</a>
+            </li>
+            <li class=" sub2nav"><a href="./Ouah Ouah Friends.html" class="sub2navlink">Ouah Ouah Friends</a>
+            </li>
+            <li class="sub2nav"><a href="./Petrol Pal.html" class="sub2navlink">Petrol Pal</a>
+            </li>
+            <li class="sub2nav"><a href="./TouchMeNot.html" class="sub2navlink">Touch Me Not</a>
+            </li>
+            <li class="sub2nav">iMarket
+                <div class="landani2" id="navblock24"></div>
+            </li>
+            <li class="subnav"><a href="./index.html#headtitle3" class="subnavlink">My Own Work</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="page">
+        <h3 class="headtitle">iMarket</h3>
+        <section class="headintroduction">
+            iMarket is a design system that improves the traditional market's navigation and functional layouts by
+            introducing a new shopping style that divides the traditional market into different areas based on the types
+            of vendors. <br>Traditional markets are dense shopping areas for agricultural and marine products, meat,
+            clothes, and retail goods. They have layout issues in which different types of vendors like meat, vegetable
+            and marine products are mixed. Accordingly, customers might lose their way and cannot quickly find the
+            vendors they want. The system helps users plan shopping routes and reduce time on finding vendors.
+        </section>
+        <section class="projectinfo">
+            <span class="bold">My role:</span>UX Researcher, UX Designer, Video Editor<br>
+            <span class="bold">Tool used:</span> Miro, Excel, Premiere Pro
+            <br>
+            <span class="bold">What I did:</span> Design test & evaluation, Demo video
+            editor, User Experience research<br>
+            <span class="bold">Duration:</span> 1 April - 14 June 2022 as part of Course <span class="italic">Design
+                Thinking</span> at UQ
+            <br>*Due to the COVID-19 lockdown, the project was completed in a remote mode.
+            <a href="./Images2/7110 iMarket Report.pdf" target="_blank" class="linkbutton">View the Project
+                Report
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <a href="https://youtu.be/_YCCYmaz3A8" target="_blank" class="linkbutton">View the demo video
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Background</h4>
+            The theme of this semester's course is <span class="underline">"Encourage collaboration between
+                people"</span>. We were asked to design
+            site-specific technologies that promote collective experiences for certain groups of people at a site.
+            We formed a team of four because we had chosen similar locations in our previous independent research.
+            <div class="paraspace">
+                During our first team studio meeting, we shared the results of our previous independent study and
+                discussed
+                the target site for our upcoming design. Combining the dataset from team members about observation and
+                interviews in the traditional market in their previous research. After discussion, refinement, and
+                extraction of the data, we summarised the following design opportunities:
+                <ul class="marketicon">
+                    <li style="font-weight: normal; font-family:Helve;">Traditional market vendors are scattered, and
+                        navigation systems are lacking.</li>
+                    <li style="font-weight: normal; font-family:Helve;">Problems with food hygiene and safety exist in
+                        traditional markets.</li>
+                    <li style="font-weight: normal; font-family:Helve;">There is a lot of plastic pollution in
+                        traditional markets.</li>
+                </ul>
+            </div>
+            We
+            brainstormed
+            many initial ideas for the design opportunities and discussed them with other groups.
+            <div class="inlinecenter">
+                <img src="./Images2/IM-oppodiscuss.png" alt="design oppoturnity duscussion note"
+                    class="imgofp img2 img3">
+                <img src="./Images2/IM-iniideation.png" alt="initial ideation" class="imgofp img2 img3">
+                <img src="./Images2/IM-interteamcritique.png" alt="Cross-groups critique" class="imgofp img2 img3">
+            </div>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Research</h4>
+            <ul class="marketicon">
+                <div class="bold">Research Method</div>
+                <li style="font-weight: normal; font-family:Helve;">Observation</li>
+                <li style="font-weight: normal; font-family:Helve;">Interview<span class="italic">(3
+                        participants were covered)</span> </li>
+                <li style="font-weight: normal; font-family:Helve;">Survey<span class="italic">(79
+                        participants were covered)</li>
+            </ul>
+            <div class="paraspace">
+                Based on the analysis of the collected data, we found that the scattered layout of vendors and poor
+                functional design cause the most significant impact on the customer experience in traditional markets.
+                The proportion of affected users is also the largest.
+            </div>
+            Therefore, we decided to focus on the design opportunity of navigation and functional layout in traditional
+            markets. According to the research results, this issue usually affects new customers in the market, so our
+            <span class="underline">target users</span> will be focused on new customers who come to the market for the
+            first time or those who have no
+            experience purchasing from a traditional market.
+            <a href="https://dochub.com/yqiqlq111/qd0E4NeKgrn4J8oRJ9LYyj/7110-imarket-report-pdf?pg=31" target="_blank"
+                class="linkbutton">Check the Report Appendices for the research data
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Design-Timeline</h4>
+            We follow the design process of empathise-define-ideate-prototype-test to carry out our design work.
+            <br>*Indeed, the design process is not linear. We went through many iterations during the design process.
+            However, for clarity, I will present the decisive design process linearly.
+            <img src="./Images2/IM-timeline.png" alt="Design milestone" class="imgofp img2">
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Design-Empathise</h4>
+            Based on the data we collected during the research phase, we created an empathy map to visualise user needs
+            and reveal the critical problems that the users face.
+            <div class="paraspace">We divided the map into four quadrants, each
+                summarising a different aspect of the user's inner experience. Variables include what users see, hear,
+                do
+                and say and their psychological experiences. We added user gains and pain points at the bottom of the
+                empathy map.
+            </div>
+            The empathy map helps us develop a more comprehensive understanding, including their emotional
+            experiences, of our target users, thereby assisting us in better design ideation.
+            <img src="./Images2/IM-emphaisedmap.png" alt="Empathise map" class="imgofp img1">
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Design-Definition</h4>
+            In the definition phase, we identify the core issues of our target users and create problem statements. We
+            used the strategy and scope layers from the Elements of User Experience (Jesse James Garrett, 2002) as the
+            framework for our problem statements and summarised our design concepts accordingly.
+            <a href="https://dochub.com/yqiqlq111/qd0E4NeKgrn4J8oRJ9LYyj/7110-imarket-report-pdf?pg=12" target="_blank"
+                class="linkbutton">Check the Definition framework
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            After discussion, contemplation and design in the framework, we have summarised the definition of our
+            product concept and system requirements:
+            <div class="paraspace">
+                "The system is a navigation-like system
+                applied in traditional
+                markets, aimed at providing an efficient, convenient, time-saving, and user-friendly solution for users
+                who
+                are unfamiliar with traditional markets to find their way. The system will attempt to improve the
+                current
+                environment and layout of traditional markets, promote user collaboration in a more friendly
+                environment,
+                and reduce the negative emotion of target users, thus enhancing the user experience."
+            </div>
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Design-Ideation</h4>
+            Our team conducted brainstorming during the ideation phase and created thumbnail sketches. We discussed our
+            ideas in team meetings and tried to find feasible concepts that fit our design goals.
+            <img src="./Images2/IM-ideation2.jpg" alt="ideation" class="imgofp img2">
+            <div class="paraspace">
+                We organised and classified the ideas as follows:
+            </div>
+            <ul class="marketicon">
+                <li>Design a new layout according to the product category the vendors sell, and distribute the same type
+                    of vendors together.</li>
+                <li>Design representative colours for various categories of products and apply them to the navigation
+                    system.</li>
+                <li>Provide the users with an overall map and route of the traditional market.</li>
+                <li>Provide artificial assistance to target users ( users unfamiliar with traditional market
+                    environments), which may be provided by traditional market staff (such as setting up inquiry
+                    offices, AI robots, etc.) or other field personnel.</li>
+            </ul>
+            <div class="paraspace">
+                Based on the careful consideration of course requirements, user needs, and feasibility, we have selected
+                our
+                solution as follows: <br>
+                "Providing a shopping basket for all users with different colours representing their user type when the
+                market layout is well-positioned. A white basket represents the target user unfamiliar with the market
+                layout and may need help with navigation. A black basket represents the fringe user who is a regular
+                customer in the traditional market and can assist the target user. These baskets will indicate the type
+                of
+                products the user needs to buy. When the target user needs help, they can quickly identify regular
+                customers
+                who can assist them by the colour of the basket and determine whether the regular customer has the same
+                destination based on the indications. If their destination is the same, the target user can follow or
+                ask
+                the regular customer for help."
+            </div>
+            After finalising the initial design concept, we communicate with the teaching team and other groups to
+            deepen and refine our design solution.
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Co-design Workshops</h4>
+            We conducted a co-design workshop to demonstrate our ideas to others to obtain their opinions and unique
+            perspectives on our design. We designed 4 activities to help us decide on valuable areas and suitable
+            layouts in traditional markets.
+            <a href="https://dochub.com/yqiqlq111/qd0E4NeKgrn4J8oRJ9LYyj/7110-imarket-report-pdf?pg=17" target="_blank"
+                class="linkbutton">Check the Workshops detail
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Prototype</h4>
+            To validate our design, we created a low-fidelity prototype for further user testing. Additionally, we also
+            explored other methods, such as cardboard and 3D models, to allow us to verify and improve our ideas through
+            rapid assessment and group reflection.
+            <div class="inlinecenter">
+                <img src="./Images2/IM-prototype1.png" alt="basket cardboard model" class="imgofp img5">
+                <img src="./Images2/IM-prototype4.png" alt="3D layout model" class="imgofp img7">
+            </div>
+            <div class="inlinecenter">
+                <img src="./Images2/IM-prototype2.png" alt="basket cardboard model" class="imgofp img7">
+                <img src="./Images2/IM-prototype3.png" alt="3D layout model" class="imgofp img5">
+            </div>
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">User Testing-Protocol</h4>
+            In the test phase, we invited ten participants of different ages to experience how it feels in various roles
+            in the system by playing the roles of regular and new customers. Seven of them are our target users, people
+            who don't go to the traditional market very much (no more than once a month), aged between 25 and 38. The
+            other three are our fringe users, people who often go to the traditional market (more than three times a
+            week), aged between 38 and 60. The test site was selected in a medium-sized market of about 400 square
+            metres in Jiangmen City, Guangdong Province, China.
+            <div class="paraspace">
+                Layout optimisation requires a change in the layout of ample space, which is implemented in our current
+                situation, so in our user test, we will focus on the test of the user experience of the iMarket system.
+                In the test, we will artificially divide a specific market area into certain colour areas and inform the
+                participants who are regular customers.
+            </div>
+            In each round of tests, one participant acts as a new customer and one as a regular customer. We will have a
+            team member playing the role of a regular customer to ensure that each participant has not played a regular
+            customer before playing a new customer, that is, to ensure they know nothing about regional distribution.
+            The new customers will be asked to use the operation screen to select four areas required by the task and
+            will be given four colour tags of different colours in their bags. And each regular customer's bag will have
+            three colour tags of the same colour as the new customer's colour tags. The new customer must find two
+            regular customers to complete the navigation task. During this period, regular customers walk around the
+            traditional market and buy goods to simulate everyday market shopping.
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">User Testing-Metric</h4>
+            We use qualitative and quantitative evaluation methods in the test to evaluate our prototype.
+            <div class="paraspace">
+                For quantitative evaluation, we will use a scale and measurement method similar to SUS (System Usability
+                Scale) to analyse and evaluate the degree to which the system promotes user collaboration. We will also
+                roughly cover usability evaluation. We call this the CPS (Collaboration Promotion Scale).
+            </div>
+            <div class="paraspace">
+                Our Collaboration Promotion Scale consists of eight questions, the responses to CPS are done on a scale
+                of 1
+                to 5, where 1 means strongly disagree and 5 means strongly agree. <br>Five of scale are designed to
+                evaluate
+                the
+                promotion of collaboration between users, two to evaluate usability, and one to conduct an open
+                assessment
+                to inspire later interviews. Of the eight questions, there are five positive questions and three
+                negative
+                ones. When we deal with the raw data, we will convert the data according to the way SUS handles it
+                (Sauro,
+                2011).
+            </div>
+            <ul class="marketicon">
+                <div class="bold">CPS scale</div>
+                <li>I think I'd like to communicate with regular customers.</li>
+                <li>I have no impulse to communicate with regular customers.</li>
+                <li>I think it's easy to talk to regular customers.</li>
+                <li>I think I need more encouragement to talk to regular customers.</li>
+                <li>I think there is a friendly atmosphere among customers.</li>
+                <li>I would love to use this system frequently.</li>
+                <li>I think this system is very helpful to my shopping experience.</li>
+                <li>I encountered difficulties in using the system.</li>
+            </ul>
+            <div class="paraspace">
+                For qualitative evaluation, we will observe and record the test process of the participants, conduct
+                interviews for them at the end, record their feedback and analyse it.
+            </div>
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">User Testing-Quantitative Evaluation</h4>
+            For CPS, we are using a similar method of SUS to convert the data to make sure the final data is neutral,
+            and the higher the score is, the better the performance is. In the end, we have boxplots for each question
+            to interpret.
+            <img src="./Images2/IM-data1.png" alt="data processing-boxplots" class="imgofp img2">
+            After analysing the data, the participants gave a relatively high evaluation of the usability of our system,
+            indicating that our system had no obvious usability issues.
+            <div class="paraspace">
+                However, although the participants gained some collective experience in the evaluation of collaboration,
+                it
+                was still insufficient and did not fully satisfy them.
+            </div>
+            The results of communicating with regular customers reflected individual differences in the social
+            experience of users with different personalities in our system, which significantly impacted their system
+            experience.
+            <div class="paraspace">
+                Based on the scale, we can conclude that iMarket is a capable and usable user collaboration system.
+            </div>
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">User Testing-Qualitative Evaluation</h4>
+            We recorded the users' behaviours during the testing process. And we further confirmed the data obtained
+            from observation through interviews and collected data on users' experiences during the interviews.
+            <a href="https://dochub.com/yqiqlq111/qd0E4NeKgrn4J8oRJ9LYyj/7110-imarket-report-pdf?pg=37" target="_blank"
+                class="linkbutton">Check the observation & interview data
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <a href="https://dochub.com/yqiqlq111/qd0E4NeKgrn4J8oRJ9LYyj/7110-imarket-report-pdf?pg=23" target="_blank"
+                class="linkbutton">Check the observation & interview evaluation
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            According to the evaluation of observations and interview data, the iMarket system promotes collaboration
+            among traditional market customers, which was almost non-existent before the emergence of iMarket (novel).
+            Additionally, iMarket does help to address the problem of user experience decline caused by poorly designed
+            market layouts and navigation systems.
+            <a href="https://dochub.com/yqiqlq111/qd0E4NeKgrn4J8oRJ9LYyj/7110-imarket-report-pdf?pg=28" target="_blank"
+                class="linkbutton">Check the Method and process reflection
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <a href="https://dochub.com/yqiqlq111/qd0E4NeKgrn4J8oRJ9LYyj/7110-imarket-report-pdf?pg=29" target="_blank"
+                class="linkbutton">Check the Future Direction
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <a href="./Images2/7110 iMarket Report.pdf" target="_blank" class="linkbutton">View the Project
+                Report
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <a href="https://youtu.be/_YCCYmaz3A8" target="_blank" class="linkbutton">View the demo video
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+
+            <div class="paraspace">
+                The above is the design process of the iMarket, welcome to click the links to
+                view the demo video or check the project report. Our team also reflected on the design process and
+                discussed the future direction of the project. Please click the link to view.
+                Or please feel free to browse my other works :)
+            </div>
+        </section>
+        <section class="introduction firstsentence lastsentence">
+            <h4 class="subtitleofp">Reference</h4>
+            Garrett, J. (2002). Elements of User Experience, The. Pearson Education Inc.
+            <div class="paraspace">
+                J. Sauro(2011). “Measuring usability with the system usability scale (SUS),” MeasuringU, 03-Feb-2011.
+                [Online]. Available:<a href="https://measuringu.com/sus/"
+                    target="_blank">https://measuringu.com/sus/</a>. [Accessed: 09-Jun-2022].
+            </div>
+        </section>
+    </main>
+    <script src="./Javascript/script.js"></script>
+</body>
+
+</html>

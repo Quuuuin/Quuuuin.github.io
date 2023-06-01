@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByWanqi | Team Project | Ouah Ouah Friends</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <nav class="mobilesubsidebar">
+        <h1>
+            <a href="./index.html#headtitle2" title="Back to: Homepage | Team Project" class="logo">Wanqi's
+                Portfolio</a>
+            <a href="JavaScript:void(0)" onclick="openDialog()" id="menuicon"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACH0lEQVR4nO2Zy07CQBSGD5dgBCKPob6AcektPgsmLBQXLmm5ljsJt4RLICxoXChL4hMYjUlxI3Xhk7AYcwgQAwU6BTpg5k/OrjP9/plzpp0ZAC4urv+twNfnqaj2/IKqPJgZotrz47sNg0s/Hx5ft/NydHU+cLicBABMDYfLSQ4vzgbeJ/kNWagNIPy+58B0cJgKZPB1O10qeJw6HHnW8DCK4+vLQeBbOdFtQOj37lmkDcyJPbeLYE3oNiD2FYE1NEzFiIkbIHwGgKfQcvEihh1ahSwWi2EoC0XbjRiIRCKkUqkQq9VqCD6fz5NkMsnGAMKPVa1WqUwgfKFQmLTXY2KtBqLRKJlWrVbTZQLhi8XiTPtUKmWOAQTI5XJES/V6faGJefCocrm8sCbWnkKxWIzQmEC4Uqmk2SabzS4t6I0UsVYqodrtNrHZbJPn0FCj0dB8NpPJsClirWL+K1mWid1uH8I3m03NZ9Lp9Hb8jSYSCU3AVqs1DC1hG9im3+lwOEz0atmKAywMYIRCoaXwej9cwMIARjAYnAtPmzbAwsDwZaI4Ax+Pxw33Byy2lIIgTOAlSVqpL2C1J0YTGOvoS+Sbelh9FPkM6BXfEwNPIbLSKrR9h7tuusNdPF7HywXW4DAKPOqnOl5HeZ/l92254LjpPL6CwSumLl4u4Pm8+WnjGo48whu6YhoLp05QlTux35NMDVW5pU4bLi4u2Dn9Aj7D0Xurw9e6AAAAAElFTkSuQmCC"></a>
+        </h1>
+        <ul id="menu1" class="menu">
+            <li class="subnav">Team Project
+            </li>
+            <li class="msub2nav"><a href="./Millionnaire.html" class="sub2navlink">Millionaire Assistant</a>
+            </li>
+            <li class=" msub2nav"><a href="./Mark II-VII.html" class="sub2navlink">Mark &#8545;-&#8550;</a>
+            </li>
+            <li class="msub2navse">Ouah Ouah Friends
+                <div class="landani2" id="navblock21"> </div>
+            </li>
+            <li class=" msub2nav"><a href="./Petrol Pal.html" class="sub2navlink">Petrol Pal</a>
+            </li>
+            <li class="msub2nav"><a href="./TouchMeNot.html" class="sub2navlink">Touch Me Not</a>
+            <li class="msub2nav"><a href="./iMarket.html" class="sub2navlink">iMarket</a>
+            </li>
+            </li>
+            <li class="subnav"><a href="./index.html#headtitle3" class="subnavlink">My Own Work</a>
+            </li>
+            <a href="javascript:void(0)" onclick="closeDialog()"><img class="closebuttom1"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEKklEQVR4nO1ZXU8TWRh+oS2KG9qiULhUwQX3M+p6oUXZgF7vYqVuvFD8WC+gSKvG72Y+1IU1hoQrgySNjZvNJgQkunZ2TYi90UUcmbZ027HZjb9h9Y5TZsxLMG6IQ5mZM4ULnuRNTjrN9HlOzsfzPgVYxSpWDgZyuTX8q6mveVnycxkpwMrSBSwcc7LUjs+YdLoMVhKYfxKeq6nnZ49EbmdbejpJQ+u3M1WbN86udVaoNrt9rnBcvXnTLD5r7ekiRyODGW5aDN7ITVUvH/FM4otAbEzYfeIoqfBUKwCg6ilnjUfxnuwgAWHsEZOb+qx4xNPp9cHx2G/bD7YRm8Ohi/THyuZwqDsO+UjoifAL81pyW0qey0w1t/Vee1vucuqe8UJV7nYpB25ef8O9Su6xhPxV8WnPNt93hDZxWFA7/D5yJTnZRZX8+Wfxa3XeXXmrycN81e/x5i9MxHlqM19M8vA/EeHkZKfpNb/tgPXLBrSW0yEfYeREk+HT5vte/u1ykYf58t268abvX9GlW0AoHvt1ndtN7bRhWVbt6+szdDoFxx/d00We/1v6HM95muTfw4iIb35oJ4ycalyygIBwX6BxSS0kb1SEraxM7Y7d/33J3gbtgVXkETzP636X9+QxsiTvxKZfhtCnWEW+v7/f0PsqPNVKODkRLCgAXaVV5AcGBky9tyM6mC7o59ESW0F+aGhILSkpMSWgNRggi/YT2HA0tOwltMlHIhG1tLTU9J5q3Ncyw2eTX2oLkCU/Nh40yUejUSrkAUD11NfNMtnkQU0BXDZx2ohV1iI/PDys2u12KuQBQMWLlZUlbafKZZOX9Z7/WuRHRkaokof5+4DNJC5RE2Cz2dTR0VFqZz2YF6B/CTkcDk0RRmwDmFpCstRuZBMXS4Snvm6WyyZ8mgIYOfUVRh9GXl4MEVv3t85gGmLZRWa1iH2h7sUvMgSGTmZ+xEoRHdE704uSn9sH02LQWVOjrDQRrtpahU2/6C4oAC2r90SHaTtNW0TTj8cJI4tVsBR0CWMxGg2NlgiGYXSf/4E/xh6AnpYSEwGzAj4mQi95AFB3HvYTJpP4FPTgTPzxvXWVlQpNEUbIl7tdSmhcuAt6gUFr28/XqcUqRh2p71bvf0xuwglGgEHrdj+dpWSkdh72Ey7zcheYQTj5V2dDS3PRo8Ute735cGryFNAABq2YVRaNfHNT/uKzOAM0gUErrZOp0LIJ05r5hcCgFbNKmpEjzNcn6ysV3LCm13xBEa8l95knQhTjPrxgzBK3rymbm/Vz8T8jhkJcw0LkVCPGfZiYOWv1eyf0Nk2njpNu4cFD3ZcUXSFiFTst9mDohLkNRh/YeGBnh3YEC8eeLXV5fIaWGF0lGrOfMs83wErCoCg6sCnC6ANbv/d/dOMYP8NMB7+z3DxXsQr4gHcjca7uWqkHggAAAABJRU5ErkJggg=="></a>
+        </ul>
+    </nav>
+    <nav class="sidebar subpsidebar">
+        <ul>
+            <h1>
+                <a href="./index.html#headtitle2" title="Back to: Homepage | Team Project" class="logo">Wanqi's
+                    Portfolio</a>
+            </h1>
+            <li class="subnav">Team Project
+            </li>
+            <li class="sub2nav"><a href="./Millionnaire.html" class="sub2navlink">Millionaire Assistant</a>
+            </li>
+            <li class=" sub2nav"><a href="./Mark II-VII.html" class="sub2navlink">Mark &#8545;-&#8550;</a>
+            </li>
+            <li class="sub2nav">Ouah Ouah Friends
+                <div class="landani2" id="navblock21"> </div>
+            </li>
+            <li class=" sub2nav"><a href="./Petrol Pal.html" class="sub2navlink">Petrol Pal</a>
+            </li>
+            <li class="sub2nav"><a href="./TouchMeNot.html" class="sub2navlink">Touch Me Not</a>
+            </li>
+            <li class="sub2nav"><a href="./iMarket.html" class="sub2navlink">iMarket</a>
+            </li>
+            <li class="subnav"><a href="./index.html#headtitle3" class="subnavlink">My Own Work</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="page">
+        <h3 class="headtitle">Ouah Ouah Friends</h3>
+        <section class="headintroduction">
+            Ouah Ouah Friends is a UX research project that applies a set of HCI(human-computer interaction) theories,
+            methods and techniques to investigate the pet community. It aims to improve community cohesion and activity,
+            and help pet owners be connected to each other to have long-term support for their pets. By analysing the
+            research data, we located the positive and negative sides of being in the pet community. We developed an
+            initial design concept to improve the user experience of the pet community.
+        </section>
+        <section class="projectinfo">
+            <span class="bold">My role:</span> UX Researcher<br>
+            <span class="bold">Tool used:</span> Miro, Slack, Zotero
+            <br>
+            <span class="bold">What I did:</span> User Experience research<br>
+            <span class="bold">Duration:</span> 28 July - 11 November 2022 as part of Course <span
+                class="italic">Advanced Human-Computer Interaction</span> at UQ
+            <a href="./Images/Ouah Ouah Friends-Report.pdf" target="_blank" class="linkbutton">Check the project report
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">The background</h4>
+            The course requires each team to conduct an inquiry into studying a specific real-world setting, where they
+            will apply a set of HCI theories, methods and techniques to understand people and their specific settings.
+            The course provides three project domains based on real-world settings
+            <div class="paraspace">
+                In speed-dating, four of us interested in the community domain came together because of our love for
+                pets. The target community of our team's research fell on the pet community. We had already had some
+                contact with the pet community and pet owners, plus our initial background research.
+            </div>
+            Our initial
+            research question for the pet community was to enhance the cohesion and activity of the pet community.
+            After further research, the question was specified: <span class="underline">How can pet owners be connected
+                to each other to
+                have long-term support for their pets?</span>
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Literature Review</h4>
+            Through a review of more than twenty relevant papers, we reveal fundamental insights into our research
+            question from three topics:
+            <ul class="peticon">
+                <li>The Sense of Community</li>
+                <li>The Need for a Pet Community </li>
+                <li>Improving the Attraction to a Community</li>
+            </ul>
+            Literature reviews helped us to justify the need for more involved research, helped to specify the research
+            questions, indicated possible research directions and improved the overall credibility of future research
+            findings.
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Methodology</h4>
+            <ul class="peticon">
+                <li>Contextual Interview
+                    <ul class="peticon-nest">
+                        <li>Photo elicitation</li>
+                        <li>Mapping</li>
+                    </ul>
+                </li>
+                <li>Observation</li>
+                <li
+                    title="Ethnography is a specific kind of written observational science that researcher joins a community, immerses into the environment, learns about individuals' practices, takes careful notes (and collects insightful information). Digital Ethnography do exactly the same, but in online/digital environments.">
+                    Digital
+                    Ethnography</li>
+            </ul>
+            According to the say-make-do model, we involved five different research method. 6 participants responded to
+            our contextual interviews, and we observed more than 20 pet owners during the observation and digital
+            ethnography. We were using Miro to conduct the interview and process the data.
+            <div class="paraspace">
+                We gained insight into the existing pet owner community's pain points and a deeper understanding
+                of what pet owners need from the community by connecting with our target users and analysing the
+                results.
+            </div>
+            <a href="https://dochub.com/yqiqlq111/qA8ldYxVEkaQXDZR6MJrpP/deco6500-a3-report-pdf?pg=5" target="_blank"
+                class="linkbutton">Check the Report - Part 3. Methodology
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <img src="./Images/OOFmethods.jpg" alt="Method note" class="imgofp img2">
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Data Analyse</h4>
+            The data obtained through the survey method is qualitative. We used the Affinity diagram for the data
+            analysis. Steps for qualitative data analysis:
+            <ul class="peticon">
+                <li>Organize and Understand the data</li>
+                <li>Code the data to find themes</li>
+                <li>Present the data in a compelling manner</li>
+            </ul>
+            <div class="inlinecenter">
+                <img src="./Images/OOFdn2.png" alt="Organize and Understand the data" class="imgofp img6">
+                <img src="./Images/OOFdn1.png" alt="Code the data to find themes" class="imgofp img5">
+                <img src="./Images/OOFdn3.png" alt="Present the data in a compelling manner" class="imgofp img3">
+            </div>
+            <a href="https://dochub.com/yqiqlq111/qA8ldYxVEkaQXDZR6MJrpP/deco6500-a3-report-pdf?pg=17" target="_blank"
+                class="linkbutton">Check the Report Appendices for more data
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Result & Conclusion</h4>
+            In this project, we aim to help pet owners be connected to have long term support for their pets. <span
+                class="underline"> We
+                explore the pet owners' reasons for joining the communities and participating in the relevant
+                activities
+                through conducting diverse HCI methods. </span>
+            <div class="paraspace">
+                First, we conduct contextual interviews to explore the users'
+                pain points. Photo elicitation is one of the contextual interview methods. Since we find out the pet
+                owner is willing to share their pet story, we adopt this method to motivate them to provide insight into
+                the pet community.</div> We also use the mapping method. The mapping method makes the participants draw
+            their
+            connection as the map is down. We believe this method is suitable for researching the relationship
+            between the owners and the community. We also can understand the pet owners' attitudes toward each
+            community.<div class="paraspace"> Additionally, digital ethnography has also been adopted. Through this
+                method, we can
+                obtain
+                data about the insights that the pet owner joins the communities.</div>
+            After evaluating our data, we conclude the reasons and the pain points of the pet
+            owners joining the
+            community:
+            <ul class="peticon">
+                <li>Motivation for joining the pet community
+                    <ul class="peticon-nest">
+                        <li>Entertainment</li>
+                        <li>Seeking Support</li>
+                        <li>Seeking Recommendations</li>
+                        <li>Social Network</li>
+                    </ul>
+                </li>
+                <li>Pain Points
+                    <ul class="peticon-nest">
+                        <li>Uncontrolled Environment</li>
+                        <li>Information Quality </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Others Section in the Project Report</h4>
+            We also present:
+            <ul class="peticon">
+                <li class="bold">Initial Design Concept </li>
+                <li class="bold">Critical Analysis of Findings</li>
+                <li class="bold">Implications for Future Design</li>
+            </ul>
+            in the project report. Click the links below to check more!
+            <a href="https://dochub.com/yqiqlq111/qA8ldYxVEkaQXDZR6MJrpP/deco6500-a3-report-pdf?pg=11" target="_blank"
+                class="linkbutton">Check the Initial Design Concept
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <a href="https://dochub.com/yqiqlq111/qA8ldYxVEkaQXDZR6MJrpP/deco6500-a3-report-pdf?pg=13" target="_blank"
+                class="linkbutton">Check the Discussion: Critical Analysis of Findings & Implications for Future Design
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <a href="./Images/Ouah Ouah Friends-Report.pdf" target="_blank" class="linkbutton">Check full report
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <div class="paraspace">
+                Based on the research outcome of Ouah Ouah Friends, I independently designed an application called<a
+                    href="./PetGO.html" class="intextlink onsitejump">PetGO<img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO2WsU7CUBSGv8luAhprLMpb+CAmogMLDwAOvqEuYFQ0wQFIiIObOgmTDJib/CQ3zS0p9NSJP7kJLSfn7zn33K+FnbZXBHSBPjDX6uteREk6BV6BZcZ6AerWpg1gKoMRcAHsAwnQBMaeuVnlZ56pa2s1EFPzzDsWppHXXmdaWRPb9OIK60bJ3jMq9ZUo9sfC+EHJXDX8p/FMyQ51HQPPwF0g9kqxPQvjLyU7kulQ164Tvtw2TCyH617JboE3/R7qIVaqaKCWwMDqOLVTkEib1jzTqY6eidzA/AZMj4EW8OGZNoqw91vtbct0GDC9BhZeFwbCqRl7Q5WeA596yJ4Gac+CvQfqQNaelsbeeM30lsbeOGNPXXvN2DsKsPcxY5Dcnpqx9zLwnxuWp9SRWViz9yRHbMuSvbOcxjUPDibs7ed4zZXC3q4SjlVVWtWy2Bvpg2xl3hQaE71PJ9uyN4/qnnlobczeTSvvaGLnRdi7E57+APHIojLsmNzxAAAAAElFTkSuQmCC"></a>
+                to address the problem space. Please click the link to view.
+            </div>
+            The above is the documentation of the research project: Ouah Ouah Friends, welcome to click the links to
+            explore more about Ouah Ouah Friends, or please feel free to browse my other works :)
+        </section>
+    </main>
+    <script src="./Javascript/script.js"></script>
+</body>
+
+</html>

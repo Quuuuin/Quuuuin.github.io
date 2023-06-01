@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByWanqi | Own Work | PetGO</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <nav class="mobilesubsidebar">
+        <h1>
+            <a href="./index.html#headtitle3" title="Back to: Homepage | My Own Work" class="logo">Wanqi's
+                Portfolio</a>
+            <a href="JavaScript:void(0)" onclick="openDialog()" id="menuicon"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACH0lEQVR4nO2Zy07CQBSGD5dgBCKPob6AcektPgsmLBQXLmm5ljsJt4RLICxoXChL4hMYjUlxI3Xhk7AYcwgQAwU6BTpg5k/OrjP9/plzpp0ZAC4urv+twNfnqaj2/IKqPJgZotrz47sNg0s/Hx5ft/NydHU+cLicBABMDYfLSQ4vzgbeJ/kNWagNIPy+58B0cJgKZPB1O10qeJw6HHnW8DCK4+vLQeBbOdFtQOj37lmkDcyJPbeLYE3oNiD2FYE1NEzFiIkbIHwGgKfQcvEihh1ahSwWi2EoC0XbjRiIRCKkUqkQq9VqCD6fz5NkMsnGAMKPVa1WqUwgfKFQmLTXY2KtBqLRKJlWrVbTZQLhi8XiTPtUKmWOAQTI5XJES/V6faGJefCocrm8sCbWnkKxWIzQmEC4Uqmk2SabzS4t6I0UsVYqodrtNrHZbJPn0FCj0dB8NpPJsClirWL+K1mWid1uH8I3m03NZ9Lp9Hb8jSYSCU3AVqs1DC1hG9im3+lwOEz0atmKAywMYIRCoaXwej9cwMIARjAYnAtPmzbAwsDwZaI4Ax+Pxw33Byy2lIIgTOAlSVqpL2C1J0YTGOvoS+Sbelh9FPkM6BXfEwNPIbLSKrR9h7tuusNdPF7HywXW4DAKPOqnOl5HeZ/l92254LjpPL6CwSumLl4u4Pm8+WnjGo48whu6YhoLp05QlTux35NMDVW5pU4bLi4u2Dn9Aj7D0Xurw9e6AAAAAElFTkSuQmCC"></a>
+        </h1>
+        <ul id="menu1" class="menu">
+            <li class="subnav"><a href="./index.html#headtitle2" class="subnavlink">Team Project</a>
+            </li>
+            <li class="subnav">My Own Work
+            </li>
+            <li class="msub2navse">Pet GO
+                <div class="landani2" id="navblock25"> </div>
+            </li>
+            <li class="msub2nav"><a href="./StretchAdventure.html" class="sub2navlink">Stretch Adventure</a>
+            </li>
+            <li class=" msub2nav"><a href="./ProjectX.html" class="sub2navlink">Project X</a>
+            </li>
+            <li class="msub2nav"><a href="./SaferATM.html" class="sub2navlink">Safer ATM</a>
+            </li>
+            <li class=" msub2nav"><a href="./CoursePortfolio.html" class="sub2navlink">Course Portfolio</a>
+            </li>
+            <a href="javascript:void(0)" onclick="closeDialog()"><img class="closebuttom"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEKklEQVR4nO1ZXU8TWRh+oS2KG9qiULhUwQX3M+p6oUXZgF7vYqVuvFD8WC+gSKvG72Y+1IU1hoQrgySNjZvNJgQkunZ2TYi90UUcmbZ027HZjb9h9Y5TZsxLMG6IQ5mZM4ULnuRNTjrN9HlOzsfzPgVYxSpWDgZyuTX8q6mveVnycxkpwMrSBSwcc7LUjs+YdLoMVhKYfxKeq6nnZ49EbmdbejpJQ+u3M1WbN86udVaoNrt9rnBcvXnTLD5r7ekiRyODGW5aDN7ITVUvH/FM4otAbEzYfeIoqfBUKwCg6ilnjUfxnuwgAWHsEZOb+qx4xNPp9cHx2G/bD7YRm8Ohi/THyuZwqDsO+UjoifAL81pyW0qey0w1t/Vee1vucuqe8UJV7nYpB25ef8O9Su6xhPxV8WnPNt93hDZxWFA7/D5yJTnZRZX8+Wfxa3XeXXmrycN81e/x5i9MxHlqM19M8vA/EeHkZKfpNb/tgPXLBrSW0yEfYeREk+HT5vte/u1ykYf58t268abvX9GlW0AoHvt1ndtN7bRhWVbt6+szdDoFxx/d00We/1v6HM95muTfw4iIb35oJ4ycalyygIBwX6BxSS0kb1SEraxM7Y7d/33J3gbtgVXkETzP636X9+QxsiTvxKZfhtCnWEW+v7/f0PsqPNVKODkRLCgAXaVV5AcGBky9tyM6mC7o59ESW0F+aGhILSkpMSWgNRggi/YT2HA0tOwltMlHIhG1tLTU9J5q3Ncyw2eTX2oLkCU/Nh40yUejUSrkAUD11NfNMtnkQU0BXDZx2ohV1iI/PDys2u12KuQBQMWLlZUlbafKZZOX9Z7/WuRHRkaokof5+4DNJC5RE2Cz2dTR0VFqZz2YF6B/CTkcDk0RRmwDmFpCstRuZBMXS4Snvm6WyyZ8mgIYOfUVRh9GXl4MEVv3t85gGmLZRWa1iH2h7sUvMgSGTmZ+xEoRHdE704uSn9sH02LQWVOjrDQRrtpahU2/6C4oAC2r90SHaTtNW0TTj8cJI4tVsBR0CWMxGg2NlgiGYXSf/4E/xh6AnpYSEwGzAj4mQi95AFB3HvYTJpP4FPTgTPzxvXWVlQpNEUbIl7tdSmhcuAt6gUFr28/XqcUqRh2p71bvf0xuwglGgEHrdj+dpWSkdh72Ey7zcheYQTj5V2dDS3PRo8Ute735cGryFNAABq2YVRaNfHNT/uKzOAM0gUErrZOp0LIJ05r5hcCgFbNKmpEjzNcn6ysV3LCm13xBEa8l95knQhTjPrxgzBK3rymbm/Vz8T8jhkJcw0LkVCPGfZiYOWv1eyf0Nk2njpNu4cFD3ZcUXSFiFTst9mDohLkNRh/YeGBnh3YEC8eeLXV5fIaWGF0lGrOfMs83wErCoCg6sCnC6ANbv/d/dOMYP8NMB7+z3DxXsQr4gHcjca7uWqkHggAAAABJRU5ErkJggg=="></a>
+        </ul>
+    </nav>
+    <nav class="sidebar subpsidebar">
+        <ul>
+            <h1>
+                <a href="./index.html#headtitle3" title="Back to: Homepage | My Own Work" class="logo">Wanqi's
+                    Portfolio</a>
+            </h1>
+            <li class="subnav"><a href="./index.html#headtitle2" class="subnavlink">Team Project</a>
+            </li>
+            <li class="subnav">My Own Work
+            </li>
+            <li class="sub2nav">Pet GO
+                <div class="landani2" id="navblock25"> </div>
+            </li>
+            <li class="sub2nav"><a href="./StretchAdventure.html" class="sub2navlink">Stretch Adventure</a>
+            </li>
+            <li class=" sub2nav"><a href="./ProjectX.html" class="sub2navlink">Project X</a>
+            </li>
+            <li class="sub2nav"><a href="./SaferATM.html" class="sub2navlink">Safer ATM</a>
+            </li>
+            <li class=" sub2nav"><a href="./CoursePortfolio.html" class="sub2navlink">Course Portfolio</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="page">
+        <h3 class="headtitle">Pet GO</h3>
+        <section class="headintroduction">
+            Pet GO is an AR social metaverse based on LBS to connect pet owners and lovers worldwide. The mobile app
+            allows users to chat, make friends, and browse pet and community information. PetGO creates a seamless
+            bridge between online relationships and offline interactions by leveraging real-world distance mapping. To
+            encourage engagement and participation, PetGO has also implemented a reward mechanism. <br>
+            PetGO empowers users to connect and create lasting relationships with like-minded individuals who share
+            their passion for pets.
+        </section>
+        <section class="projectinfo">
+            <span class="bold">What I did:</span> UI Design, Design test & evaluation<br>
+            <span class="bold">Tool used:</span> Figma
+            <br>
+            <span class="bold">Duration:</span> 11th November - 18th November 2022 as part of Course <span
+                class="italic">Advanced Human-Computer Interaction</span> at UQ
+            <a href="https://www.figma.com/proto/UyMKRY5NMiIs1tEXe7Nav1/Pet-GO?page-id=0%3A1&node-id=1-2&viewport=270%2C366%2C0.26&scaling=scale-down&starting-point-node-id=1%3A2"
+                target="_blank" class="linkbutton">Try the prototype
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">The background</h4>
+            PetGO was independently developed as a follow-up solution to the team project <a
+                href="./Ouah Ouah Friends.html" class="intextlink onsitejump">Ouah Ouah Friends<img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO2WsU7CUBSGv8luAhprLMpb+CAmogMLDwAOvqEuYFQ0wQFIiIObOgmTDJib/CQ3zS0p9NSJP7kJLSfn7zn33K+FnbZXBHSBPjDX6uteREk6BV6BZcZ6AerWpg1gKoMRcAHsAwnQBMaeuVnlZ56pa2s1EFPzzDsWppHXXmdaWRPb9OIK60bJ3jMq9ZUo9sfC+EHJXDX8p/FMyQ51HQPPwF0g9kqxPQvjLyU7kulQ164Tvtw2TCyH617JboE3/R7qIVaqaKCWwMDqOLVTkEib1jzTqY6eidzA/AZMj4EW8OGZNoqw91vtbct0GDC9BhZeFwbCqRl7Q5WeA596yJ4Gac+CvQfqQNaelsbeeM30lsbeOGNPXXvN2DsKsPcxY5Dcnpqx9zLwnxuWp9SRWViz9yRHbMuSvbOcxjUPDibs7ed4zZXC3q4SjlVVWtWy2Bvpg2xl3hQaE71PJ9uyN4/qnnlobczeTSvvaGLnRdi7E57+APHIojLsmNzxAAAAAElFTkSuQmCC"></a>.
+            Based on
+            the issues related to user experience and community development that we identified in the pet community
+            through Ouah Ouah Friends,
+            I proposed my own design solution.
+            <div class="paraspace">
+                <ul class="peticon">
+                    <div class="bold">Problem Space</div>
+                    <li>Lack of motivation to join the pet community.</li>
+                    <li>Uncontrolled environment in the pet community.</li>
+                    <li>The quality of information within the community cannot be guaranteed.</li>
+                </ul>
+            </div>
+            Due to the limited design timeframe of only one week, a process similar to agile development was adopted for
+            this project. The goal was to complete one round of iteration within the limited time.
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">UX Design</h4>
+            <div class="statement">A solution that can facilitate the target audience to join or help them form and
+                maintain a pet community. The answer should also effectively sustain the community's environment and
+                information quality. </div>
+            <div class="statement">The solution is Pet GO, an AR social metaverse based on location-based service. With
+                the mobile
+                app, users can easily connect with other pet owners in the virtual world, chat and make new friends.
+                Users can access a wealth of information about pets and the community.
+                Users can create posts and host activities based on location in the app, building a real-world network
+                that helps
+                pet owners in the local area more easily participate in community.
+                <div class="paraspace">
+                    Users can open the camera using AR to access users & their pet
+                    profiles for quick offline dating information sharing. By quickly connecting people in physical
+                    locations to virtual spaces, PetGO helps users make friends and maintain relationships conveniently
+                    through online networking.
+                </div>
+                The metaverse also sets up virtual items to build the reward mechanism. Users
+                can earn virtual items through activities, and the proceeds of virtual goods can support the operating
+                expenses of the metaverse. Designing a reward mechanism based on gaming principles can help connect the
+                sense of community participation with the pleasure of playing games, encouraging users to engage in
+                community interactions actively. Moreover, the mechanism can also help maintain the community
+                environment and ensure information quality.
+            </div>
+            <div class="inlinecenter">
+                <div class="statement instat">Mobile</div>
+                <div class="statement instat">Exploring and browsing</div>
+            </div>
+            <div class="statement">
+                <span class="bold">-Real World: </span>The Skeuomorphic design brings a sense of reality to the virtual
+                world, allowing users to perceive the community's connection visually. The design style also helps users
+                become familiar with the app more quickly, reducing users' sense of unfamiliarity.<br>
+                <span class="bold">-Cartoon: </span>The cartoon UI style can give the app a game-like interface,
+                creating a relaxed and entertaining atmosphere for users. It can increase the app's usability and
+                improve the social atmosphere.
+            </div>
+            <img src="./Images/PG-designrational.png" alt="Design Rational" class="imgofp img2">
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">UI design</h4>
+            Based on the goal of gamified design, the UI adopts a 3D cartoon style, and the interactive elements and
+            icons within the application are also designed with a consistent style.
+            <br> *All third-party art resources used in the project have been licensed.
+            <img src="./Images/PGdesignguideline.png" alt="Design Guideline" class="imgofp img2">
+            Here is the first version mid-fidelity prototype.
+            <img src="./Images/PGmidfidelity.png" alt="Mid-fidelity prototype" class="imgofp img2">
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">User test & Evaluation</h4>
+            Three participants participated in the evaluation. One is a peer with a game interaction design background,
+            one is a potential user, and the other is a potential user interviewed in our research phase. With a
+            medium-fidelity Figma prototype, the two potential users were involved in a <a
+                href="https://www.nngroup.com/articles/thinking-aloud-the-1-usability-tool/" target="_blank"
+                class="intextlink">think-aloud protocol<img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>.
+            The peer
+            was engaged in the <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank"
+                class="intextlink">Heuristics Evaluation<img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            and the think-aloud protocol.
+            <img src="./Images/PGtestshot.png" alt="the picture of peer test" class="imgofp img1">
+            For the design purpose of the app, gamification design is used to attract potential users to join the
+            community and allow them to have long-term support from the community. <span class="underline">All three
+                users think that the app's
+                gamification is sufficient and it's helpful to achieve this goal</span>. Both potential users said they
+            were
+            motivated to join the game and keep playing it. They believed the game was relaxing and not heavily
+            addictive, and they were delighted to see this.
+            <div class="paraspace">
+                For usability, professional users said, <span class="underline">"clear hierarchy, consistent and high
+                    aesthetic UI design", but
+                    she also said there could be a task system in the apt to give the user more guidance and a sense of
+                    achievement in the game</span> . She also believes the AR system could be very good at discovering
+                the
+                connections between existing networks and the pet community. Both potential users say the app is easy to
+                use. They thought the flame metaphor was not intuitive, but it was easy to understand its meaning as
+                long as they tried. Moreover, they thought dressing up in avatars was attractive, and <span
+                    class="underline">the rewards
+                    mechanism successfully caught them</span>.
+            </div>
+            For the privacy issue, all three testers believe that as long as the right of choice is fully open to
+            and controlled by the user, this will not cause doubts about the use.
+            <div class="paraspace">
+                From the comprehensive feedback
+                analysis, the current app functions have <span class="underline">achieved the design purpose</span>.
+                There is room for improvement in
+                details, such as Match between the system and the real world. Suggested functions in the evaluation may
+                better increase the role of the app in enhancing the community experience.
+            </div>
+        </section>
+        <section class="introduction">
+            <h4 class="subtitleofp">Midfidelity prototype-Final</h4>
+            <img src="./Images/PGfinalprototype.png" alt="Midfidelity prototype-Final" class="imgofp img2">
+            <a href="https://www.figma.com/proto/UyMKRY5NMiIs1tEXe7Nav1/Pet-GO?page-id=0%3A1&node-id=1-2&viewport=270%2C366%2C0.26&scaling=scale-down&starting-point-node-id=1%3A2"
+                target="_blank" class="linkbutton">Try the prototype
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            The above is the design and development process of the PetGO, welcome to click the links to
+            experience the prototype, or please feel free to browse my other works :)
+        </section>
+    </main>
+    <script src="./Javascript/script.js"></script>
+</body>
+
+</html>

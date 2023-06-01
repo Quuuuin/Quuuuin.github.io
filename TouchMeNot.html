@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByWanqi | Team Project | Touch Me Not</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <nav class="mobilesubsidebar">
+        <h1>
+            <a href="./index.html#headtitle2" title="Back to: Homepage | Team Project" class="logo">Wanqi's
+                Portfolio</a>
+            <a href="JavaScript:void(0)" onclick="openDialog()" id="menuicon"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACH0lEQVR4nO2Zy07CQBSGD5dgBCKPob6AcektPgsmLBQXLmm5ljsJt4RLICxoXChL4hMYjUlxI3Xhk7AYcwgQAwU6BTpg5k/OrjP9/plzpp0ZAC4urv+twNfnqaj2/IKqPJgZotrz47sNg0s/Hx5ft/NydHU+cLicBABMDYfLSQ4vzgbeJ/kNWagNIPy+58B0cJgKZPB1O10qeJw6HHnW8DCK4+vLQeBbOdFtQOj37lmkDcyJPbeLYE3oNiD2FYE1NEzFiIkbIHwGgKfQcvEihh1ahSwWi2EoC0XbjRiIRCKkUqkQq9VqCD6fz5NkMsnGAMKPVa1WqUwgfKFQmLTXY2KtBqLRKJlWrVbTZQLhi8XiTPtUKmWOAQTI5XJES/V6faGJefCocrm8sCbWnkKxWIzQmEC4Uqmk2SabzS4t6I0UsVYqodrtNrHZbJPn0FCj0dB8NpPJsClirWL+K1mWid1uH8I3m03NZ9Lp9Hb8jSYSCU3AVqs1DC1hG9im3+lwOEz0atmKAywMYIRCoaXwej9cwMIARjAYnAtPmzbAwsDwZaI4Ax+Pxw33Byy2lIIgTOAlSVqpL2C1J0YTGOvoS+Sbelh9FPkM6BXfEwNPIbLSKrR9h7tuusNdPF7HywXW4DAKPOqnOl5HeZ/l92254LjpPL6CwSumLl4u4Pm8+WnjGo48whu6YhoLp05QlTux35NMDVW5pU4bLi4u2Dn9Aj7D0Xurw9e6AAAAAElFTkSuQmCC"></a>
+        </h1>
+        <ul id="menu1" class="menu">
+            <li class="subnav">Team Project
+            </li>
+            <li class="msub2nav"><a href="./Millionnaire.html" class="sub2navlink">Millionaire Assistant</a>
+            </li>
+            <li class=" msub2nav"><a href="./Mark II-VII.html" class="sub2navlink">Mark &#8545;-&#8550;</a>
+            </li>
+            <li class=" msub2nav"><a href="./Ouah Ouah Friends.html" class="sub2navlink">Ouah Ouah Friends</a>
+            </li>
+            <li class="msub2nav"><a href="./Petrol Pal.html" class="sub2navlink">Petrol Pal</a>
+            </li>
+            <li class="msub2navse">Touch Me Not
+                <div class="landani2" id="navblock23"></div>
+            </li>
+            <li class="msub2nav"><a href="./iMarket.html" class="sub2navlink">iMarket</a>
+            </li>
+            </li>
+            <li class="subnav"><a href="./index.html#headtitle3" class="subnavlink">My Own Work</a>
+            </li>
+            <a href="javascript:void(0)" onclick="closeDialog()"><img class="closebuttom1"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEKklEQVR4nO1ZXU8TWRh+oS2KG9qiULhUwQX3M+p6oUXZgF7vYqVuvFD8WC+gSKvG72Y+1IU1hoQrgySNjZvNJgQkunZ2TYi90UUcmbZ027HZjb9h9Y5TZsxLMG6IQ5mZM4ULnuRNTjrN9HlOzsfzPgVYxSpWDgZyuTX8q6mveVnycxkpwMrSBSwcc7LUjs+YdLoMVhKYfxKeq6nnZ49EbmdbejpJQ+u3M1WbN86udVaoNrt9rnBcvXnTLD5r7ekiRyODGW5aDN7ITVUvH/FM4otAbEzYfeIoqfBUKwCg6ilnjUfxnuwgAWHsEZOb+qx4xNPp9cHx2G/bD7YRm8Ohi/THyuZwqDsO+UjoifAL81pyW0qey0w1t/Vee1vucuqe8UJV7nYpB25ef8O9Su6xhPxV8WnPNt93hDZxWFA7/D5yJTnZRZX8+Wfxa3XeXXmrycN81e/x5i9MxHlqM19M8vA/EeHkZKfpNb/tgPXLBrSW0yEfYeREk+HT5vte/u1ykYf58t268abvX9GlW0AoHvt1ndtN7bRhWVbt6+szdDoFxx/d00We/1v6HM95muTfw4iIb35oJ4ycalyygIBwX6BxSS0kb1SEraxM7Y7d/33J3gbtgVXkETzP636X9+QxsiTvxKZfhtCnWEW+v7/f0PsqPNVKODkRLCgAXaVV5AcGBky9tyM6mC7o59ESW0F+aGhILSkpMSWgNRggi/YT2HA0tOwltMlHIhG1tLTU9J5q3Ncyw2eTX2oLkCU/Nh40yUejUSrkAUD11NfNMtnkQU0BXDZx2ohV1iI/PDys2u12KuQBQMWLlZUlbafKZZOX9Z7/WuRHRkaokof5+4DNJC5RE2Cz2dTR0VFqZz2YF6B/CTkcDk0RRmwDmFpCstRuZBMXS4Snvm6WyyZ8mgIYOfUVRh9GXl4MEVv3t85gGmLZRWa1iH2h7sUvMgSGTmZ+xEoRHdE704uSn9sH02LQWVOjrDQRrtpahU2/6C4oAC2r90SHaTtNW0TTj8cJI4tVsBR0CWMxGg2NlgiGYXSf/4E/xh6AnpYSEwGzAj4mQi95AFB3HvYTJpP4FPTgTPzxvXWVlQpNEUbIl7tdSmhcuAt6gUFr28/XqcUqRh2p71bvf0xuwglGgEHrdj+dpWSkdh72Ey7zcheYQTj5V2dDS3PRo8Ute735cGryFNAABq2YVRaNfHNT/uKzOAM0gUErrZOp0LIJ05r5hcCgFbNKmpEjzNcn6ysV3LCm13xBEa8l95knQhTjPrxgzBK3rymbm/Vz8T8jhkJcw0LkVCPGfZiYOWv1eyf0Nk2njpNu4cFD3ZcUXSFiFTst9mDohLkNRh/YeGBnh3YEC8eeLXV5fIaWGF0lGrOfMs83wErCoCg6sCnC6ANbv/d/dOMYP8NMB7+z3DxXsQr4gHcjca7uWqkHggAAAABJRU5ErkJggg=="></a>
+        </ul>
+    </nav>
+    <nav class="sidebar subpsidebar">
+        <ul>
+            <h1>
+                <a href="./index.html#headtitle2" title="Back to: Homepage | Team Project" class="logo">Wanqi's
+                    Portfolio</a>
+            </h1>
+            <li class="subnav">Team Project
+            </li>
+            <li class="sub2nav"><a href="./Millionnaire.html" class="sub2navlink">Millionaire Assistant</a>
+            </li>
+            <li class=" sub2nav"><a href="./Mark II-VII.html" class="sub2navlink">Mark &#8545;-&#8550;</a>
+            </li>
+            <li class=" sub2nav"><a href="./Ouah Ouah Friends.html" class="sub2navlink">Ouah Ouah Friends</a>
+            </li>
+            <li class="sub2nav"><a href="./Petrol Pal.html" class="sub2navlink">Petrol Pal</a>
+            </li>
+            <li class="sub2nav">Touch Me Not
+                <div class="landani2" id="navblock23"></div>
+            </li>
+            <li class="sub2nav"><a href="./iMarket.html" class="sub2navlink">iMarket</a>
+            </li>
+            <li class="subnav"><a href="./index.html#headtitle3" class="subnavlink">My Own Work</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="page">
+        <h3 class="headtitle">Touch Me Not</h3>
+        <section class="headintroduction">
+            The Touch Me Not project aims to provide an opportunity for most people who don't have synaesthesia, an
+            ability that only a very few people have.
+            Synaesthesia is a neurological phenomenon in which stimulation of one sensory or cognitive pathway leads to
+            automatic, involuntary experiences in a second sensory or cognitive pathway. <br>
+            The project focuses on the auditory-tactile synaesthesia experience. We designed a
+            partitioned panel with different materials covering the surface. When the user touches the materials,
+            different melodies will be played depending on the materials. Users can create their chords by touching
+            multiple areas simultaneously, giving them the experience of making music through their tactile feedback.
+        </section>
+        <section class="projectinfo">
+            <span class="bold">My role:</span>UX Researcher, UX Designer, Music designer, Craftsman<br>
+            <span class="bold">Tool used:</span> Ableton Live, Excel, Messanger
+            <br>
+            <span class="bold">What I did:</span> User Experience research, design, test & evaluation, Music design,
+            Constructing the device<br>
+            <span class="bold">Duration:</span> 1 Augest - 19 October 2022 as part of Course <span class="italic">Design
+                Computing Studio 3 - Build</span> at UQ
+            <a href="./Images2/TMN-Team documentation.pdf" target="_blank" class="linkbutton">View the Project
+                Documentation
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <a href="./Images2/TMNvideo.mp4" target="_blank" class="linkbutton">View the Kickstarter video
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Background</h4>
+            Studio 3 is a practice-based course. We will form an interdisciplinary team to design, build, test, evaluate
+            and document our projects based on a supplied set of requirements designed by teams in Studio 2. Through
+            this course, we will develop skills in project management, effective communication, critical thinking, and
+            self-reflection.
+            <div class="paraspace">
+                <span class="underline">Therefore, the background research and proposal are readily available</span>,
+                and we only need to conduct
+                minimal research before entering the development stage. To better understand the synaesthetic
+                experience, our team conducted online interviews with four volunteers who have synaesthesia.
+            </div>
+            <div class="inlinecenter">
+                <img src="./Images2/TMNinter1.jpg" alt="Partial interview screenshots" class="imgofp img3">
+                <img src="./Images2/TMNinter2.jpg" alt="Partial interview screenshots" class="imgofp img3">
+                <img src="./Images2/TMNinter3.jpg" alt="Partial interview screenshots" class="imgofp img3">
+            </div>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Justification-Function</h4>
+            From the interview, we found that the synaesthesia experiences are very personal and might not be
+            understandable for general people. So it might not be a good idea to try to directly copy the synesthesia
+            experiences from this small group of people to the public.
+            <div class="paraspace">
+                We looked at other synesthesia-related devices, most connecting images and music. The <a
+                    href="https://youtu.be/20faPwXUbb4" target="_blank" class="intextlink">idea<img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+                is that
+                painters bind to instruments and automatically paint when the tools are played.
+            </div>
+            Our team decided to create an auditory-tactile synesthesia device based on two factors. Firstly, we were
+            inspired by the idea of creating a more immersive music experience for people. Secondly, we wanted to
+            explore the potential of technology to simulate synesthesia and how it could enhance the music-listening
+            experience.
+            <div class="paraspace">
+                In summary, we have decided to design this device as <span class="underline">an auditory-tactile
+                    synesthesia-based
+                    soundboard/music synthesizer </span>.
+            </div>
+            We decided there would be 6 textures for users to feel in the final prototype, each connected to a music
+            clip. There is background music looping if the device is turned on. The music clips linking to the materials
+            can be seen as voice parts, and users can create their music by adding, removing, and changing those voice
+            parts.
+            <div class="paraspace">
+                <span class="underline">Users can control the device by touching the materials. </span>They can control
+                which
+                voice part will be played by touching the corresponding materials. Users can control the volume and the
+                filter parameters added to the music clip by touch with different strengths. <span
+                    class="underline">This control allows
+                    multi-level
+                    play. </span>With normal interaction strength, the device could create a good sound, while skilled
+                users could
+                make
+                better music with proper timing and power of touch.
+            </div>
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Justification-Industrial Design</h4>
+            Our initial design envisioned the device as a midi controller-like model with two main components: a square
+            box for the materials and a transparent container for the sensors at the bottom. This design intuitively
+            showcases the correlation between tactile sensations and music. The transparent acrylic container also
+            provides a clear view of the device's internal structure.
+            <div class="paraspace">
+                During the subsequent development, we conducted a small-scale evaluation. We found that the first
+                version of the design might amplify users' perception of vision, causing them to overlook the tactile
+                feedback associated with the materials and link the music to specific substances. To avoid this issue,
+                we updated the design and designed it as a blind box. This form avoids visual interference with tactile
+                feedback and gives users a sense of connection and surprise during the interaction.
+            </div>
+            Here are our design iterations. <br>
+            <span class="bold">-Initial Draft</span>
+            <div class="inlinecenter">
+                <img src="./Images2/TMNdesign1.png" alt="Initial design draft" class="imgofp img2 img7">
+                <img src="./Images2/TMNdesign2.png" alt="Initial design draft" class="imgofp img7">
+            </div>
+            <span class="bold">-Design version1</span>
+            <img src="./Images2/TMNdesign3.png" alt="Initial design draft" class="imgofp img1">
+            <span class="bold">-Design final version</span>
+            <img src="./Images2/TMNdesign4.png" alt="Initial design draft" class="imgofp img1">
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Justification-Music</h4>
+            At the beginning of the design, we created sound effects connected to each material and edited them into a
+            rhythmic combination without involving any background music production. However, our internal evaluation
+            found that piecing together these effects as rhythmic percussion made the entire music sound very noisy,
+            chaotic, and somewhat dull.
+            <div class="paraspace">
+                Therefore, we chose a compromise solution that may reduce the possibilities for
+                creation. We set a default background sound for the device. Users can touch different materials to add
+                percussion patterns or accompaniment melodies to the background. Although we created music according to
+                our
+                imagined tactile sense, which is very subjective, we need to verify and iterate it in the evaluation
+                stage.
+            </div>
+            In the second round of development, we decided to provide users with more control because we wanted to offer
+            a higher level of experience and make the device more fun and creative. Because using different levels of
+            force to touch materials brings slight sensory differences, we decided that the music should also sound
+            different.Therefore, we
+            gave each music clip more possibilities.
+            <div class="paraspace">
+                Based on the feeling of the materials when touched with different
+                forces, we added sound effects that change according to the intensity of the touch in the clip. <span
+                    class="underline">The
+                    parameters of these sound effects vary with the strength of the touch.</span> For example, when the
+                user
+                presses
+                hard, the part of the music associated with wood becomes more piercing.
+            </div>
+            <img src="./Images2/TMNmusic.png" alt="Ableton Live and Max interface" class="imgofp img1">
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">User test & Evaluation</h4>
+            We first asked our testers to listen to each piece of music and describe the emotional experience that the
+            music gave them, like sadness or happiness.
+            <div class="paraspace">
+                We designed it like this because when we first conducted a
+                small-scope pre-test, we found it challenging for people to associate a piece of music with the sense of
+                touch. The testers tended to mistake the auditory-textile connection for the sound the material could
+                make.
+                So we improved our test process, <span class="underline">trying to guide them toward more abstract
+                    concepts</span>. Subsequent tests
+                verified that our process improvements were practical, and the testers were more active in expressing
+                their
+                thoughts. They could make connections to a broader range of material tactile sensations.
+            </div>
+            After the first test task, we give a list of the material that our creators corresponded to when they
+            composed the music and ask the testers to connect the material that they feel has a connection to music.We
+            designed tests like this because of the limited course time, and we could not conduct more rounds of testing
+            and music iterations. <span class="underline">We
+                tried to narrow down the vast and varied range of answers by using this list linkage to redirect the
+                testers' associations and feelings toward more suitable material.</span> At the same time, this
+            suggestive hint
+            allows us to synthesise different people's feelings better and identify generic solutions through the test.
+            We collected a total of 20 valid data from the online interviews and field interviews.
+            <img src="./Images2/TMNtestdata1.jpg" alt="User test data table1" class="imgofp img1">
+            We conducted a second round of sound tests on selected materials without revealing their shapes to the
+            testers. Testers evaluated the sounds using a scale provided to them after feeling each material with their
+            hands. This method reduced test errors and minimised the influence of other senses. <br>
+            Here is the scale.
+            <img src="./Images2/TMNterstscale.png" alt="rating scale" class="imgofp img2">
+            In the second iteration, we collected 16 valid data and found that all materials scored above 3 on average,
+            indicating a clear connection between them and the corresponding music. Although the degree of connection
+            varies due to individual subjectivity, we believe the device offers a subjective experience that can provide
+            a synesthesia-like experience for most people.
+            <img src="./Images2/TMNtestdata2.jpg" alt="User test data table2" class="imgofp img1">
+        </section>
+        <section class="introduction firstsentence">
+            <h4 class="subtitleofp">Final Prototype</h4>
+            <img src="./Images2/TMNprototype.png" alt="Touch Me Not prototype" class="imgofp img1">
+            <a href="./Images2/TMNexpovideo.mp4" target="_blank" class="linkbutton">View the Expo on-site
+                experience video
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <a href="./Images2/TMNvideo.mp4" target="_blank" class="linkbutton">View the Kickstarter video
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <a href="./Images2/TMNStatement of Work .pdf" target="_blank" class="linkbutton">View the Statement of Work
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            <a href="./Images2/TMN-Team documentation.pdf" target="_blank" class="linkbutton">View the Project
+                Documentation
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2VQQrCMBBF3yUMHkE8Sc9tFy50ZRfuU5DeYqRQoSgTZ0KsWPNhlvNf+/NJoOpH1QKizPFbYGEhbYDL0uAAdBOss4IboH8T2fMMwF6BBis4FoZiBeeex/xMr8DW6ykZYO1P520/lAZr0Ef8ZokDrMW7A26fAodEvENOT8SwlCqS5+PdS6dEkaweWUvjhX9WoFaPF5W4VyvYpBr1+ssVne+xNqOPS00BeJx8qv5Yd5herU1jqGmdAAAAAElFTkSuQmCC"></a>
+            The above is the development process of the Touch Me Not, welcome to click the links to
+            experience the prototype or check the project documentation, or please feel free to browse my other works :)
+        </section>
+    </main>
+    <script src="./Javascript/script.js"></script>
+</body>
+
+</html>
