@@ -109,6 +109,13 @@ h1,
     text-shadow: 0.6rem 0.6rem 0rem #81D8D0;
 }
 
+
+.sign {
+    position: fixed;
+    bottom: 0;
+    font-family: HelveticaOb;
+}
+
 .subnavh {
     list-style: none;
     font-family: Smilesans;
@@ -1032,6 +1039,7 @@ article {
     align-items: center;
     background-color: #E85827;
     z-index: 15;
+    margin: 0rem, 1rem, 1rem, 1rem;
 }
 
 
@@ -1078,6 +1086,9 @@ article {
         display: block;
     }
 
+    .main {
+        margin-left: 1rem;
+    }
 
     .page {
         width: 100vw;
@@ -1252,7 +1263,7 @@ article {
 
 
 /* mobile screen */
-@media (orientation:portrait) and (width<=395px) {
+@media (orientation:portrait) and (width<=390px) {
 
     html {
         font-size: 8px;
