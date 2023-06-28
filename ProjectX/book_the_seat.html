@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book your Seat</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body class="background">
+
+    <header class="item fixheader">
+        <a href="./home_page.html"><img src="./image/icons8-back-to-96-white.png" alt="back" width="48" height="48"
+                class="icon"></a>
+        <div class="dropdown">
+            <h1 style="display: inline-block;font-family: 'Open Sans', sans-serif; z-index: 2;cursor:pointer;">Book your
+                Seat
+            </h1>
+            <div class="dropdowncontent">
+                <ul>
+                    <li><a href="./about_the_project.html">About the Project</a></li>
+                    <li><a href="./about_the_ship.html">About the Ship</a></li>
+                    <li><a href="./entertainment.html">Entertainment</a></li>
+                    <li><a href="./as_a_crew.html">As a Crew</a></li>
+                    <li><a href="./contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="container" style="margin:0; margin-top: 8%;">
+        <section class="item" style="margin-left: 3em;">
+            <div class="item"><a href="JavaScript:void(0)" onclick="openDialog()"><img
+                        src="./image/icons8-user-64-whtie.png" alt="login" class="login">
+                    <div class="oneline login" style="font-family:'Raleway', sans-serif;">Log in first before booking
+                    </div>
+                </a>
+
+            </div>
+            <div id="light" class="white_content">
+                <div class=typebox>
+                    <input type="text" name="UserNuber" id="Username" placeholder="Username" style="width: 50%;" />
+                    <input type="Password" name="Password" id="Password" placeholder="Password" style="width: 50%;" />
+                </div>
+                <div class="block">
+                    <a href="javascript:void(0)" onclick="remindoflog()"><img src="./image/icons8-login-50.png"
+                            alt="confirmlogin"></a>
+                    <span style="color: black;">Log in</span>
+                </div>
+                <div id="backtoalign">
+                    <a href="javascript:void(0)" onclick="closeDialog()"><img src="./image/icons8-go-back-50.png"
+                            style="margin-right: 5%;"></a>
+                </div>
+            </div>
+            <div id="fade" class="black_overlay"></div>
+        </section>
+        <div class="choosecontainer">
+            <div class="item beblock">
+                <h3 style="margin-top: 0%;">Choose your class</h3>
+                <h4>
+                    <p>Premium</p>
+                </h4>
+                <div class="block2"><button class="btn active">Level 1<br>$199</button><button class="btn">Level
+                        2<br>$299</button></div>
+                <br>
+                <h4>
+                    <p>Normal</p>
+                </h4>
+                <div class="block2"><button class="btn">Level 1<br>$99</button><button class="btn">Level
+                        2<br>$199</button>
+                </div>
+                <h4>
+                    <p>Upload your file</p>
+                </h4>
+                <div class="block2">
+                    <input type="file" name="upload">
+                </div>
+                <button class="button2" style="vertical-align:middle; height: 10%;"
+                    onclick="reminderofbooking()"><span>Book now!
+                    </span></button>
+            </div>
+            <div class="item textcheck">
+                <div class="content show">
+                    <p>The personal cabin in this class contains the following facilities and the crew privileges.
+                        (bolded
+                        items are exclusive to
+                        this class)</p>
+                    <ul>
+                        <li>Two additional relatives can be brought on board per ticket.</li>
+                        <li><strong> 160 m&#178 private space</strong></li>
+                        <li><strong>Complete exclusivity and privacy</strong></li>
+                        <li>holographic projections</li>
+                        <li> multifunctional interactive glass windows<strong>(Have a best view of the space)</strong>
+                        </li>
+                        <li>a personal AI assistant exclusive to you</li>
+                        <li>MR seats with access to the ship's metaverse</li>
+                        <li><strong>Unlimited use of dormant cabin</strong></li>
+                        <li>Second priority use of dormant cabin</li>
+                        <li><strong>Access to all facilities</strong></li>
+                    </ul>
+                    <div style="  position:relative;">
+                        <img src="./image/evgeny-kashin-corredor-daylight-5.jpg" alt="" class="illustrate">
+                        <div class="text">
+                            A corner of the ship</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>The personal cabin in this class contains the following facilities and the crew privileges.
+                        (bolded
+                        items are exclusive to
+                        this class)</p>
+                    <ul>
+                        <li>Two additional relatives can be brought on board per ticket.</li>
+                        <li><strong> 200 m&#178 private space(Freedom to choose from large flat or double storey
+                                homes)</strong></li>
+                        <li><strong>Complete exclusivity and privacy</strong></li>
+                        <li><strong>Living in the inner circle</strong></li>
+                        <li>holographic projections</li>
+                        <li> multifunctional interactive glass windows<strong>(Have a best view of the space)</strong>
+                        </li>
+                        <li>a personal AI assistant exclusive to you</li>
+                        <li>MR seats with access to the ship's metaverse</li>
+                        <li><strong>Unlimited use of dormant cabin</strong></li>
+                        <li><strong>The highest priority use of dormant cabin</strong></li>
+                        <li><strong>Access to all facilities</strong></li>
+                    </ul>
+                    <div style="  position:relative;">
+                        <img src="./image/cockpit.jpeg" alt="" class="illustrate">
+                        <div class="text">
+                            Central control room</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>The personal cabin in this class contains the following facilities and the crew privileges.
+                        (bolded
+                        items are exclusive to
+                        this class)</p>
+                    <ul>
+                        <li>Two additional relatives can be brought on board per ticket.</li>
+                        <li>100 m&#178 private space</li>
+                        <li>holographic projections</li>
+                        <li>multifunctional interactive glass windows <br>(Randomly assigned cabin positions do not
+                            guarantee a
+                            view of space)</li>
+                        <li>a personal AI assistant exclusive to you</li>
+                        <li>MR seats with access to the ship's metaverse</li>
+                        <li>No more than 100 years of dormant cabin use</li>
+                        <li>The lowest priority use of dormant cabin</li>
+                        <li>Access to all facilities except administrative, power and research facilities</li>
+                    </ul>
+                    <div style="position:relative;">
+                        <img src="./image/leo-g-highresscreenshot00001-copy.jpg" alt="" class="illustrate">
+                        <div class="text">
+                            A corner of the ship</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>The personal cabin in this class contains the following facilities and the crew privileges.
+                        (bolded
+                        items are exclusive to
+                        this class)</p>
+                    <ul>
+                        <li>Two additional relatives can be brought on board per ticket.</li>
+                        <li><strong> 120 m&#178 private space</strong></li>
+                        <li>holographic projections</li>
+                        <li>multifunctional interactive glass windows<br>(Randomly assigned cabin positions do not
+                            guarantee a
+                            view of space)</li>
+                        <li>a personal AI assistant exclusive to you</li>
+                        <li>MR seats with access to the ship's metaverse</li>
+                        <li>No more than 500 years of dormant cabin use</li>
+                        <li>Third priority use of dormant cabin</li>
+                        <li>Access to all facilities <strong>except administrative and power facilities</strong></li>
+                    </ul>
+                    <div style="position:relative;">
+                        <img src="./image/lab.jpeg" alt="" class="illustrate">
+                        <div class="text">
+                            An ionisation laboratory on the ship</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./Script/script.js"></script>
+</body>
+
+</html>
