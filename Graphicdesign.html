@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByWanqi | Own Work | Graphic Design</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <nav class="mobilesubsidebar">
+        <h1>
+            <a href="./index.html#headtitle3" title="Back to: Homepage | My Own Work" class="logo">Wanqi's
+                Portfolio</a>
+            <a href="JavaScript:void(0)" onclick="openDialog()" id="menuicon"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACH0lEQVR4nO2Zy07CQBSGD5dgBCKPob6AcektPgsmLBQXLmm5ljsJt4RLICxoXChL4hMYjUlxI3Xhk7AYcwgQAwU6BTpg5k/OrjP9/plzpp0ZAC4urv+twNfnqaj2/IKqPJgZotrz47sNg0s/Hx5ft/NydHU+cLicBABMDYfLSQ4vzgbeJ/kNWagNIPy+58B0cJgKZPB1O10qeJw6HHnW8DCK4+vLQeBbOdFtQOj37lmkDcyJPbeLYE3oNiD2FYE1NEzFiIkbIHwGgKfQcvEihh1ahSwWi2EoC0XbjRiIRCKkUqkQq9VqCD6fz5NkMsnGAMKPVa1WqUwgfKFQmLTXY2KtBqLRKJlWrVbTZQLhi8XiTPtUKmWOAQTI5XJES/V6faGJefCocrm8sCbWnkKxWIzQmEC4Uqmk2SabzS4t6I0UsVYqodrtNrHZbJPn0FCj0dB8NpPJsClirWL+K1mWid1uH8I3m03NZ9Lp9Hb8jSYSCU3AVqs1DC1hG9im3+lwOEz0atmKAywMYIRCoaXwej9cwMIARjAYnAtPmzbAwsDwZaI4Ax+Pxw33Byy2lIIgTOAlSVqpL2C1J0YTGOvoS+Sbelh9FPkM6BXfEwNPIbLSKrR9h7tuusNdPF7HywXW4DAKPOqnOl5HeZ/l92254LjpPL6CwSumLl4u4Pm8+WnjGo48whu6YhoLp05QlTux35NMDVW5pU4bLi4u2Dn9Aj7D0Xurw9e6AAAAAElFTkSuQmCC"></a>
+        </h1>
+        <ul id="menu1" class="menu">
+            <li class="subnav"><a href="./index.html#headtitle2" class="subnavlink">Team Project</a>
+            </li>
+            <li class="subnav">My Own Work
+            </li>
+            <li class="msub2nav"><a href="./PetGO.html" class="sub2navlink">Pet GO</a>
+            </li>
+            <li class=" msub2nav"><a href="./StretchAdventure.html" class="sub2navlink">Stretch Adventure</a>
+            </li>
+            <li class="msub2nav"><a href="./ProjectX.html" class="sub2navlink">Project X</a>
+            </li>
+            <li class="msub2nav"><a href="./SaferATM.html" class="sub2navlink">Safer ATM</a>
+            </li>
+            <li class="msub2nav"><a href="./CoursePortfolio.html" class="sub2navlink">Course Portfolio</a>
+            </li>
+            <li class="msub2navse">Graphic Design Gallery
+                <div class="landani2" id="navblock27"> </div>
+            </li>
+            <a href="javascript:void(0)" onclick="closeDialog()"><img class="closebuttom"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEKklEQVR4nO1ZXU8TWRh+oS2KG9qiULhUwQX3M+p6oUXZgF7vYqVuvFD8WC+gSKvG72Y+1IU1hoQrgySNjZvNJgQkunZ2TYi90UUcmbZ027HZjb9h9Y5TZsxLMG6IQ5mZM4ULnuRNTjrN9HlOzsfzPgVYxSpWDgZyuTX8q6mveVnycxkpwMrSBSwcc7LUjs+YdLoMVhKYfxKeq6nnZ49EbmdbejpJQ+u3M1WbN86udVaoNrt9rnBcvXnTLD5r7ekiRyODGW5aDN7ITVUvH/FM4otAbEzYfeIoqfBUKwCg6ilnjUfxnuwgAWHsEZOb+qx4xNPp9cHx2G/bD7YRm8Ohi/THyuZwqDsO+UjoifAL81pyW0qey0w1t/Vee1vucuqe8UJV7nYpB25ef8O9Su6xhPxV8WnPNt93hDZxWFA7/D5yJTnZRZX8+Wfxa3XeXXmrycN81e/x5i9MxHlqM19M8vA/EeHkZKfpNb/tgPXLBrSW0yEfYeREk+HT5vte/u1ykYf58t268abvX9GlW0AoHvt1ndtN7bRhWVbt6+szdDoFxx/d00We/1v6HM95muTfw4iIb35oJ4ycalyygIBwX6BxSS0kb1SEraxM7Y7d/33J3gbtgVXkETzP636X9+QxsiTvxKZfhtCnWEW+v7/f0PsqPNVKODkRLCgAXaVV5AcGBky9tyM6mC7o59ESW0F+aGhILSkpMSWgNRggi/YT2HA0tOwltMlHIhG1tLTU9J5q3Ncyw2eTX2oLkCU/Nh40yUejUSrkAUD11NfNMtnkQU0BXDZx2ohV1iI/PDys2u12KuQBQMWLlZUlbafKZZOX9Z7/WuRHRkaokof5+4DNJC5RE2Cz2dTR0VFqZz2YF6B/CTkcDk0RRmwDmFpCstRuZBMXS4Snvm6WyyZ8mgIYOfUVRh9GXl4MEVv3t85gGmLZRWa1iH2h7sUvMgSGTmZ+xEoRHdE704uSn9sH02LQWVOjrDQRrtpahU2/6C4oAC2r90SHaTtNW0TTj8cJI4tVsBR0CWMxGg2NlgiGYXSf/4E/xh6AnpYSEwGzAj4mQi95AFB3HvYTJpP4FPTgTPzxvXWVlQpNEUbIl7tdSmhcuAt6gUFr28/XqcUqRh2p71bvf0xuwglGgEHrdj+dpWSkdh72Ey7zcheYQTj5V2dDS3PRo8Ute735cGryFNAABq2YVRaNfHNT/uKzOAM0gUErrZOp0LIJ05r5hcCgFbNKmpEjzNcn6ysV3LCm13xBEa8l95knQhTjPrxgzBK3rymbm/Vz8T8jhkJcw0LkVCPGfZiYOWv1eyf0Nk2njpNu4cFD3ZcUXSFiFTst9mDohLkNRh/YeGBnh3YEC8eeLXV5fIaWGF0lGrOfMs83wErCoCg6sCnC6ANbv/d/dOMYP8NMB7+z3DxXsQr4gHcjca7uWqkHggAAAABJRU5ErkJggg=="></a>
+            <div class="sign">The website is Designed and Coded by Wanqi.</div>
+        </ul>
+    </nav>
+    <nav class="sidebar subpsidebar">
+        <ul>
+            <h1>
+                <a href="./index.html#headtitle3" title="Back to: Homepage | My Own Work" class="logo">Wanqi's
+                    Portfolio</a>
+            </h1>
+            <li class="subnav"><a href="./index.html#headtitle2" class="subnavlink">Team Project</a>
+            </li>
+            <li class="subnav">My Own Work
+            </li>
+            <li class="sub2nav"><a href="./PetGO.html" class="sub2navlink">Pet GO</a>
+            </li>
+            <li class=" sub2nav"><a href="./StretchAdventure.html" class="sub2navlink">Stretch Adventure</a>
+            </li>
+            <li class=" sub2nav"><a href="./ProjectX.html" class="sub2navlink">Project X</a>
+            </li>
+            <li class="sub2nav"><a href="./SaferATM.html" class="sub2navlink">Safer ATM</a>
+            </li>
+            <li class="sub2nav"><a href="./CoursePortfolio.html" class="sub2navlink">Course Portfolio</a>
+            </li>
+            <li class="sub2nav">Graphic Design Gallery
+                <div class="landani2" id="navblock27"> </div>
+            </li>
+            <div class="sign">The website is Designed and Coded by Wanqi.</div>
+        </ul>
+    </nav>
+    <main class="page gacontainer" onscroll="horiscoll()" onclick="horiscoll()">
+        <header class="gapage gatitle">
+            <h3 class="headtitle">Graphic Design Gallery</h3>
+        </header>
+        <section class="headintroduction gapage gamain">
+            Welcome to my graphic design gallery, where creativity knows no bounds and inspiration takes centre stage. I
+            am thrilled to offer you a glimpse into my artistic vision and professional abilities.
+            <div class="paraspace">
+                Within these digital walls, you will discover a captivating collection of designs that embody my
+                unwavering
+                passion for visual storytelling. From stunning data visualizations to compelling marketing&suppporting
+                materials in the form of booklets, flyers and posters, and impactful branding creations, each work
+                showcases
+                my deep understanding of design principles, colour theory, typography, and layout.
+            </div>
+            Equipped with an in-depth knowledge of the latest industry trends and techniques, I have mastered the tools
+            of the trade, including industry-leading software such as Adobe Creative Suite. With these skills, I bring
+            my artistic visions to life with meticulous precision and finesse.
+            <div class="paraspace">
+                Furthermore, my experience in web design and development and my expertise as a user researcher in user
+                experience design empowers me to create designs that align with stakeholders' needs.
+                Thank you for joining me on this artistic voyage, and I sincerely hope my designs leave a lasting
+                impression.
+            </div>
+            <div class="gasign"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyUlEQVR4nO3YrUpEURSG4QcVRLAojJOmDUybOuAV2r0Au8EueKLa/AmCzSRYLHoBWnaaLMhafA/stNMLZ5+z9iEiIiIiIv7XDZ5worhb/OAZxwqb4WXEPOJIYXO8jpg7HCpsgbcRM+FAYUu8j5hr7CtshY8Rc4U9ha3xOWIusauwDb5GzAV2FHaK7xFzvr05jY2K62x7JGgR0ubRqmLT4bCvO7x+Vx0+iMsOI8qiw9A47zDGz7pcrO67XHUnPHT4+RARERER4c/9AoxmkwPuIygtAAAAAElFTkSuQmCC">
+                Scroll to view
+            </div>
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images6/diposter1.png" alt="Poster design" class="gaimgofp imgga">
+            <div class="introduction">
+                Poster design for course <span class="italic">Data Visualisation (Graphic design)</span> at UQ
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images6/diposter2.png" alt="Poster design" class="gaimgofp imgga">
+            <div class="introduction">
+                Poster design for course <span class="italic">Data Visualisation (Graphic design)</span> at UQ
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images6/diposter3.png" alt="Poster design" class="gaimgofp imgga">
+            <div class="introduction">
+                Poster design for course <span class="italic">Data Visualisation (Graphic design)</span> at UQ
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images6/diinfographic.png" alt="Infographic design" class="gaimgofp imgga">
+            <div class="introduction">
+                Infographic poster design for course <span class="italic">Data Visualisation (Graphic design)</span> at
+                UQ
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images6/7220design critique.png" alt="Booklet design" class="gaimgofp img2 imgga">
+            <div class="introduction">
+                Booklet design for course <span class="italic">Data Visualisation (Graphic design)</span> at
+                UQ, page(1/10)
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images6/7220design critique2.png" alt="Booklet design" class="gaimgofp img2 imgga">
+            <div class="introduction">
+                Booklet design for course <span class="italic">Data Visualisation (Graphic design)</span> at
+                UQ, page(2/10)
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images6/7220design critique3.png" alt="Booklet design" class="gaimgofp img2 imgga">
+            <div class="introduction">
+                Booklet design for course <span class="italic">Data Visualisation (Graphic design)</span> at
+                UQ, page(3/10)
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images6/7220design critique4.png" alt="Booklet design" class="gaimgofp img2 imgga">
+            <div class="introduction">
+                Booklet design for course <span class="italic">Data Visualisation (Graphic design)</span> at
+                UQ, page(4/10)
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images6/7220design critique7.png" alt="Booklet design" class="gaimgofp img2 imgga">
+            <div class="introduction">
+                Booklet design for course <span class="italic">Data Visualisation (Graphic design)</span> at
+                UQ, page(5/10)
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images6/7220design critique13.png" alt="Booklet design" class="gaimgofp img2 imgga">
+            <div class="introduction">
+                Booklet design for course <span class="italic">Data Visualisation (Graphic design)</span> at
+                UQ, page(6/10)
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images6/7220design critique16.png" alt="Booklet design" class="gaimgofp img2 imgga">
+            <div class="introduction">
+                Booklet design for course <span class="italic">Data Visualisation (Graphic design)</span> at
+                UQ, page(7/10)
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images6/7220design critique17.png" alt="Booklet design" class="gaimgofp img2 imgga">
+            <div class="introduction">
+                Booklet design for course <span class="italic">Data Visualisation (Graphic design)</span> at
+                UQ, page(8/10)
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images6/7220design critique18.png" alt="Booklet design" class="gaimgofp img2 imgga">
+            <div class="introduction">
+                Booklet design for course <span class="italic">Data Visualisation (Graphic design)</span> at
+                UQ, page(9/10)
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images6/7220design critique19.png" alt="Booklet design" class="gaimgofp img2 imgga">
+            <div class="introduction">
+                Booklet design for course <span class="italic">Data Visualisation (Graphic design)</span> at
+                UQ, page(10/10)
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images3/MAGraphicdesign.png" alt="Brand logo design" class="gaimgofp img2">
+            <div class="introduction">
+                Logo design for <a href="./Millionnaire.html" class="intextlink onsitejump">Millionnaire<img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO2WsU7CUBSGv8luAhprLMpb+CAmogMLDwAOvqEuYFQ0wQFIiIObOgmTDJib/CQ3zS0p9NSJP7kJLSfn7zn33K+FnbZXBHSBPjDX6uteREk6BV6BZcZ6AerWpg1gKoMRcAHsAwnQBMaeuVnlZ56pa2s1EFPzzDsWppHXXmdaWRPb9OIK60bJ3jMq9ZUo9sfC+EHJXDX8p/FMyQ51HQPPwF0g9kqxPQvjLyU7kulQ164Tvtw2TCyH617JboE3/R7qIVaqaKCWwMDqOLVTkEib1jzTqY6eidzA/AZMj4EW8OGZNoqw91vtbct0GDC9BhZeFwbCqRl7Q5WeA596yJ4Gac+CvQfqQNaelsbeeM30lsbeOGNPXXvN2DsKsPcxY5Dcnpqx9zLwnxuWp9SRWViz9yRHbMuSvbOcxjUPDibs7ed4zZXC3q4SjlVVWtWy2Bvpg2xl3hQaE71PJ9uyN4/qnnlobczeTSvvaGLnRdi7E57+APHIojLsmNzxAAAAAElFTkSuQmCC"></a>
+
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images3/MAposter2.png" alt="Report Cover" class="gaimgofp imgga">
+            <div class="introduction">
+                Report cover design for <a href="./Millionnaire.html" class="intextlink onsitejump">Millionaire
+                    Assistant<img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO2WsU7CUBSGv8luAhprLMpb+CAmogMLDwAOvqEuYFQ0wQFIiIObOgmTDJib/CQ3zS0p9NSJP7kJLSfn7zn33K+FnbZXBHSBPjDX6uteREk6BV6BZcZ6AerWpg1gKoMRcAHsAwnQBMaeuVnlZ56pa2s1EFPzzDsWppHXXmdaWRPb9OIK60bJ3jMq9ZUo9sfC+EHJXDX8p/FMyQ51HQPPwF0g9kqxPQvjLyU7kulQ164Tvtw2TCyH617JboE3/R7qIVaqaKCWwMDqOLVTkEib1jzTqY6eidzA/AZMj4EW8OGZNoqw91vtbct0GDC9BhZeFwbCqRl7Q5WeA596yJ4Gac+CvQfqQNaelsbeeM30lsbeOGNPXXvN2DsKsPcxY5Dcnpqx9zLwnxuWp9SRWViz9yRHbMuSvbOcxjUPDibs7ed4zZXC3q4SjlVVWtWy2Bvpg2xl3hQaE71PJ9uyN4/qnnlobczeTSvvaGLnRdi7E57+APHIojLsmNzxAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images3/MAposter4.png" alt="Report Cover" class="gaimgofp imgga">
+            <div class="introduction">
+                Report cover design for <a href="./Millionnaire.html" class="intextlink onsitejump">Millionaire
+                    Assistant<img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO2WsU7CUBSGv8luAhprLMpb+CAmogMLDwAOvqEuYFQ0wQFIiIObOgmTDJib/CQ3zS0p9NSJP7kJLSfn7zn33K+FnbZXBHSBPjDX6uteREk6BV6BZcZ6AerWpg1gKoMRcAHsAwnQBMaeuVnlZ56pa2s1EFPzzDsWppHXXmdaWRPb9OIK60bJ3jMq9ZUo9sfC+EHJXDX8p/FMyQ51HQPPwF0g9kqxPQvjLyU7kulQ164Tvtw2TCyH617JboE3/R7qIVaqaKCWwMDqOLVTkEib1jzTqY6eidzA/AZMj4EW8OGZNoqw91vtbct0GDC9BhZeFwbCqRl7Q5WeA596yJ4Gac+CvQfqQNaelsbeeM30lsbeOGNPXXvN2DsKsPcxY5Dcnpqx9zLwnxuWp9SRWViz9yRHbMuSvbOcxjUPDibs7ed4zZXC3q4SjlVVWtWy2Bvpg2xl3hQaE71PJ9uyN4/qnnlobczeTSvvaGLnRdi7E57+APHIojLsmNzxAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images3/MAposter3.png" alt="Report Cover" class="gaimgofp imgga">
+            <div class="introduction">
+                Report cover design for <a href="./Millionnaire.html" class="intextlink onsitejump">Millionaire
+                    Assistant<img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO2WsU7CUBSGv8luAhprLMpb+CAmogMLDwAOvqEuYFQ0wQFIiIObOgmTDJib/CQ3zS0p9NSJP7kJLSfn7zn33K+FnbZXBHSBPjDX6uteREk6BV6BZcZ6AerWpg1gKoMRcAHsAwnQBMaeuVnlZ56pa2s1EFPzzDsWppHXXmdaWRPb9OIK60bJ3jMq9ZUo9sfC+EHJXDX8p/FMyQ51HQPPwF0g9kqxPQvjLyU7kulQ164Tvtw2TCyH617JboE3/R7qIVaqaKCWwMDqOLVTkEib1jzTqY6eidzA/AZMj4EW8OGZNoqw91vtbct0GDC9BhZeFwbCqRl7Q5WeA596yJ4Gac+CvQfqQNaelsbeeM30lsbeOGNPXXvN2DsKsPcxY5Dcnpqx9zLwnxuWp9SRWViz9yRHbMuSvbOcxjUPDibs7ed4zZXC3q4SjlVVWtWy2Bvpg2xl3hQaE71PJ9uyN4/qnnlobczeTSvvaGLnRdi7E57+APHIojLsmNzxAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images3/MAposter1.png" alt="Poster" class="gaimgofp imgga">
+            <div class="introduction">
+                Poster (including dyslexia friendly version on the right) design for <a href="./Millionnaire.html"
+                    class="intextlink onsitejump">Millionaire
+                    Assistant<img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO2WsU7CUBSGv8luAhprLMpb+CAmogMLDwAOvqEuYFQ0wQFIiIObOgmTDJib/CQ3zS0p9NSJP7kJLSfn7zn33K+FnbZXBHSBPjDX6uteREk6BV6BZcZ6AerWpg1gKoMRcAHsAwnQBMaeuVnlZ56pa2s1EFPzzDsWppHXXmdaWRPb9OIK60bJ3jMq9ZUo9sfC+EHJXDX8p/FMyQ51HQPPwF0g9kqxPQvjLyU7kulQ164Tvtw2TCyH617JboE3/R7qIVaqaKCWwMDqOLVTkEib1jzTqY6eidzA/AZMj4EW8OGZNoqw91vtbct0GDC9BhZeFwbCqRl7Q5WeA596yJ4Gac+CvQfqQNaelsbeeM30lsbeOGNPXXvN2DsKsPcxY5Dcnpqx9zLwnxuWp9SRWViz9yRHbMuSvbOcxjUPDibs7ed4zZXC3q4SjlVVWtWy2Bvpg2xl3hQaE71PJ9uyN4/qnnlobczeTSvvaGLnRdi7E57+APHIojLsmNzxAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images4/M2poster1.png" alt="Poster for Mark &#8545;-&#8550;" class="gaimgofp imgga">
+            <div class="introduction">
+                Poster design for <a href="./Mark II-VII.html" class="intextlink onsitejump">Mark &#8545;-&#8550;<img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO2WsU7CUBSGv8luAhprLMpb+CAmogMLDwAOvqEuYFQ0wQFIiIObOgmTDJib/CQ3zS0p9NSJP7kJLSfn7zn33K+FnbZXBHSBPjDX6uteREk6BV6BZcZ6AerWpg1gKoMRcAHsAwnQBMaeuVnlZ56pa2s1EFPzzDsWppHXXmdaWRPb9OIK60bJ3jMq9ZUo9sfC+EHJXDX8p/FMyQ51HQPPwF0g9kqxPQvjLyU7kulQ164Tvtw2TCyH617JboE3/R7qIVaqaKCWwMDqOLVTkEib1jzTqY6eidzA/AZMj4EW8OGZNoqw91vtbct0GDC9BhZeFwbCqRl7Q5WeA596yJ4Gac+CvQfqQNaelsbeeM30lsbeOGNPXXvN2DsKsPcxY5Dcnpqx9zLwnxuWp9SRWViz9yRHbMuSvbOcxjUPDibs7ed4zZXC3q4SjlVVWtWy2Bvpg2xl3hQaE71PJ9uyN4/qnnlobczeTSvvaGLnRdi7E57+APHIojLsmNzxAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images4/M2flyer1.png" alt="Flyer cover for Mark &#8545;-&#8550;" class="gaimgofp imgga">
+            <div class="introduction">
+                Flyer cover for <a href="./Mark II-VII.html" class="intextlink onsitejump">Mark &#8545;-&#8550;<img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO2WsU7CUBSGv8luAhprLMpb+CAmogMLDwAOvqEuYFQ0wQFIiIObOgmTDJib/CQ3zS0p9NSJP7kJLSfn7zn33K+FnbZXBHSBPjDX6uteREk6BV6BZcZ6AerWpg1gKoMRcAHsAwnQBMaeuVnlZ56pa2s1EFPzzDsWppHXXmdaWRPb9OIK60bJ3jMq9ZUo9sfC+EHJXDX8p/FMyQ51HQPPwF0g9kqxPQvjLyU7kulQ164Tvtw2TCyH617JboE3/R7qIVaqaKCWwMDqOLVTkEib1jzTqY6eidzA/AZMj4EW8OGZNoqw91vtbct0GDC9BhZeFwbCqRl7Q5WeA596yJ4Gac+CvQfqQNaelsbeeM30lsbeOGNPXXvN2DsKsPcxY5Dcnpqx9zLwnxuWp9SRWViz9yRHbMuSvbOcxjUPDibs7ed4zZXC3q4SjlVVWtWy2Bvpg2xl3hQaE71PJ9uyN4/qnnlobczeTSvvaGLnRdi7E57+APHIojLsmNzxAAAAAElFTkSuQmCC"></a>
+        </section>
+        <section class="gapage gamain gabox">
+            <img src="./Images4/M2flyer2.png" alt="Flyer inner for Mark &#8545;-&#8550;" class="gaimgofp imgga">
+            <div class="introduction">
+                Flyer inner for <a href="./Mark II-VII.html" class="intextlink onsitejump">Mark &#8545;-&#8550;<img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO2WsU7CUBSGv8luAhprLMpb+CAmogMLDwAOvqEuYFQ0wQFIiIObOgmTDJib/CQ3zS0p9NSJP7kJLSfn7zn33K+FnbZXBHSBPjDX6uteREk6BV6BZcZ6AerWpg1gKoMRcAHsAwnQBMaeuVnlZ56pa2s1EFPzzDsWppHXXmdaWRPb9OIK60bJ3jMq9ZUo9sfC+EHJXDX8p/FMyQ51HQPPwF0g9kqxPQvjLyU7kulQ164Tvtw2TCyH617JboE3/R7qIVaqaKCWwMDqOLVTkEib1jzTqY6eidzA/AZMj4EW8OGZNoqw91vtbct0GDC9BhZeFwbCqRl7Q5WeA596yJ4Gac+CvQfqQNaelsbeeM30lsbeOGNPXXvN2DsKsPcxY5Dcnpqx9zLwnxuWp9SRWViz9yRHbMuSvbOcxjUPDibs7ed4zZXC3q4SjlVVWtWy2Bvpg2xl3hQaE71PJ9uyN4/qnnlobczeTSvvaGLnRdi7E57+APHIojLsmNzxAAAAAElFTkSuQmCC"></a>
+        </section>
+    </main>
+    <script>
+        let gacontainer = document.querySelector(".gacontainer");
+        gacontainer.addEventListener("wheel", (event) => {
+            event.preventDefault();
+            gacontainer.scrollLeft += event.deltaY;
+        })
+    </script>
+    <script src="./Javascript/script.js"></script>
+</body>
+
+</html>
