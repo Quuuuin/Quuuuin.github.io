@@ -444,6 +444,10 @@ article {
     background-image: url("../Images/pproject5.png");
 }
 
+.pcard6 {
+    background-image: url("../Images/pproject6.jpg");
+}
+
 .cardtext {
     font-size: 1.5rem;
     font-weight: 500;
@@ -665,6 +669,13 @@ article {
     transition: all 1.5s cubic-bezier(0.7, 0.12, 0.26, 0.97);
 }
 
+#navblock27 {
+    display: block;
+    width: 17rem;
+    animation: subtick7 2s;
+    transition: all 1.5s cubic-bezier(0.7, 0.12, 0.26, 0.97);
+}
+
 @keyframes subtick {
     0% {
         width: 0;
@@ -722,6 +733,16 @@ article {
 
     100% {
         width: 13rem;
+    }
+}
+
+@keyframes subtick7 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 17rem;
     }
 }
 
@@ -956,6 +977,11 @@ article {
     margin-right: 2rem;
 }
 
+.imgga {
+    max-height: 70vh;
+    max-width: 50vw;
+}
+
 .imgfloat {
     z-index: -10;
 }
@@ -1051,6 +1077,53 @@ article {
     margin: 1.5rem;
 }
 
+
+.gacontainer {
+    box-sizing: border-box;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.gapage {
+    z-index: 2;
+    width: 70vw;
+    height: 87vh;
+    flex-shrink: 0;
+}
+
+.gatitle {
+    z-index: -1;
+    position: fixed;
+}
+
+.gamain {
+    margin-top: 10vh;
+}
+
+.gasign {
+    display: flex;
+    color: black;
+    font-family: Smilesans;
+    font-size: 2rem;
+    margin: 3rem;
+    /* text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 0.2rem; */
+    width: max-content;
+    align-items: center;
+}
+
+.gabox {
+    padding-left: 10rem;
+}
+
+.gaimgofp {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    box-shadow: 1.5rem 1rem 0rem #E85827;
+}
 
 /* .menubackground {
     display: none;
