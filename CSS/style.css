@@ -246,6 +246,13 @@ article {
     margin-left: 2vw;
 }
 
+#circle {
+    background: lightblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
 
 .aboutme {
     background-image:
@@ -366,6 +373,13 @@ article {
     margin: 0rem 5rem 2rem 2rem;
 }
 
+
+.confession1 {
+    font-family: HelveticaBold;
+    font-size: 2rem;
+    margin: 0rem 5rem 2rem 2rem;
+}
+
 .confession2 {
     display: flex;
     align-items: center;
@@ -374,7 +388,17 @@ article {
     margin: 8rem 5rem 2rem 2rem;
 }
 
+.confession1link {
+    font-family: HelveticaBold;
+    font-size: 2rem;
+    display: inline-flex;
+    align-items: center;
+    color: black;
+}
 
+.confession1link:hover {
+    border-bottom: 0.2rem solid #81D8D0;
+}
 
 
 /* responsive card  */
@@ -574,7 +598,6 @@ article {
 .icon:hover {
     box-shadow: 0.2rem 1rem 1rem grey;
 }
-
 
 
 /* Millionaire assistant */
