@@ -37,7 +37,7 @@ html {
 
 ::selection {
     color: #fff;
-    background-color: #81D8D0;
+    background-color: #99EBE1;
 }
 
 
@@ -59,7 +59,7 @@ li {
     height: 100vh;
     min-height: auto;
     width: 25vw;
-    background-color: #E85827;
+    background-color: #f87c56;
     box-shadow: 1rem 0rem 1rem #d9d9d9;
     z-index: 0;
     overflow-y: auto;
@@ -100,14 +100,14 @@ h1,
     font-size: 5rem;
     /*padding-left: 1rem;*/
     color: #000;
-    text-shadow: 0.2rem 0.2rem 0rem #81D8D0;
+    text-shadow: 0.2rem 0.2rem 0rem #99EBE1;
     transition: all, 1.5s;
-    background-color: #E85827;
+    background-color: #f87c56;
     margin: 1rem;
 }
 
 .logo:hover {
-    text-shadow: 0.6rem 0.6rem 0rem #81D8D0;
+    text-shadow: 0.6rem 0.6rem 0rem #99EBE1;
 }
 
 
@@ -155,7 +155,7 @@ h1,
     top: -2rem;
     left: 0.5rem;
     z-index: -2;
-    background-color: #81D8D0;
+    background-color: #99EBE1;
 }
 
 #navblock1 {
@@ -398,7 +398,7 @@ article {
 }
 
 .confession1link:hover {
-    border-bottom: 0.2rem solid #81D8D0;
+    border-bottom: 0.2rem solid #99EBE1;
 }
 
 
@@ -483,7 +483,7 @@ article {
 .card:hover {
     background-size: 101%;
     box-shadow: 0.2rem 1rem 1rem grey;
-    background-image: linear-gradient(#81D8D0, #81D8D0);
+    background-image: linear-gradient(#99EBE1, #99EBE1);
 }
 
 .card:hover .cardtext {
@@ -542,14 +542,14 @@ article {
 
 .underline {
     /* text-decoration: underline;
-    text-decoration-color: #E85827;
+    text-decoration-color: #f87c56;
     text-decoration-thickness: 0.5rem; */
-    border-bottom: 0.2rem solid #E85827;
+    border-bottom: 0.2rem solid #f87c56;
 }
 
 .highlight {
     background-clip: padding-box;
-    background-color: #E85827;
+    background-color: #f87c56;
 }
 
 .linkbutton {
@@ -561,7 +561,7 @@ article {
     /* text-decoration: underline;
     text-underline-offset: 0.5rem;
     text-decoration-thickness: 0.2rem; */
-    border-bottom: 0.2rem solid #81D8D0;
+    border-bottom: 0.2rem solid #99EBE1;
     width: max-content;
     align-items: center;
     transition: all 1.5s;
@@ -581,7 +581,7 @@ article {
 }
 
 .linkbutton:hover {
-    background-color: #81D8D0;
+    background-color: #99EBE1;
     box-shadow: 0.2rem 1rem 1rem grey;
 }
 
@@ -630,7 +630,7 @@ article {
     font-size: 2rem;
     position: relative;
     height: 2.5rem;
-    color: #81D8D0;
+    color: #99EBE1;
 }
 
 .sub2navlink {
@@ -648,7 +648,7 @@ article {
     top: -1.5rem;
     left: 0.5rem;
     z-index: -2;
-    background-color: #81D8D0;
+    background-color: #99EBE1;
 }
 
 #navblock21 {
@@ -772,7 +772,7 @@ article {
 
 .subpsidebar {
     position: fixed;
-    background-color: #E8582700;
+    background-color: #f87c5600;
     box-shadow: none;
     transition: all 1.5s linear;
     animation: backfade 1.5s;
@@ -780,18 +780,18 @@ article {
 
 @keyframes backfade {
     0% {
-        background-color: #E85827;
+        background-color: #f87c56;
         box-shadow: 1rem 0rem 1rem #d9d9d9;
     }
 
     100% {
-        background-color: #E8582700;
+        background-color: #f87c5600;
         box-shadow: none;
     }
 }
 
 .subpsidebar:hover {
-    background-color: #E85827;
+    background-color: #f87c56;
     box-shadow: 1rem 0rem 1rem #d9d9d9;
 }
 
@@ -800,7 +800,7 @@ article {
     padding: 1vw;
     padding-left: 2vw;
     text-decoration: line-through;
-    text-decoration-color: #E85827;
+    text-decoration-color: #f87c56;
     text-decoration-thickness: 0.25rem;
 }
 
@@ -839,7 +839,7 @@ article {
     margin-bottom: 2rem;
     /* padding-left: 2vw; */
     text-decoration: line-through;
-    text-decoration-color: #E85827;
+    text-decoration-color: #f87c56;
     text-decoration-thickness: 0.15rem;
     margin-top: 1.5rem;
 }
@@ -854,7 +854,7 @@ article {
 
 .foodtruckicon {
     list-style-image: url("../Images/foodtruck.png");
-    background-color: #E85827;
+    background-color: #f87c56;
     margin: 1.5rem;
     padding: 0.75rem;
 }
@@ -862,14 +862,14 @@ article {
 
 .M2icon {
     list-style-image: url("../Images/icons8-tailors-dummy-48.png");
-    background-color: #E85827;
+    background-color: #f87c56;
     margin: 1.5rem;
     padding: 0.75rem;
 }
 
 .peticon {
     list-style-image: url("../Images/icons8-cat-footprint-48.png");
-    background-color: #E85827;
+    background-color: #f87c56;
     margin: 1.5rem;
     padding: 0.75rem;
 }
@@ -882,7 +882,7 @@ article {
 
 .petrolicon {
     list-style-image: url("../Images/icons8-gas-station-48.png");
-    background-color: #E85827;
+    background-color: #f87c56;
     padding: 0.75rem;
     margin-left: 1.5rem;
 }
@@ -895,21 +895,21 @@ article {
 
 .marketicon {
     list-style-image: url("../Images/icons8-stall-24.png");
-    background-color: #E85827;
+    background-color: #f87c56;
     padding: 0.75rem;
     margin-left: 1.5rem;
 }
 
 .sticon {
     list-style-image: url("../Images/icons8-stretching-24.png");
-    background-color: #E85827;
+    background-color: #f87c56;
     padding: 0.75rem;
     margin-left: 1.5rem;
 }
 
 .shipicon {
     list-style-image: url("../Images/icons8-boy-on-the-rocket-24.png");
-    background-color: #E85827;
+    background-color: #f87c56;
     padding: 0.75rem;
     margin-left: 1.5rem;
 }
@@ -919,7 +919,7 @@ article {
     margin-top: 2rem;
     margin-bottom: 3rem;
     display: flex;
-    box-shadow: 1.5rem 1rem 0rem #E85827;
+    box-shadow: 1.5rem 1rem 0rem #f87c56;
 }
 
 .inlinecenter {
@@ -936,7 +936,7 @@ article {
 }
 
 .img2 {
-    border: 0.2rem solid#E85827;
+    border: 0.2rem solid#f87c56;
 }
 
 .img3 {
@@ -996,7 +996,7 @@ article {
 
 .img10 {
     width: 40%;
-    border: 0.2rem solid#E85827;
+    border: 0.2rem solid#f87c56;
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -1048,7 +1048,7 @@ article {
 }
 
 .statement {
-    border: 0.2rem solid #E85827;
+    border: 0.2rem solid #f87c56;
     margin: 0.2rem;
     padding: 1rem;
 }
@@ -1087,7 +1087,7 @@ article {
     height: 100vh;
     flex-direction: column;
     align-items: center;
-    background-color: #E85827;
+    background-color: #f87c56;
     z-index: 15;
     margin: 0rem, 1rem, 1rem, 1rem;
 }
@@ -1146,13 +1146,13 @@ article {
     margin-top: 2rem;
     margin-bottom: 3rem;
     display: flex;
-    box-shadow: 1.5rem 1rem 0rem #E85827;
+    box-shadow: 1.5rem 1rem 0rem #f87c56;
 }
 
 /* .menubackground {
     display: none;
     position: absolute;
-    background-color: #E85827;
+    background-color: #f87c56;
     z-index: 14;
     top: 0%;
     left: 0%;
