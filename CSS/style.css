@@ -36,8 +36,8 @@ html {
 }
 
 ::selection {
-    color: #fff;
-    background-color: #99EBE1;
+    color: #000;
+    background-color: #D6F2FF;
 }
 
 
@@ -59,8 +59,8 @@ li {
     height: 100vh;
     min-height: auto;
     width: 25vw;
-    background-color: #f87c56;
-    box-shadow: 1rem 0rem 1rem #d9d9d9;
+    /*background-color: #D6F2FF;
+    box-shadow: 1rem 0rem 1rem #d9d9d9;*/
     z-index: 0;
     overflow-y: auto;
 }
@@ -100,14 +100,19 @@ h1,
     font-size: 5rem;
     /*padding-left: 1rem;*/
     color: #000;
-    text-shadow: 0.2rem 0.2rem 0rem #99EBE1;
+    text-shadow: 0.2rem 0.2rem 0rem #D6F2FF;
     transition: all, 1.5s;
-    background-color: #f87c56;
     margin: 1rem;
 }
 
+h1 {
+    background-image: url(../Images/cool-background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 .logo:hover {
-    text-shadow: 0.6rem 0.6rem 0rem #99EBE1;
+    text-shadow: 0.6rem 0.6rem 0rem #D6F2FF;
 }
 
 
@@ -155,7 +160,7 @@ h1,
     top: -2rem;
     left: 0.5rem;
     z-index: -2;
-    background-color: #99EBE1;
+    background-color: #D6F2FF;
 }
 
 #navblock1 {
@@ -255,7 +260,7 @@ article {
 }
 
 
-.aboutme {
+/*.aboutme {
     background-image:
         radial-gradient(closest-side, rgba(235, 105, 78, 1), rgba(235, 105, 78, 0)),
         radial-gradient(closest-side, #F9D2E4, rgba(243, 11, 164, 0)),
@@ -340,7 +345,7 @@ article {
             -10vmax 10vmax,
             40vmax 60vmax;
     }
-}
+}*/
 
 .container {
     padding-top: 1vh;
@@ -398,7 +403,7 @@ article {
 }
 
 .confession1link:hover {
-    border-bottom: 0.2rem solid #99EBE1;
+    border-bottom: 0.2rem solid #D6F2FF;
 }
 
 
@@ -478,12 +483,14 @@ article {
     font-weight: 500;
     transition: all 2s;
     margin-left: 1.5rem;
+    background-color: #D6F2FF;
+    width: 100%;
 }
 
 .card:hover {
     background-size: 101%;
     box-shadow: 0.2rem 1rem 1rem grey;
-    background-image: linear-gradient(#99EBE1, #99EBE1);
+    background-image: linear-gradient(#D6F2FF, #D6F2FF);
 }
 
 .card:hover .cardtext {
@@ -506,7 +513,12 @@ article {
     font-size: 1rem;
 }
 
-
+.tag {
+    font-family: Smilesans;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700
+}
 
 /* contact page */
 .contactcard {
@@ -519,7 +531,7 @@ article {
     transition: all 1.5s;
     margin: 2.5rem 0rem;
     color: black;
-    background: rgb(129, 216, 208);
+    background: #D6F2FF;
 }
 
 .contacticon {
@@ -542,14 +554,14 @@ article {
 
 .underline {
     /* text-decoration: underline;
-    text-decoration-color: #f87c56;
+    text-decoration-color: #D6F2FF;
     text-decoration-thickness: 0.5rem; */
-    border-bottom: 0.2rem solid #f87c56;
+    border-bottom: 0.2rem solid #D6F2FF;
 }
 
 .highlight {
     background-clip: padding-box;
-    background-color: #f87c56;
+    background-color: #D6F2FF;
 }
 
 .linkbutton {
@@ -561,7 +573,7 @@ article {
     /* text-decoration: underline;
     text-underline-offset: 0.5rem;
     text-decoration-thickness: 0.2rem; */
-    border-bottom: 0.2rem solid #99EBE1;
+    border-bottom: 0.2rem solid #D6F2FF;
     width: max-content;
     align-items: center;
     transition: all 1.5s;
@@ -581,7 +593,7 @@ article {
 }
 
 .linkbutton:hover {
-    background-color: #99EBE1;
+    background-color: #D6F2FF;
     box-shadow: 0.2rem 1rem 1rem grey;
 }
 
@@ -630,7 +642,7 @@ article {
     font-size: 2rem;
     position: relative;
     height: 2.5rem;
-    color: #99EBE1;
+    color: #D6F2FF;
 }
 
 .sub2navlink {
@@ -648,7 +660,7 @@ article {
     top: -1.5rem;
     left: 0.5rem;
     z-index: -2;
-    background-color: #99EBE1;
+    background-color: #D6F2FF;
 }
 
 #navblock21 {
@@ -772,7 +784,7 @@ article {
 
 .subpsidebar {
     position: fixed;
-    background-color: #f87c5600;
+    background-color: #D6F2FF00;
     box-shadow: none;
     transition: all 1.5s linear;
     animation: backfade 1.5s;
@@ -780,18 +792,18 @@ article {
 
 @keyframes backfade {
     0% {
-        background-color: #f87c56;
+        background-color: #D6F2FF;
         box-shadow: 1rem 0rem 1rem #d9d9d9;
     }
 
     100% {
-        background-color: #f87c5600;
+        background-color: #D6F2FF00;
         box-shadow: none;
     }
 }
 
 .subpsidebar:hover {
-    background-color: #f87c56;
+    background-color: #D6F2FF;
     box-shadow: 1rem 0rem 1rem #d9d9d9;
 }
 
@@ -799,9 +811,9 @@ article {
 .headtitle {
     padding: 1vw;
     padding-left: 2vw;
-    text-decoration: line-through;
-    text-decoration-color: #f87c56;
-    text-decoration-thickness: 0.25rem;
+    /*text-decoration: line-through;
+    text-decoration-color: #D6F2FF;
+    text-decoration-thickness: 0.25rem;*/
 }
 
 .introduction {
@@ -837,10 +849,10 @@ article {
     font-family: Smilesans;
     font-size: 2rem;
     margin-bottom: 2rem;
-    /* padding-left: 2vw; */
+    /* padding-left: 2vw; 
     text-decoration: line-through;
-    text-decoration-color: #f87c56;
-    text-decoration-thickness: 0.15rem;
+    text-decoration-color: #D6F2FF;
+    text-decoration-thickness: 0.15rem;*/
     margin-top: 1.5rem;
 }
 
@@ -854,7 +866,7 @@ article {
 
 .foodtruckicon {
     list-style-image: url("../Images/foodtruck.png");
-    background-color: #f87c56;
+    background-color: #D6F2FF;
     margin: 1.5rem;
     padding: 0.75rem;
 }
@@ -862,14 +874,14 @@ article {
 
 .M2icon {
     list-style-image: url("../Images/icons8-tailors-dummy-48.png");
-    background-color: #f87c56;
+    background-color: #D6F2FF;
     margin: 1.5rem;
     padding: 0.75rem;
 }
 
 .peticon {
     list-style-image: url("../Images/icons8-cat-footprint-48.png");
-    background-color: #f87c56;
+    background-color: #D6F2FF;
     margin: 1.5rem;
     padding: 0.75rem;
 }
@@ -882,7 +894,7 @@ article {
 
 .petrolicon {
     list-style-image: url("../Images/icons8-gas-station-48.png");
-    background-color: #f87c56;
+    background-color: #D6F2FF;
     padding: 0.75rem;
     margin-left: 1.5rem;
 }
@@ -895,21 +907,21 @@ article {
 
 .marketicon {
     list-style-image: url("../Images/icons8-stall-24.png");
-    background-color: #f87c56;
+    background-color: #D6F2FF;
     padding: 0.75rem;
     margin-left: 1.5rem;
 }
 
 .sticon {
     list-style-image: url("../Images/icons8-stretching-24.png");
-    background-color: #f87c56;
+    background-color: #D6F2FF;
     padding: 0.75rem;
     margin-left: 1.5rem;
 }
 
 .shipicon {
     list-style-image: url("../Images/icons8-boy-on-the-rocket-24.png");
-    background-color: #f87c56;
+    background-color: #D6F2FF;
     padding: 0.75rem;
     margin-left: 1.5rem;
 }
@@ -919,7 +931,7 @@ article {
     margin-top: 2rem;
     margin-bottom: 3rem;
     display: flex;
-    box-shadow: 1.5rem 1rem 0rem #f87c56;
+    box-shadow: 1.5rem 1rem 0rem #D6F2FF;
 }
 
 .inlinecenter {
@@ -936,7 +948,7 @@ article {
 }
 
 .img2 {
-    border: 0.2rem solid#f87c56;
+    border: 0.2rem solid#D6F2FF;
 }
 
 .img3 {
@@ -996,7 +1008,7 @@ article {
 
 .img10 {
     width: 40%;
-    border: 0.2rem solid#f87c56;
+    border: 0.2rem solid#D6F2FF;
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -1048,7 +1060,7 @@ article {
 }
 
 .statement {
-    border: 0.2rem solid #f87c56;
+    border: 0.2rem solid #D6F2FF;
     margin: 0.2rem;
     padding: 1rem;
 }
@@ -1087,7 +1099,7 @@ article {
     height: 100vh;
     flex-direction: column;
     align-items: center;
-    background-color: #f87c56;
+    background-color: #D6F2FF;
     z-index: 15;
     margin: 0rem, 1rem, 1rem, 1rem;
 }
@@ -1146,13 +1158,13 @@ article {
     margin-top: 2rem;
     margin-bottom: 3rem;
     display: flex;
-    box-shadow: 1.5rem 1rem 0rem #f87c56;
+    box-shadow: 1.5rem 1rem 0rem #D6F2FF;
 }
 
 /* .menubackground {
     display: none;
     position: absolute;
-    background-color: #f87c56;
+    background-color: #D6F2FF;
     z-index: 14;
     top: 0%;
     left: 0%;
@@ -1412,4 +1424,11 @@ article {
         height: 15rem
     }
 
+}
+
+
+.background1 {
+    background-image: url(../Images/cool-background.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
 }
