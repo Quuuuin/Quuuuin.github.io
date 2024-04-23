@@ -1099,7 +1099,10 @@ article {
     height: 100vh;
     flex-direction: column;
     align-items: center;
-    background-color: #D6F2FF;
+    background-image: url(../Images/cool-background.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    /*background-color: #D6F2FF;*/
     z-index: 15;
     margin: 0rem, 1rem, 1rem, 1rem;
 }
@@ -1172,6 +1175,12 @@ article {
     height: 100%;
 }
  */
+
+.background1 {
+    background-image: url(../Images/cool-background.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
 
 /* tablet or small window */
 @media (orientation:landscape) and (640px<=width<=1280px) {
@@ -1262,9 +1271,14 @@ article {
     }
 
     .card {
-        width: 10rem;
-        height: 10rem
+        width: 20rem;
+        height: 20rem
     }
+
+    .background1 {
+        background-size: 100%;
+    }
+
 }
 
 
@@ -1308,9 +1322,14 @@ article {
     }
 
     .card {
-        width: 15rem;
-        height: 15rem
+        width: 20rem;
+        height: 20rem
     }
+
+    .background1 {
+        background-size: 100%;
+    }
+
 
 }
 
@@ -1368,6 +1387,11 @@ article {
         height: 15rem
     }
 
+    .background1 {
+        background-size: 100%;
+    }
+
+
 }
 
 
@@ -1424,11 +1448,9 @@ article {
         height: 15rem
     }
 
-}
+    .background1 {
+        background-size: 100%;
+    }
 
 
-.background1 {
-    background-image: url(../Images/cool-background.svg);
-    background-repeat: no-repeat;
-    background-position: right top;
 }
