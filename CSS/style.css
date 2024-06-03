@@ -152,7 +152,7 @@ h1 {
     display: flex;
     align-items: center;
     font-family: SmileSans;
-    font-size: 1.5rem;
+    font-size: 1rem;
     position: relative;
     height: 3.5rem;
     color: black;
@@ -639,7 +639,7 @@ article {
     font-family: SmileSans;
     margin-left: 4.5rem;
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: relative;
     height: 2.5rem;
 }
@@ -667,7 +667,7 @@ article {
 
 .sub2navlink {
     font-family: SmileSans;
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: relative;
     height: 2.5rem;
     color: black;
@@ -685,7 +685,7 @@ article {
 
 #navblock21 {
     display: block;
-    width: 15rem;
+    width: 11rem;
     animation: subtick 2s;
     transition: all 1.5s cubic-bezier(0.7, 0.12, 0.26, 0.97);
 }
@@ -699,35 +699,35 @@ article {
 
 #navblock23 {
     display: block;
-    width: 10rem;
+    width: 11rem;
     animation: subtick3 2s;
     transition: all 1.5s cubic-bezier(0.7, 0.12, 0.26, 0.97);
 }
 
 #navblock24 {
     display: block;
-    width: 6rem;
+    width: 5rem;
     animation: subtick4 2s;
     transition: all 1.5s cubic-bezier(0.7, 0.12, 0.26, 0.97);
 }
 
 #navblock25 {
     display: block;
-    width: 5rem;
+    width: 7rem;
     animation: subtick5 2s;
     transition: all 1.5s cubic-bezier(0.7, 0.12, 0.26, 0.97);
 }
 
 #navblock26 {
     display: block;
-    width: 13rem;
+    width: 10rem;
     animation: subtick6 2s;
     transition: all 1.5s cubic-bezier(0.7, 0.12, 0.26, 0.97);
 }
 
 #navblock27 {
     display: block;
-    width: 17rem;
+    width: 11rem;
     animation: subtick7 2s;
     transition: all 1.5s cubic-bezier(0.7, 0.12, 0.26, 0.97);
 }
@@ -738,7 +738,7 @@ article {
     }
 
     100% {
-        width: 15rem;
+        width: 11rem;
     }
 }
 
@@ -758,7 +758,7 @@ article {
     }
 
     100% {
-        width: 10rem;
+        width: 11rem;
     }
 }
 
@@ -768,7 +768,7 @@ article {
     }
 
     100% {
-        width: 6rem;
+        width: 5rem;
     }
 }
 
@@ -778,7 +778,7 @@ article {
     }
 
     100% {
-        width: 5rem;
+        width: 7rem;
     }
 }
 
@@ -788,7 +788,7 @@ article {
     }
 
     100% {
-        width: 13rem;
+        width: 10rem;
     }
 }
 
@@ -798,7 +798,7 @@ article {
     }
 
     100% {
-        width: 17rem;
+        width: 11rem;
     }
 }
 
