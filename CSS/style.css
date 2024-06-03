@@ -159,6 +159,17 @@ h1 {
 }
 
 
+.subnavlinkh {
+    display: flex;
+    align-items: center;
+    font-family: SmileSans;
+    font-size: 1.5rem;
+    position: relative;
+    height: 3.5rem;
+    color: black;
+}
+
+
 .landani {
     content: normal;
     position: relative;
