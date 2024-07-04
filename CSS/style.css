@@ -509,6 +509,7 @@ article {
     background-size: 101%;
     box-shadow: 0.2rem 1rem 1rem grey;
     background-image: linear-gradient(#D6F2FF, #D6F2FF);
+    cursor: none;
 }
 
 .card:hover .cardtext {
